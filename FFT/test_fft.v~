@@ -1,0 +1,46 @@
+
+module test_fft;
+   reg [10:0] A[0:63];
+   reg [6:0]  k;
+   reg        start;
+   reg        clk,rst;
+   integer    cnt;
+   
+   reg        fin_batterfly ;
+   
+
+   initial begin 
+      rst = 1;
+      start <= 0;
+      k <= 1;
+      fin_batterfly <= 0;
+      
+      for(cnt=0;cnt<64;cnt=cnt+1) begin
+         A[cnt]<= 0;         
+      end
+      #10 rst<=0;
+      #10 rst<=1;
+      #3000 $finish;
+
+   end
+   initial
+     begin
+        $dumpfile("fft.vcd");
+        $dumpvars;
+        #0
+          clk<=0;
+     end
+
+      
+   initial begin
+      #20 start <= 1;
+      #10 start <= 0;
+      
+   end // initial begin
+
+   always #5 clk <= ~clk;
+   always #10 fin_batterfly <= ~fin_batterfly;
+   
+  FFT FFT_module(.clk(clk), .rst(rst),.start(start),.fin_batterfly(fin_batterfly));
+      
+endmodule

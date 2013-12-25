@@ -1,0 +1,9 @@
+module encode_fix_point(
+                        input [11:0] ar,
+                        input [11:0] ai,
+                        input 
+                        output reg[11:0] xr,
+                        output reg[11:0] xi,
+                        
+                        );
+ 

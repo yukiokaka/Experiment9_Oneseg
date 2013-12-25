@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(int argc, char *argv[]) 
+{
+    if(argc != 2) {
+        printf("input_number\n");
+        return 1;
+    }
+    char *k_num = argv[1];
+    printf("function [15:0] func_k%s_sin;\n", k_num);
+    printf("    input[6:0] select;\n");
+    printf("    begin\n");
+    printf("    case(select)\n");
+    for(int i = 0;i < 64 ;i++) {
+        int val = sin((double)i/64)*sin((double)i/64)*65535;
+        printf("        7'd%d: func_k%s_sin = %d;\n",i ,k_num, val);
+    }
+    printf("    endcase\n");
+    printf("    end\n");
+    printf("endfunction\n\n");
+
+    printf("function [15:0] func_k%s_cos;\n", k_num);
+    printf("    input[6:0] select;\n");
+    printf("    begin\n");
+    printf("    case(select)\n");
+    for(int i = 0;i < 64 ;i++) {
+        int val = cos((double)i/64)*cos((double)i/64)*65535;
+        printf("        7'd%d: func_k%s_cos = %d;\n",i ,k_num, val);
+    }
+    printf("    endcase\n");
+    printf("    end\n");
+    printf("endfunction\n\n");
+        
+}
+

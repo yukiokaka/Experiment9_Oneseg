@@ -1,0 +1,162 @@
+
+module lcd_control
+  (
+   input        CLK,
+   input        RST,
+
+   output       update,
+   output       lcd_row, 
+   output [3:0] lcd_col,
+   output [7:0] lcd_char,
+   output       lcd_we,
+
+   input        lcd_busy,
+
+   input        valid_i,
+   input        start_update,
+   input [7:0]  char
+   );
+
+`define SW 4
+   reg [79:0]    char_reg;
+   reg          char_out;
+   
+   parameter s_wait_init = `SW'd0;
+   parameter s_0         = `SW'd1;
+   parameter s_1         = `SW'd2;
+   parameter s_2        = `SW'd3;
+   parameter s_3        = `SW'd4;
+   parameter s_4        = `SW'd5;
+   parameter s_5         = `SW'd6;
+   parameter s_6        = `SW'd7;
+   parameter s_7         = `SW'd8;
+   parameter s_8        = `SW'd9;
+   parameter s_9         = `SW'd10;
+   parameter s_update    = `SW'd11;
+   parameter s_idle      = `SW'd12;
+
+   reg [`SW-1:0] state; 
+	reg [4:0] s,char_s;
+`undef SW
+
+ 
+   assign lcd_char = 
+						  state == s_0?  char_reg[7:0] : 
+                    state == s_1?  char_reg[15:8] : 
+                    state == s_2?  char_reg[23:16] : 
+                    state == s_3?  char_reg[31:24] : 
+                    state == s_4?  char_reg[39:32] : 
+                    state == s_5?  char_reg[47:40] : 
+                    state == s_6?  char_reg[55:48] : 
+                    state == s_7?  char_reg[63:56] : 
+                    state == s_8?  char_reg[71:64] : 
+                    state == s_9?  char_reg[79:72] :
+                    3'h0;
+                   
+   assign lcd_we   = state != s_wait_init && state != s_idle && state != s_update;
+   assign lcd_row  = 1;//!(state == s_h
+                       //|| state == s_e
+                       //|| state == s_l1
+                       //|| state == s_l2
+                       //|| state == s_o1);
+   assign update = state == s_update;
+ 
+    assign lcd_col = 
+                    state == s_0?  4'd0 : 
+                    state == s_1?  4'd1 : 
+                    state == s_2?  4'd2 : 
+                    state == s_3?  4'd3 : 
+                    state == s_4?  4'd4 : 
+                    state == s_5?  4'd5 : 
+                    state == s_6?  4'd6 : 
+                    state == s_7?  4'd7 : 
+                    state == s_8?  4'd8 : 
+                    state == s_9?  4'd9 :
+                    3'h0;                     
+   always @(posedge CLK or negedge RST)
+     if (!RST) begin
+        state <= s_wait_init;
+        char_out <= 0;
+        s <= 0;
+     end else begin
+        case (state)
+          s_wait_init: 
+            if (!lcd_busy)
+              state <= s_idle;
+
+          s_idle:
+            if (start_update)
+              state <= s_0;
+
+          s_0:
+            state <= s_1;
+
+          s_1:
+            state <= s_2;
+          
+          s_2:
+            state <= s_3;
+          
+          s_3:
+            state <= s_4;
+          
+          s_4:
+            state <= s_5;
+          
+          s_5:
+            state <= s_6;
+          
+          s_6:
+            state <= s_7;
+          
+          s_7:
+            state <= s_8;
+
+          s_8:
+            state <= s_9;
+          
+          s_9:
+            state <= s_update;
+          
+          
+          s_update:
+            if (!lcd_busy)
+              state <= s_idle;
+          
+			 
+          default: ;
+        endcase
+		  
+
+			if(char_out == 1)
+          begin
+             if(valid_i == 1)
+               begin
+						  if(char_s == 4'd0)   char_reg[7:0]    <= char; 
+ 						  if(char_s == 4'd1)   char_reg[15:8]   <= char; 
+ 						  if(char_s == 4'd2)   char_reg[23:16]  <= char; 
+ 						  if(char_s == 4'd3)   char_reg[31:24]  <= char; 
+ 						  if(char_s == 4'd4)   char_reg[39:32]  <= char; 
+ 						  if(char_s == 4'd5)   char_reg[47:40]  <= char; 
+ 						  if(char_s == 4'd6)   char_reg[55:48]  <= char; 
+ 						  if(char_s == 4'd7)   char_reg[63:56]  <= char; 
+ 						  if(char_s == 4'd8)   char_reg[71:64]  <= char; 
+ 						  if(char_s == 4'd9)   char_reg[79:72]  <= char; 
+  
+						char_s <= char_s + 1;
+               end
+             else
+               begin
+                  char_out <= 0;
+						char_s <= 0;
+               end
+          end
+        else if(start_update == 1)
+          begin
+				 char_s <= 0;          
+             char_out <= 1;
+          end
+
+     end
+
+endmodule

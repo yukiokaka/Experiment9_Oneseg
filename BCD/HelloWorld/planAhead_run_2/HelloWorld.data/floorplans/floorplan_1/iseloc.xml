@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ISELocs Version="2" Minor="2">
+	<term name="LED[2]" site="E12" sf="T" lf="T" st="UI"/>
+	<term name="CLK" site="AD8" sf="T" lf="T" st="UI"/>
+	<term name="LCDDATA[1]" site="T3" sf="T" lf="T" st="UI"/>
+	<term name="LCDDATA[0]" site="R6" sf="T" lf="T" st="UI"/>
+	<term name="LCDDATA[2]" site="R3" sf="T" lf="T" st="UI"/>
+	<term name="LCDDATA[3]" site="P4" sf="T" lf="T" st="UI"/>
+	<term name="LED[0]" site="E13" sf="T" lf="T" st="UI"/>
+	<term name="LED[3]" site="F12" sf="T" lf="T" st="UI"/>
+	<term name="LED[7]" site="E11" sf="T" lf="T" st="UI"/>
+	<term name="BTN_W" site="C21" sf="T" lf="T" st="UI"/>
+	<term name="DIP[0]" site="U4" sf="T" lf="T" st="UI"/>
+	<term name="LED[6]" site="E10" sf="T" lf="T" st="UI"/>
+	<term name="BTN_S" site="B22" sf="T" lf="T" st="UI"/>
+	<term name="DIP[1]" site="V3" sf="T" lf="T" st="UI"/>
+	<term name="EN" site="P6" sf="T" lf="T" st="UI"/>
+	<term name="LED[5]" site="E15" sf="T" lf="T" st="UI"/>
+	<term name="DIP[5]" site="U5" sf="T" lf="T" st="UI"/>
+	<term name="BTN_E" site="A23" sf="T" lf="T" st="UI"/>
+	<term name="DIP[2]" site="T4" sf="T" lf="T" st="UI"/>
+	<term name="RW" site="R5" sf="T" lf="T" st="UI"/>
+	<term name="RS" site="R7" sf="T" lf="T" st="UI"/>
+	<term name="LED[4]" site="D15" sf="T" lf="T" st="UI"/>
+	<term name="DIP[6]" site="U7" sf="T" lf="T" st="UI"/>
+	<term name="BTN_N" site="A22" sf="T" lf="T" st="UI"/>
+	<term name="DIP[3]" site="T5" sf="T" lf="T" st="UI"/>
+	<term name="DIP[4]" site="U6" sf="T" lf="T" st="UI"/>
+	<term name="DIP[7]" site="T7" sf="T" lf="T" st="UI"/>
+	<term name="nRST" site="T23" sf="T" lf="T" st="UI"/>
+	<term name="LED[1]" site="D14" sf="T" lf="T" st="UI"/>
+	<term name="BTN_C" site="B21" sf="T" lf="T" st="UI"/>
+</ISELocs>
+

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v11.3
+# Build 48858 by hdbuild on Fri Aug 21 18:43:38 PDT 2009
+# Start of session at: 12/3/13 2:01:21 PM
+# Process ID: 4716
+#-----------------------------------------------------------
+source /home/oneseg13/temp/HelloWorld/pa.fromHdl.tcl
+# hdi::project new -name HelloWorld -dir /home/oneseg13/temp/HelloWorld/planAhead_run_1
+# hdi::project setArch -name HelloWorld -arch virtex5
+# hdi::design setOptions -project HelloWorld -top sysele
+# hdi::param set -name project.paUcfFile -svalue sysele.ucf
+# hdi::floorplan new -name floorplan_1 -part xc5vlx30ff676-1 -project HelloWorld
+# hdi::port import -project HelloWorld -verilog num2char.v work -verilog lcd_memory.v work -verilog lcd_control.v work -verilog lcd_comm.v work -verilog ber.v work -verilog switch.v work -verilog rstgen.v work -verilog lcd_ber_top.v work -verilog lcd.v work -verilog pll2.v work -verilog pll.v work -verilog top.v work
+# hdi::port export -project HelloWorld -file HelloWorld_pa_ports.v -format verilog
+# hdi::pconst import -project HelloWorld -floorplan floorplan_1 -file sysele.ucf
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[7]}} -sites E11
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[6]}} -sites E10
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[5]}} -sites E15
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[4]}} -sites D15
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[3]}} -sites F12
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[2]}} -sites E12
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[1]}} -sites D14
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[0]}} -sites E13

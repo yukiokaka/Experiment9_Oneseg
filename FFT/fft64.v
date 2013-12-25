@@ -1,0 +1,223 @@
+
+module fft64
+  #(parameter width = 11)
+   (
+    input                  CLK,
+    input                  RST,
+
+    input                  valid_a,
+    input [width-1:0]      ar,
+    input [width-1:0]      ai,
+
+    output reg             valid_o,
+    input                  rd_en,
+    output                 full,
+    output reg [width-1:0] xr,
+    output reg [width-1:0] xi
+    );
+   
+   reg [6:0]           cnt,cnt_o;
+   
+   reg [21:0]          A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22,A23,A24,A25,A26,A27,A28,A29,A30,A31,A32,A33,A34,A35,A36,A37,A38,A39,A40,A41,A42,A43,A44,A45,A46,A47,A48,A49,A50,A51,A52,A53,A54,A55,A56,A57,A58,A59,A60,A61,A62,A63;
+   
+   wire [21:0]         Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,Y10,Y11,Y12,Y13,Y14,Y15,Y16,Y17,Y18,Y19,Y20,Y21,Y22,Y23,Y24,Y25,Y26,Y27,Y28,Y29,Y30,Y31,Y32,Y33,Y34,Y35,Y36,Y37,Y38,Y39,Y40,Y41,Y42,Y43,Y44,Y45,Y46,Y47,Y48,Y49,Y50,Y51,Y52,Y53,Y54,Y55,Y56,Y57,Y58,Y59,Y60,Y61,Y62,Y63;
+
+
+   reg                 start, start_fft_flg, fin_fft_flg;
+   wire                valid_o_from_myFFT;
+   reg                 fft_culculating_flg;
+   
+   
+   
+   always@(posedge CLK or negedge RST) begin
+      if(!RST) begin
+         start <= 0;
+         cnt_o <= 0;
+         cnt <= 0;
+         valid_o <= 0;
+         start_fft_flg <= 0;
+         fft_culculating_flg <= 0;
+      end
+      else begin
+         if(!start_fft_flg) begin
+            if(fft_culculating_flg <= 0) begin
+               if(valid_a) begin
+                  case(cnt)
+                    7'd0: A0<= {ar,ai};
+                    7'd1: A1<= {ar,ai};
+                    7'd2: A2<= {ar,ai};
+                    7'd3: A3<= {ar,ai};
+                    7'd4: A4<= {ar,ai};
+                    7'd5: A5<= {ar,ai};
+                    7'd6: A6<= {ar,ai};
+                    7'd7: A7<= {ar,ai};
+                    7'd8: A8<= {ar,ai};
+                    7'd9: A9<= {ar,ai};
+                    7'd10: A10<= {ar,ai};
+                    7'd11: A11<= {ar,ai};
+                    7'd12: A12<= {ar,ai};
+                    7'd13: A13<= {ar,ai};
+                    7'd14: A14<= {ar,ai};
+                    7'd15: A15<= {ar,ai};
+                    7'd16: A16<= {ar,ai};
+                    7'd17: A17<= {ar,ai};
+                    7'd18: A18<= {ar,ai};
+                    7'd19: A19<= {ar,ai};
+                    7'd20: A20<= {ar,ai};
+                    7'd21: A21<= {ar,ai};
+                    7'd22: A22<= {ar,ai};
+                    7'd23: A23<= {ar,ai};
+                    7'd24: A24<= {ar,ai};
+                    7'd25: A25<= {ar,ai};
+                    7'd26: A26<= {ar,ai};
+                    7'd27: A27<= {ar,ai};
+                    7'd28: A28<= {ar,ai};
+                    7'd29: A29<= {ar,ai};
+                    7'd30: A30<= {ar,ai};
+                    7'd31: A31<= {ar,ai};
+                    7'd32: A32<= {ar,ai};
+                    7'd33: A33<= {ar,ai};
+                    7'd34: A34<= {ar,ai};
+                    7'd35: A35<= {ar,ai};
+                    7'd36: A36<= {ar,ai};
+                    7'd37: A37<= {ar,ai};
+                    7'd38: A38<= {ar,ai};
+                    7'd39: A39<= {ar,ai};
+                    7'd40: A40<= {ar,ai};
+                    7'd41: A41<= {ar,ai};
+                    7'd42: A42<= {ar,ai};
+                    7'd43: A43<= {ar,ai};
+                    7'd44: A44<= {ar,ai};
+                    7'd45: A45<= {ar,ai};
+                    7'd46: A46<= {ar,ai};
+                    7'd47: A47<= {ar,ai};
+                    7'd48: A48<= {ar,ai};
+                    7'd49: A49<= {ar,ai};
+                    7'd50: A50<= {ar,ai};
+                    7'd51: A51<= {ar,ai};
+                    7'd52: A52<= {ar,ai};
+                    7'd53: A53<= {ar,ai};
+                    7'd54: A54<= {ar,ai};
+                    7'd55: A55<= {ar,ai};
+                    7'd56: A56<= {ar,ai};
+                    7'd57: A57<= {ar,ai};
+                    7'd58: A58<= {ar,ai};
+                    7'd59: A59<= {ar,ai};
+                    7'd60: A60<= {ar,ai};
+                    7'd61: A61<= {ar,ai};
+                    7'd62: A62<= {ar,ai};
+                    7'd63: A63<= {ar,ai};
+                    default cnt <= cnt;                 
+                  endcase
+                  cnt <= cnt+1;
+               end // if (fft_culculating_flg <= 0)
+            end            
+         end // if (!start_fft_flg)
+         
+         else begin
+            start <= 1;
+            cnt <= 0;
+            
+            if(start) begin
+               start <= 0;
+               start_fft_flg <= 0;
+            end
+         end 
+         if(valid_o_from_myFFT) begin
+            fin_fft_flg <= 1;
+         end
+         if(fin_fft_flg) begin
+            valid_o <= 1;
+            fft_culculating_flg <= 0;
+            case(cnt_o)
+              7'd0:{xr,xi} <= Y0;
+              7'd1:{xr,xi} <= Y1;
+              7'd2:{xr,xi} <= Y2;
+              7'd3:{xr,xi} <= Y3;
+              7'd4:{xr,xi} <= Y4;
+              7'd5:{xr,xi} <= Y5;
+              7'd6:{xr,xi} <= Y6;
+              7'd7:{xr,xi} <= Y7;
+              7'd8:{xr,xi} <= Y8;
+              7'd9:{xr,xi} <= Y9;
+              7'd10:{xr,xi} <= Y10;
+              7'd11:{xr,xi} <= Y11;
+              7'd12:{xr,xi} <= Y12;
+              7'd13:{xr,xi} <= Y13;
+              7'd14:{xr,xi} <= Y14;
+              7'd15:{xr,xi} <= Y15;
+              7'd16:{xr,xi} <= Y16;
+              7'd17:{xr,xi} <= Y17;
+              7'd18:{xr,xi} <= Y18;
+              7'd19:{xr,xi} <= Y19;
+              7'd20:{xr,xi} <= Y20;
+              7'd21:{xr,xi} <= Y21;
+              7'd22:{xr,xi} <= Y22;
+              7'd23:{xr,xi} <= Y23;
+              7'd24:{xr,xi} <= Y24;
+              7'd25:{xr,xi} <= Y25;
+              7'd26:{xr,xi} <= Y26;
+              7'd27:{xr,xi} <= Y27;
+              7'd28:{xr,xi} <= Y28;
+              7'd29:{xr,xi} <= Y29;
+              7'd30:{xr,xi} <= Y30;
+              7'd31:{xr,xi} <= Y31;
+              7'd32:{xr,xi} <= Y32;
+              7'd33:{xr,xi} <= Y33;
+              7'd34:{xr,xi} <= Y34;
+              7'd35:{xr,xi} <= Y35;
+              7'd36:{xr,xi} <= Y36;
+              7'd37:{xr,xi} <= Y37;
+              7'd38:{xr,xi} <= Y38;
+              7'd39:{xr,xi} <= Y39;
+              7'd40:{xr,xi} <= Y40;
+              7'd41:{xr,xi} <= Y41;
+              7'd42:{xr,xi} <= Y42;
+              7'd43:{xr,xi} <= Y43;
+              7'd44:{xr,xi} <= Y44;
+              7'd45:{xr,xi} <= Y45;
+              7'd46:{xr,xi} <= Y46;
+              7'd47:{xr,xi} <= Y47;
+              7'd48:{xr,xi} <= Y48;
+              7'd49:{xr,xi} <= Y49;
+              7'd50:{xr,xi} <= Y50;
+              7'd51:{xr,xi} <= Y51;
+              7'd52:{xr,xi} <= Y52;
+              7'd53:{xr,xi} <= Y53;
+              7'd54:{xr,xi} <= Y54;
+              7'd55:{xr,xi} <= Y55;
+              7'd56:{xr,xi} <= Y56;
+              7'd57:{xr,xi} <= Y57;
+              7'd58:{xr,xi} <= Y58;
+              7'd59:{xr,xi} <= Y59;
+              7'd60:{xr,xi} <= Y60;
+              7'd61:{xr,xi} <= Y61;
+              7'd62:{xr,xi} <= Y62;
+              7'd63:{xr,xi} <= Y63;
+              default: cnt <= cnt;
+              
+            endcase
+            cnt_o <= cnt_o + 1;
+            if(cnt_o == 64) begin
+               cnt_o <= 0;
+               valid_o <= 0;
+               fin_fft_flg <= 0;
+            end
+         end // if (fin_fft_flg)
+         if(cnt > 63) begin
+            start_fft_flg <= 1;
+            cnt <= 0;
+            fft_culculating_flg <= 1;
+         end // if (valid_a)
+         
+      end // else: !if(!RST)
+   end // always@ (posedge CLK or negedge RST)
+   
+      
+   
+   
+   
+   myFFT myFFT_module(.clk(CLK), .rst(RST), .start(start),.valid_o(valid_o_from_myFFT),.A0(A0),.A1(A1),.A2(A2),.A3(A3),.A4(A4),.A5(A5),.A6(A6),.A7(A7),.A8(A8),.A9(A9),.A10(A10),.A11(A11),.A12(A12),.A13(A13),.A14(A14),.A15(A15),.A16(A16),.A17(A17),.A18(A18),.A19(A19),.A20(A20),.A21(A21),.A22(A22),.A23(A23),.A24(A24),.A25(A25),.A26(A26),.A27(A27),.A28(A28),.A29(A29),.A30(A30),.A31(A31),.A32(A32),.A33(A33),.A34(A34),.A35(A35),.A36(A36),.A37(A37),.A38(A38),.A39(A39),.A40(A40),.A41(A41),.A42(A42),.A43(A43),.A44(A44),.A45(A45),.A46(A46),.A47(A47),.A48(A48),.A49(A49),.A50(A50),.A51(A51),.A52(A52),.A53(A53),.A54(A54),.A55(A55),.A56(A56),.A57(A57),.A58(A58),.A59(A59),.A60(A60),.A61(A61),.A62(A62),.A63(A63),.YOUT0(Y0),.YOUT1(Y1),.YOUT2(Y2),.YOUT3(Y3),.YOUT4(Y4),.YOUT5(Y5),.YOUT6(Y6),.YOUT7(Y7),.YOUT8(Y8),.YOUT9(Y9),.YOUT10(Y10),.YOUT11(Y11),.YOUT12(Y12),.YOUT13(Y13),.YOUT14(Y14),.YOUT15(Y15),.YOUT16(Y16),.YOUT17(Y17),.YOUT18(Y18),.YOUT19(Y19),.YOUT20(Y20),.YOUT21(Y21),.YOUT22(Y22),.YOUT23(Y23),.YOUT24(Y24),.YOUT25(Y25),.YOUT26(Y26),.YOUT27(Y27),.YOUT28(Y28),.YOUT29(Y29),.YOUT30(Y30),.YOUT31(Y31),.YOUT32(Y32),.YOUT33(Y33),.YOUT34(Y34),.YOUT35(Y35),.YOUT36(Y36),.YOUT37(Y37),.YOUT38(Y38),.YOUT39(Y39),.YOUT40(Y40),.YOUT41(Y41),.YOUT42(Y42),.YOUT43(Y43),.YOUT44(Y44),.YOUT45(Y45),.YOUT46(Y46),.YOUT47(Y47),.YOUT48(Y48),.YOUT49(Y49),.YOUT50(Y50),.YOUT51(Y51),.YOUT52(Y52),.YOUT53(Y53),.YOUT54(Y54),.YOUT55(Y55),.YOUT56(Y56),.YOUT57(Y57),.YOUT58(Y58),.YOUT59(Y59),.YOUT60(Y60),.YOUT61(Y61),.YOUT62(Y62),.YOUT63(Y63));
+   
+
+endmodule

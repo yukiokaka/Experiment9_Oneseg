@@ -1,0 +1,88 @@
+
+
+module fft(
+                        input             clk,rst,
+                        input [11:0]      ar,
+                        input [11:0]      ai,
+                        // input             valid_i,
+                        // output reg [11:0] xr,
+                        // output reg [11:0] xi,
+                        );
+   reg [11:0]                             ar_reg [0:63];
+   reg [11:0]                             ai_reg [0:63];
+   reg [11:0]                             xr_tmp,xi_tmp;                             
+   reg [6:0]                              input_cnt, output_cnt, m, mh, j;
+   reg                                    start_flg, loop_fin_flg;
+
+   always@(posedge clk)
+     begin
+        if(!rst) begin
+           xr <= 0;
+           xi <= 0;
+           input_cnt <= 0;
+           output_cnt <= 0;
+           m <= 0;
+           j <= 0;
+           start_flg <= 0;
+           loop_fin_flg <= 0;           
+        end
+
+        else begin
+           if(valid_i) begin
+              ar_reg[input_cnt] <= ar;
+              ai_reg[input_cnt] <= ai;
+              input_cnt <= input_cnt + 1;
+              if(input_cnt >= 64) begin
+                 start_flg <= 1;
+                 input_cnt <= 0;
+              end     
+           end // if (valid_i)
+
+           else begin
+              if(start_flg) begin //FFT
+                 if(!i_loop_flg) begin
+                    m <= m >> 1;
+                    if(!m) begin
+                       //演算終了
+                    end
+                    else begin
+                       mh <= m >> 1;
+                       i_loop_flg <= 1;
+                    end
+                 end
+                 else begin
+                    if(!j_loop_flg) begin
+                       i <= i + 1;
+                       if(i >= mh) begin
+                          i <= 0;
+                          i_loop_flg <= 0; 
+                       end                       
+                       else begin
+                          // wr <= cos[(m >> 5) * i];
+                          // wi <= sin[(m >> 5) * i];
+                          j <= i;
+                          j_loop_flg <= 1;                        
+                       end
+                    end
+                    else begin
+                       k <= j + mh;
+                       // xr_tmp <= ar_reg[j] -ar_reg[k];
+                       // xi_tmp <= ai_reg[j] -ai_reg[k];
+                       // ar_reg[k] <= (wr * xr- wi * xi) >>15;
+                       // ai_reg[k] <= (wr * xi- wi * xr) >>15;
+                       j <= j + m;
+                       if(j == 64) begin
+                          j_loop_flg <= 0;
+                       end
+                    end // else: !if(!j_loop_flg)
+                 end // else: !if(!i_loop_flg)
+              end // if (start_flg)
+           end // else: !if(valid_i)
+        end // else: !if(!rst)
+     end // always@ (posedge clk)
+   
+   
+   
+   
+   
+endmodule // encode_fix_point

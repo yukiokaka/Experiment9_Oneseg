@@ -1,0 +1,1138 @@
+Release 11.1 - xst L.57 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Reading design: sysele.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sysele.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sysele"
+Output Format                      : NGC
+Target Device                      : xc5vlx50-1-ff676
+
+---- Source Options
+Top Module Name                    : sysele
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : off
+Reduce Control Sets                : off
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Library Search Order               : sysele.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "num2char.v" in library work
+Compiling verilog file "lcd_memory.v" in library work
+Module <num2char> compiled
+Compiling verilog file "lcd_control.v" in library work
+Module <lcd_memory> compiled
+Compiling verilog file "lcd_comm.v" in library work
+Module <lcd_control> compiled
+Compiling verilog file "switch.v" in library work
+Module <lcd_comm> compiled
+Compiling verilog file "rstgen.v" in library work
+Module <switch> compiled
+Compiling verilog file "lcd_ber_top.v" in library work
+Module <rstgen> compiled
+Compiling verilog file "lcd.v" in library work
+Module <lcd_ber_top> compiled
+Compiling verilog file "pll2.v" in library work
+Module <lcd> compiled
+Compiling verilog file "pll.v" in library work
+Module <pll2> compiled
+Compiling verilog file "top.v" in library work
+Module <pll> compiled
+Module <sysele> compiled
+No errors in compilation
+Analysis of file <"sysele.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <sysele> in library <work>.
+
+Analyzing hierarchy for module <pll> in library <work>.
+
+Analyzing hierarchy for module <pll2> in library <work>.
+
+Analyzing hierarchy for module <rstgen> in library <work>.
+
+Analyzing hierarchy for module <lcd> in library <work> with parameters.
+	clk_mhz = "00000000000000000000000011110000"
+	clk_mhz_width = "00000000000000000000000000001000"
+	s_idle = "00000"
+	s_init_ram = "00001"
+	s_next_line = "01100"
+	s_read_mem = "01000"
+	s_return_home = "01010"
+	s_set_display_clear = "00101"
+	s_set_display_off = "00100"
+	s_set_display_on = "00111"
+	s_set_entry_mode = "00110"
+	s_set_nf = "00011"
+	s_wait_idle = "01011"
+	s_wait_init = "00010"
+	s_wait_writing = "01001"
+
+Analyzing hierarchy for module <lcd_ber_top> in library <work>.
+
+Analyzing hierarchy for module <switch> in library <work> with parameters.
+	counter_bits = "00000000000000000000000000010001"
+	counter_bits_1 = "00000000000000000000000000010000"
+	samples_bits = "00000000000000000000000000000101"
+	samples_bits_1 = "00000000000000000000000000000100"
+	samples_bits_2 = "00000000000000000000000000000011"
+	sync_bits = "00000000000000000000000000000011"
+
+Analyzing hierarchy for module <lcd_memory> in library <work>.
+
+Analyzing hierarchy for module <lcd_comm> in library <work> with parameters.
+	clk_mhz = "00000000000000000000000011110000"
+	clk_mhz_width = "00000000000000000000000000001000"
+	divider_top = "00000000000000000000100101011111"
+	divider_width = "00000000000000000000000000001100"
+	s_byte_1 = "01001"
+	s_byte_2 = "01010"
+	s_idle = "00000"
+	s_set_4bit = "00111"
+	s_set_8bit_1 = "00010"
+	s_set_8bit_2 = "00100"
+	s_set_8bit_3 = "00110"
+	s_wait_0_1 = "00101"
+	s_wait_0_1_2 = "01101"
+	s_wait_15 = "00001"
+	s_wait_4_1 = "00011"
+	s_wait_busy_1 = "01011"
+	s_wait_busy_2 = "01100"
+	s_wait_fire = "01000"
+
+Analyzing hierarchy for module <num2char> in library <work>.
+
+Analyzing hierarchy for module <lcd_control> in library <work> with parameters.
+	s_0 = "0001"
+	s_1 = "0010"
+	s_2 = "0011"
+	s_3 = "0100"
+	s_4 = "0101"
+	s_5 = "0110"
+	s_6 = "0111"
+	s_7 = "1000"
+	s_8 = "1001"
+	s_9 = "1010"
+	s_idle = "1100"
+	s_update = "1011"
+	s_wait_init = "0000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <sysele>.
+Module <sysele> is correct for synthesis.
+ 
+Analyzing module <pll> in library <work>.
+Module <pll> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN1_IBUFG_INST> in unit <pll>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN1_IBUFG_INST> in unit <pll>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN1_IBUFG_INST> in unit <pll>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN1_IBUFG_INST> in unit <pll>.
+    Set user-defined property "BANDWIDTH =  OPTIMIZED" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKFBOUT_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKFBOUT_MULT =  8" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKFBOUT_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKIN1_PERIOD =  10.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKIN2_PERIOD =  10.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT0_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT0_DIVIDE =  20" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT0_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT0_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT1_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT1_DIVIDE =  24" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT1_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT1_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT2_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT2_DIVIDE =  10" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT2_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT2_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT3_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT3_DIVIDE =  10" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT3_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT3_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT4_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT4_DIVIDE =  8" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT4_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT4_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT5_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT5_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT5_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLKOUT5_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "CLK_FEEDBACK =  CLKFBOUT" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "COMPENSATION =  SYSTEM_SYNCHRONOUS" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "DIVCLK_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "EN_REL =  FALSE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "PLL_PMCD_MODE =  FALSE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "REF_JITTER =  0.000000" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "RESET_ON_LOSS_OF_LOCK =  FALSE" for instance <PLL_ADV_INST> in unit <pll>.
+    Set user-defined property "RST_DEASSERT_CLK =  CLKIN1" for instance <PLL_ADV_INST> in unit <pll>.
+Analyzing module <pll2> in library <work>.
+Module <pll2> is correct for synthesis.
+ 
+    Set user-defined property "BANDWIDTH =  OPTIMIZED" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKFBOUT_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKFBOUT_MULT =  6" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKFBOUT_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKIN1_PERIOD =  12.500000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKIN2_PERIOD =  10.000000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT0_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT0_DIVIDE =  2" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT0_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT0_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT1_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT1_DIVIDE =  2" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT1_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT1_PHASE =  180.000000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT2_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT2_DIVIDE =  2" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT2_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT2_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT3_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT3_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT3_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT3_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT4_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT4_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT4_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT4_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT5_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT5_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT5_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLKOUT5_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "CLK_FEEDBACK =  CLKFBOUT" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "COMPENSATION =  SYSTEM_SYNCHRONOUS" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "DIVCLK_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "EN_REL =  FALSE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "PLL_PMCD_MODE =  FALSE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "REF_JITTER =  0.000000" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "RESET_ON_LOSS_OF_LOCK =  FALSE" for instance <PLL_ADV_INST> in unit <pll2>.
+    Set user-defined property "RST_DEASSERT_CLK =  CLKIN1" for instance <PLL_ADV_INST> in unit <pll2>.
+Analyzing module <rstgen> in library <work>.
+Module <rstgen> is correct for synthesis.
+ 
+Analyzing module <lcd> in library <work>.
+	clk_mhz = 32'sb00000000000000000000000011110000
+	clk_mhz_width = 32'sb00000000000000000000000000001000
+	s_idle = 5'b00000
+	s_init_ram = 5'b00001
+	s_next_line = 5'b01100
+	s_read_mem = 5'b01000
+	s_return_home = 5'b01010
+	s_set_display_clear = 5'b00101
+	s_set_display_off = 5'b00100
+	s_set_display_on = 5'b00111
+	s_set_entry_mode = 5'b00110
+	s_set_nf = 5'b00011
+	s_wait_idle = 5'b01011
+	s_wait_init = 5'b00010
+	s_wait_writing = 5'b01001
+Module <lcd> is correct for synthesis.
+ 
+Analyzing module <lcd_memory> in library <work>.
+Module <lcd_memory> is correct for synthesis.
+ 
+Analyzing module <lcd_comm> in library <work>.
+	clk_mhz = 32'sb00000000000000000000000011110000
+	clk_mhz_width = 32'sb00000000000000000000000000001000
+	divider_top = 32'sb00000000000000000000100101011111
+	divider_width = 32'sb00000000000000000000000000001100
+	s_byte_1 = 5'b01001
+	s_byte_2 = 5'b01010
+	s_idle = 5'b00000
+	s_set_4bit = 5'b00111
+	s_set_8bit_1 = 5'b00010
+	s_set_8bit_2 = 5'b00100
+	s_set_8bit_3 = 5'b00110
+	s_wait_0_1 = 5'b00101
+	s_wait_0_1_2 = 5'b01101
+	s_wait_15 = 5'b00001
+	s_wait_4_1 = 5'b00011
+	s_wait_busy_1 = 5'b01011
+	s_wait_busy_2 = 5'b01100
+	s_wait_fire = 5'b01000
+Module <lcd_comm> is correct for synthesis.
+ 
+Analyzing module <lcd_ber_top> in library <work>.
+Module <lcd_ber_top> is correct for synthesis.
+ 
+Analyzing module <num2char> in library <work>.
+	Calling function <onedigit>.
+INFO:Xst:1432 - Contents of array <char_reg> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <char_reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <char_reg> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <char_reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <char_reg> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <char_reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <char_reg> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <char_reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <num2char> is correct for synthesis.
+ 
+Analyzing module <lcd_control> in library <work>.
+	s_0 = 4'b0001
+	s_1 = 4'b0010
+	s_2 = 4'b0011
+	s_3 = 4'b0100
+	s_4 = 4'b0101
+	s_5 = 4'b0110
+	s_6 = 4'b0111
+	s_7 = 4'b1000
+	s_8 = 4'b1001
+	s_9 = 4'b1010
+	s_idle = 4'b1100
+	s_update = 4'b1011
+	s_wait_init = 4'b0000
+Module <lcd_control> is correct for synthesis.
+ 
+Analyzing module <switch> in library <work>.
+	counter_bits = 32'sb00000000000000000000000000010001
+	counter_bits_1 = 32'sb00000000000000000000000000010000
+	samples_bits = 32'sb00000000000000000000000000000101
+	samples_bits_1 = 32'sb00000000000000000000000000000100
+	samples_bits_2 = 32'sb00000000000000000000000000000011
+	sync_bits = 32'sb00000000000000000000000000000011
+Module <switch> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <char_out> in unit <lcd_control> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <s> in unit <lcd_control> has a constant value of 00000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <rstgen>.
+    Related source file is "rstgen.v".
+    Found 1-bit register for signal <rstgen>.
+    Found 8-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <rstgen> synthesized.
+
+
+Synthesizing Unit <switch>.
+    Related source file is "switch.v".
+WARNING:Xst:1305 - Output <d> is never assigned. Tied to value 0.
+    Found 1-bit register for signal <neg>.
+    Found 1-bit register for signal <pos>.
+    Found 17-bit up counter for signal <counter>.
+    Found 5-bit register for signal <samples>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   7 D-type flip-flop(s).
+Unit <switch> synthesized.
+
+
+Synthesizing Unit <lcd_memory>.
+    Related source file is "lcd_memory.v".
+    Found 32x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <rdata>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <lcd_memory> synthesized.
+
+
+Synthesizing Unit <lcd_comm>.
+    Related source file is "lcd_comm.v".
+WARNING:Xst:646 - Signal <write_r> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <device_addr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 14                                             |
+    | Transitions        | 55                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 23                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | state$not0000             (positive)           |
+    | Reset              | RST                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00001                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit tristate buffer for signal <LCD_DATA>.
+    Found 8-bit register for signal <data_r>.
+    Found 1-bit register for signal <e>.
+    Found 1-bit register for signal <rs>.
+    Found 1-bit register for signal <rw>.
+    Found 11-bit up counter for signal <counter>.
+    Found 8-bit register for signal <data_w_r>.
+    Found 1-bit register for signal <device_busy>.
+    Found 12-bit up counter for signal <divider>.
+    Found 1-bit register for signal <fire>.
+    Found 4-bit register for signal <lcddata>.
+    Found 1-bit register for signal <lcddata_en>.
+    Found 1-bit register for signal <system_r>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   4 Tristate(s).
+Unit <lcd_comm> synthesized.
+
+
+Synthesizing Unit <num2char>.
+    Related source file is "num2char.v".
+WARNING:Xst:646 - Signal <tempReg<72>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <AllReg<71>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 72-bit register for signal <AllReg>.
+    Found 1-bit register for signal <char_ready>.
+    Found 40-bit register for signal <char_reg>.
+    Found 8-bit register for signal <cnt>.
+    Found 8-bit subtractor for signal <cnt$addsub0000> created at line 79.
+    Found 1-bit register for signal <disp_start>.
+    Found 8-bit register for signal <dispchar>.
+    Found 6-bit adder for signal <dispchar$add0000> created at line 78.
+    Found 10-bit subtractor for signal <dispchar$sub0000> created at line 78.
+    Found 1-bit 40-to-1 multiplexer for signal <dispchar$varindex0000> created at line 78.
+    Found 1-bit 40-to-1 multiplexer for signal <dispchar$varindex0001> created at line 78.
+    Found 1-bit 40-to-1 multiplexer for signal <dispchar$varindex0002> created at line 78.
+    Found 1-bit 40-to-1 multiplexer for signal <dispchar$varindex0003> created at line 78.
+    Found 7-bit register for signal <state>.
+    Found 7-bit adder for signal <state$addsub0000> created at line 61.
+    Found 7-bit comparator greatequal for signal <state$cmp_ge0000> created at line 58.
+    Found 7-bit comparator less for signal <state$cmp_lt0000> created at line 58.
+    Found 1-bit register for signal <valid_out>.
+    Summary:
+	inferred 138 D-type flip-flop(s).
+	inferred  18 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <num2char> synthesized.
+
+
+Synthesizing Unit <lcd_control>.
+    Related source file is "lcd_control.v".
+WARNING:Xst:646 - Signal <s> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <char_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 16                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 17                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 80-bit register for signal <char_reg>.
+    Found 5-bit up counter for signal <char_s>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  80 D-type flip-flop(s).
+Unit <lcd_control> synthesized.
+
+
+Synthesizing Unit <pll>.
+    Related source file is "pll.v".
+Unit <pll> synthesized.
+
+
+Synthesizing Unit <pll2>.
+    Related source file is "pll2.v".
+Unit <pll2> synthesized.
+
+
+Synthesizing Unit <lcd>.
+    Related source file is "lcd.v".
+WARNING:Xst:646 - Signal <state_o> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 27                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 13                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00001                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <lc_data_w>.
+    Found 1-bit register for signal <lc_start>.
+    Found 1-bit register for signal <lc_system>.
+    Found 5-bit register for signal <raddr>.
+    Found 5-bit adder for signal <raddr$addsub0000> created at line 280.
+    Found 5-bit up counter for signal <waddr_init>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <lcd> synthesized.
+
+
+Synthesizing Unit <lcd_ber_top>.
+    Related source file is "lcd_ber_top.v".
+WARNING:Xst:647 - Input <recv_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sent_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <number_of_bits> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <valid_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <ber_valid_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <lcd_ber_top> synthesized.
+
+
+Synthesizing Unit <sysele>.
+    Related source file is "top.v".
+WARNING:Xst:647 - Input <BTN_C> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BTN_N> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DIP> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BTN_S> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BTN_W> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLK_33MHZ_FPGA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <number_of_bits> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <lcd_ber_valid_i> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <ber_sent_data> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <ber_recv_data> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <sysele> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x8-bit dual-port RAM                                : 1
+# Adders/Subtractors                                   : 19
+ 10-bit adder                                          : 3
+ 10-bit subtractor                                     : 1
+ 4-bit adder                                           : 10
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 6
+ 11-bit up counter                                     : 1
+ 12-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 5-bit up counter                                      : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 114
+ 1-bit register                                        : 103
+ 4-bit register                                        : 1
+ 40-bit register                                       : 1
+ 5-bit register                                        : 2
+ 7-bit register                                        : 1
+ 72-bit register                                       : 1
+ 8-bit register                                        : 5
+# Comparators                                          : 2
+ 7-bit comparator greatequal                           : 1
+ 7-bit comparator less                                 : 1
+# Multiplexers                                         : 4
+ 1-bit 40-to-1 multiplexer                             : 4
+# Tristates                                            : 1
+ 4-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <lcd_inst/state/FSM> on signal <state[1:13]> with one-hot encoding.
+------------------------
+ State | Encoding
+------------------------
+ 00000 | 0000100000000
+ 00001 | 0000000000001
+ 00010 | 0000000000010
+ 00011 | 0000000000100
+ 00100 | 0000000001000
+ 00101 | 0000000010000
+ 00110 | 0000000100000
+ 00111 | 0000001000000
+ 01000 | 0010000000000
+ 01001 | 0100000000000
+ 01010 | 0001000000000
+ 01011 | 0000010000000
+ 01100 | 1000000000000
+------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <lcd_ber_top_inst/lcd_control_inst/state/FSM> on signal <state[1:13]> with one-hot encoding.
+------------------------
+ State | Encoding
+------------------------
+ 0000  | 0000000000001
+ 0001  | 0000000000100
+ 0010  | 0000000001000
+ 0011  | 0000000010000
+ 0100  | 0000000100000
+ 0101  | 0000001000000
+ 0110  | 0000010000000
+ 0111  | 0000100000000
+ 1000  | 0001000000000
+ 1001  | 0010000000000
+ 1010  | 0100000000000
+ 1011  | 1000000000000
+ 1100  | 0000000000010
+------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <lcd_inst/inst/state/FSM> on signal <state[1:14]> with one-hot encoding.
+-------------------------
+ State | Encoding
+-------------------------
+ 00000 | 10000000000000
+ 00001 | 00000000000001
+ 00010 | 00000000000100
+ 00011 | 00000000001000
+ 00100 | 00000000010000
+ 00101 | 00000000100000
+ 00110 | 00000001000000
+ 00111 | 00000100000000
+ 01000 | 00000000000010
+ 01001 | 00010000000000
+ 01010 | 00100000000000
+ 01011 | 00001000000000
+ 01100 | 01000000000000
+ 01101 | 00000010000000
+-------------------------
+INFO:Xst:2261 - The FF/Latch <dispchar_6> in Unit <num2char_inst> is equivalent to the following FF/Latch, which will be removed : <dispchar_7> 
+WARNING:Xst:1710 - FF/Latch <char_reg_79> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_78> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_70> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_71> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_62> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_63> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_54> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_55> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_46> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_47> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_39> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_38> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_30> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_31> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_22> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_23> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_14> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_15> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_6> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_reg_7> (without init value) has a constant value of 0 in block <lcd_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dispchar_6> (without init value) has a constant value of 0 in block <num2char_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <AllReg_71> of sequential type is unconnected in block <num2char_inst>.
+WARNING:Xst:2404 -  FFs/Latches <dispchar<7:6>> (without init value) have a constant value of 0 in block <num2char>.
+
+Synthesizing (advanced) Unit <lcd_memory>.
+INFO:Xst:3048 - The small RAM <Mram_mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <wen>           | high     |
+    |     addrA          | connected to signal <waddr>         |          |
+    |     diA            | connected to signal <wdata>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <raddr>         |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <lcd_memory> synthesized (advanced).
+WARNING:Xst:2677 - Node <AllReg_71> of sequential type is unconnected in block <num2char>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# RAMs                                                 : 1
+ 32x8-bit dual-port distributed RAM                    : 1
+# Adders/Subtractors                                   : 19
+ 4-bit adder                                           : 10
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 4
+ 6-bit subtractor                                      : 2
+ 7-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 6
+ 11-bit up counter                                     : 1
+ 12-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 5-bit up counter                                      : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 273
+ Flip-Flops                                            : 273
+# Comparators                                          : 2
+ 7-bit comparator greatequal                           : 1
+ 7-bit comparator less                                 : 1
+# Multiplexers                                         : 4
+ 1-bit 40-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <cnt_0> (without init value) has a constant value of 0 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_1> (without init value) has a constant value of 0 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dispchar_4> (without init value) has a constant value of 1 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dispchar_5> (without init value) has a constant value of 1 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <lcd_inst/inst/data_r_7> of sequential type is unconnected in block <sysele>.
+WARNING:Xst:2677 - Node <lcd_inst/inst/data_r_4> of sequential type is unconnected in block <sysele>.
+WARNING:Xst:2677 - Node <lcd_inst/inst/data_r_6> of sequential type is unconnected in block <sysele>.
+WARNING:Xst:2677 - Node <lcd_inst/inst/data_r_5> of sequential type is unconnected in block <sysele>.
+WARNING:Xst:2677 - Node <lcd_inst/inst/data_r_3> of sequential type is unconnected in block <sysele>.
+WARNING:Xst:2677 - Node <lcd_inst/inst/data_r_2> of sequential type is unconnected in block <sysele>.
+WARNING:Xst:2677 - Node <lcd_inst/inst/data_r_1> of sequential type is unconnected in block <sysele>.
+WARNING:Xst:2677 - Node <lcd_inst/inst/data_r_0> of sequential type is unconnected in block <sysele>.
+
+Optimizing unit <sysele> ...
+
+Optimizing unit <switch> ...
+
+Optimizing unit <lcd_memory> ...
+
+Optimizing unit <num2char> ...
+WARNING:Xst:1710 - FF/Latch <state_6> (without init value) has a constant value of 0 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_7> (without init value) has a constant value of 0 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cnt_6> (without init value) has a constant value of 0 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <state_6> (without init value) has a constant value of 0 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_6> (without init value) has a constant value of 0 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_7> (without init value) has a constant value of 0 in block <num2char>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <lcd_control> ...
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_36> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_37> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_38> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_39> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_29> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_30> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_28> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_31> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_20> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_21> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_23> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_22> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_12> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_13> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_14> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_15> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_4> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_5> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_7> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_6> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_76> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_77> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_79> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_78> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_68> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_69> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_70> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_71> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_60> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_62> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_63> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_61> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_52> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_53> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_54> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_55> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_44> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_46> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_47> (without init value) has a constant value of 0 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_ber_top_inst/lcd_control_inst/char_reg_45> (without init value) has a constant value of 1 in block <sysele>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <sw_btn_e3/neg> of sequential type is unconnected in block <sysele>.
+INFO:Xst:2399 - RAMs <lcd_inst/mem/Mram_mem22>, <lcd_inst/mem/Mram_mem21> are equivalent, second RAM is removed
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <lcd_inst/mem/rdata_7> in Unit <sysele> is equivalent to the following FF/Latch, which will be removed : <lcd_inst/mem/rdata_6> 
+Found area constraint ratio of 100 (+ 5) on block sysele, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 314
+ Flip-Flops                                            : 314
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : sysele.ngr
+Top Level Output File Name         : sysele
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 36
+
+Cell Usage :
+# BELS                             : 475
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 34
+#      LUT2                        : 26
+#      LUT3                        : 28
+#      LUT4                        : 76
+#      LUT5                        : 41
+#      LUT6                        : 167
+#      MUXCY                       : 44
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 314
+#      FD                          : 82
+#      FDC                         : 76
+#      FDCE                        : 62
+#      FDE                         : 90
+#      FDP                         : 3
+#      FDPE                        : 1
+# RAMS                             : 2
+#      RAM32M                      : 1
+#      RAM32X1D                    : 1
+# Clock Buffers                    : 8
+#      BUFG                        : 8
+# IO Buffers                       : 23
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      IOBUF                       : 1
+#      OBUF                        : 16
+#      OBUFT                       : 3
+# Others                           : 2
+#      PLL_ADV                     : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50ff676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             314  out of  28800     1%  
+ Number of Slice LUTs:                  387  out of  28800     1%  
+    Number used as Logic:               381  out of  28800     1%  
+    Number used as Memory:                6  out of   7680     0%  
+       Number used as RAM:                6
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    491
+   Number with an unused Flip Flop:     177  out of    491    36%  
+   Number with an unused LUT:           104  out of    491    21%  
+   Number of fully used LUT-FF pairs:   210  out of    491    42%  
+   Number of unique control sets:        28
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  23  out of    440     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                8  out of     32    25%  
+ Number of PLL_ADVs:                      2  out of      6    33%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+pll/CLKOUT0_BUF                    | BUFG                   | 9     |
+pll2/CLKOUT0_BUF                   | BUFG                   | 307   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------+-------------------------------------------------------+-------+
+Control Signal                                                                      | Buffer(FF name)                                       | Load  |
+------------------------------------------------------------------------------------+-------------------------------------------------------+-------+
+lcd_ber_top_inst/lcd_control_inst/state_FSM_Acst_FSM_inv(sw_btn_e3/RST_inv1_INV_0:O)| NONE(lcd_ber_top_inst/lcd_control_inst/state_FSM_FFd1)| 133   |
+nRST_inv(nRST_inv1_INV_0:O)                                                         | NONE(rstmod/counter_0)                                | 9     |
+------------------------------------------------------------------------------------+-------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.050ns (Maximum Frequency: 327.869MHz)
+   Minimum input arrival time before clock: 1.780ns
+   Maximum output required time after clock: 3.854ns
+   Maximum combinational path delay: 1.772ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pll/CLKOUT0_BUF'
+  Clock period: 2.567ns (frequency: 389.560MHz)
+  Total number of paths / destination ports: 109 / 16
+-------------------------------------------------------------------------
+Delay:               2.567ns (Levels of Logic = 3)
+  Source:            rstmod/counter_2 (FF)
+  Destination:       rstmod/counter_0 (FF)
+  Source Clock:      pll/CLKOUT0_BUF rising
+  Destination Clock: pll/CLKOUT0_BUF rising
+
+  Data Path: rstmod/counter_2 to rstmod/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.471   0.715  rstmod/counter_2 (rstmod/counter_2)
+     LUT3:I0->O            2   0.094   0.581  rstmod/rstgen_cmp_eq0000_SW0 (N12)
+     LUT6:I4->O            8   0.094   0.518  rstmod/counter_not00011 (rstmod/counter_not0001)
+     LUT3:I2->O            1   0.094   0.000  rstmod/counter_0_rstpot (rstmod/counter_0_rstpot)
+     FDC:D                    -0.018          rstmod/counter_0
+    ----------------------------------------
+    Total                      2.567ns (0.753ns logic, 1.814ns route)
+                                       (29.3% logic, 70.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pll2/CLKOUT0_BUF'
+  Clock period: 3.050ns (frequency: 327.869MHz)
+  Total number of paths / destination ports: 3680 / 466
+-------------------------------------------------------------------------
+Delay:               3.050ns (Levels of Logic = 2)
+  Source:            lcd_ber_top_inst/lcd_control_inst/state_FSM_FFd12 (FF)
+  Destination:       lcd_inst/mem/Mram_mem22 (RAM)
+  Source Clock:      pll2/CLKOUT0_BUF rising
+  Destination Clock: pll2/CLKOUT0_BUF rising
+
+  Data Path: lcd_ber_top_inst/lcd_control_inst/state_FSM_FFd12 to lcd_inst/mem/Mram_mem22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.471   0.984  lcd_ber_top_inst/lcd_control_inst/state_FSM_FFd12 (lcd_ber_top_inst/lcd_control_inst/state_FSM_FFd12)
+     LUT5:I0->O            1   0.094   0.576  lcd_inst/wen_SW0 (N16)
+     LUT6:I4->O            2   0.094   0.341  lcd_inst/wen (lcd_inst/wen)
+     RAM32M:WE                 0.490          lcd_inst/mem/Mram_mem1
+    ----------------------------------------
+    Total                      3.050ns (1.149ns logic, 1.901ns route)
+                                       (37.7% logic, 62.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pll/CLKOUT0_BUF'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              1.780ns (Levels of Logic = 2)
+  Source:            pll/PLL_ADV_INST:LOCKED (PAD)
+  Destination:       rstmod/counter_0 (FF)
+  Destination Clock: pll/CLKOUT0_BUF rising
+
+  Data Path: pll/PLL_ADV_INST:LOCKED to rstmod/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PLL_ADV:LOCKED         2   0.000   1.074  pll/PLL_ADV_INST (locked1)
+     LUT6:I0->O            8   0.094   0.518  rstmod/counter_not00011 (rstmod/counter_not0001)
+     LUT3:I2->O            1   0.094   0.000  rstmod/counter_0_rstpot (rstmod/counter_0_rstpot)
+     FDC:D                    -0.018          rstmod/counter_0
+    ----------------------------------------
+    Total                      1.780ns (0.188ns logic, 1.592ns route)
+                                       (10.6% logic, 89.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pll2/CLKOUT0_BUF'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.154ns (Levels of Logic = 1)
+  Source:            BTN_E (PAD)
+  Destination:       sw_btn_e3/samples_0 (FF)
+  Destination Clock: pll2/CLKOUT0_BUF rising
+
+  Data Path: BTN_E to sw_btn_e3/samples_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.818   0.336  BTN_E_IBUF (BTN_E_IBUF)
+     FDCE:D                   -0.018          sw_btn_e3/samples_0
+    ----------------------------------------
+    Total                      1.154ns (0.818ns logic, 0.336ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pll2/CLKOUT0_BUF'
+  Total number of paths / destination ports: 11 / 7
+-------------------------------------------------------------------------
+Offset:              3.854ns (Levels of Logic = 2)
+  Source:            lcd_inst/inst/lcddata_en (FF)
+  Destination:       LCDDATA<3> (PAD)
+  Source Clock:      pll2/CLKOUT0_BUF rising
+
+  Data Path: lcd_inst/inst/lcddata_en to LCDDATA<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.471   0.341  lcd_inst/inst/lcddata_en (lcd_inst/inst/lcddata_en)
+     INV:I->O              4   0.238   0.352  lcd_inst/inst/lcddata_en_inv1_INV_0 (lcd_inst/inst/lcddata_en_inv)
+     OBUFT:T->O                2.452          LCDDATA_2_OBUFT (LCDDATA<2>)
+    ----------------------------------------
+    Total                      3.854ns (3.161ns logic, 0.693ns route)
+                                       (82.0% logic, 18.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Delay:               1.772ns (Levels of Logic = 2)
+  Source:            nRST (PAD)
+  Destination:       pll/PLL_ADV_INST:RST (PAD)
+
+  Data Path: nRST to pll/PLL_ADV_INST:RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.818   0.336  nRST_IBUF (nRST_IBUF)
+     INV:I->O              9   0.238   0.380  nRST_inv1_INV_0 (nRST_inv)
+    PLL_ADV:RST                0.000          pll/PLL_ADV_INST
+    ----------------------------------------
+    Total                      1.772ns (1.056ns logic, 0.716ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.38 secs
+ 
+--> 
+
+
+Total memory usage is 463928 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  109 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

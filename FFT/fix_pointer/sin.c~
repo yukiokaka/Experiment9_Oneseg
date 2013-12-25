@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+unsigned int encode_double_to_fixpoint(double f)
+{
+    int i,val = 1;
+    for(i = 0;i < 16;i++)
+        val *= 2;
+    return (f * val);
+}
+
+int main(void)
+{
+    int i;
+    printf("%f%f\n",sin(3.14),sin(90));
+    for(i = 0; i < 628; i++) {
+        printf("%f  %12d\n", (float)i/100, encode_double_to_fixpoint(sin((float)i/100)));
+
+    }
+}

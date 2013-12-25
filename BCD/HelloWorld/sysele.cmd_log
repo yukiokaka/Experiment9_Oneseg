@@ -1,0 +1,232 @@
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx30-ff676-1 sysele.ngc sysele.ngd  
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx30-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx30-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx30-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx30-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx30-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx30-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx30-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx30-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx30-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx30-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx30-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx30-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx30-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx30-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx30-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 
+xst -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -ifn "/home/oneseg13/temp/HelloWorld/sysele.xst" -ofn "/home/oneseg13/temp/HelloWorld/sysele.syr" 
+ngdbuild -ise "HelloWorld.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 sysele.ngc sysele.ngd  
+map -ise "HelloWorld.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol std -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sysele_map.ncd sysele.ngd sysele.pcf 
+par -ise "HelloWorld.ise" -w -intstyle ise -ol std -t 1 sysele_map.ncd sysele.ncd sysele.pcf 
+trce -ise "/home/oneseg13/temp/HelloWorld/HelloWorld.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf 
+bitgen -ise "HelloWorld.ise" -intstyle ise -f sysele.ut sysele.ncd 

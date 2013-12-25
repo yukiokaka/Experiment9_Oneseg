@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;CLK_33MHZ_FPGA&quot; IOSTANDARD = LVCMOS33;&gt; [sysele.ucf(13)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;CLK_33MHZ_FPGA&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[0]&quot; LOC = U4;&gt; [sysele.ucf(14)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[0]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;NET &quot;DIP[0]&quot; LOC = U4;&gt; [sysele.ucf(14)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[0]&quot; IOSTANDARD = LVCMOS33;&gt; [sysele.ucf(15)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[0]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[1]&quot; LOC = V3;&gt; [sysele.ucf(16)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[1]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;NET &quot;DIP[1]&quot; LOC = V3;&gt; [sysele.ucf(16)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[1]&quot; IOSTANDARD = LVCMOS33;&gt; [sysele.ucf(17)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[1]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[2]&quot; LOC = T4;&gt; [sysele.ucf(18)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[2]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;NET &quot;DIP[2]&quot; LOC = T4;&gt; [sysele.ucf(18)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[2]&quot; IOSTANDARD = LVCMOS33;&gt; [sysele.ucf(19)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[2]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[3]&quot; LOC = T5;&gt; [sysele.ucf(20)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[3]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;NET &quot;DIP[3]&quot; LOC = T5;&gt; [sysele.ucf(20)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[3]&quot; IOSTANDARD = LVCMOS33;&gt; [sysele.ucf(21)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[3]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[4]&quot; LOC = U6;&gt; [sysele.ucf(22)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[4]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;NET &quot;DIP[4]&quot; LOC = U6;&gt; [sysele.ucf(22)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[4]&quot; IOSTANDARD = LVCMOS33;&gt; [sysele.ucf(23)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[4]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[5]&quot; LOC = U5;&gt; [sysele.ucf(24)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[5]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;NET &quot;DIP[5]&quot; LOC = U5;&gt; [sysele.ucf(24)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[5]&quot; IOSTANDARD = LVCMOS33;&gt; [sysele.ucf(25)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[5]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[6]&quot; LOC = U7;&gt; [sysele.ucf(26)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[6]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;NET &quot;DIP[6]&quot; LOC = U7;&gt; [sysele.ucf(26)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[6]&quot; IOSTANDARD = LVCMOS33;&gt; [sysele.ucf(27)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[6]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[7]&quot; LOC = T7;&gt; [sysele.ucf(28)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[7]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;NET &quot;DIP[7]&quot; LOC = T7;&gt; [sysele.ucf(28)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DIP[7]&quot; IOSTANDARD = LVCMOS33;&gt; [sysele.ucf(29)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP[7]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">CLK_FEEDBACK</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">pll/PLL_ADV_INST</arg>&quot; of type &quot;<arg fmt="%s" index="3">PLL_ADV</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">CLK_FEEDBACK</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">pll2/PLL_ADV_INST</arg>&quot; of type &quot;<arg fmt="%s" index="3">PLL_ADV</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+</messages>
+

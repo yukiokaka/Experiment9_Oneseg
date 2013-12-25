@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# PlanAhead v11.3
+# Build 48858 by hdbuild on Fri Aug 21 18:43:38 PDT 2009
+# Start of session at: 12/3/13 2:12:04 PM
+# Process ID: 4962
+#-----------------------------------------------------------
+source /home/oneseg13/temp/HelloWorld/pa.fromHdlPorts.tcl
+# hdi::project new -name HelloWorld -dir /home/oneseg13/temp/HelloWorld/planAhead_run_2
+# hdi::project setArch -name HelloWorld -arch virtex5
+# hdi::design setOptions -project HelloWorld -top netlist_1_EMPTY
+# hdi::param set -name project.paUcfFile -svalue sysele.ucf
+# hdi::floorplan new -name floorplan_1 -part xc5vlx30ff676-1 -project HelloWorld
+# hdi::port import -project HelloWorld -verilog HelloWorld_pa_ports.v work
+# hdi::pconst import -project HelloWorld -floorplan floorplan_1 -file sysele.ucf
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LCDDATA[3]}} -sites P4
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LCDDATA[2]}} -sites R3
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LCDDATA[1]}} -sites T3
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LCDDATA[0]}} -sites R6
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[7]}} -sites E11
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[6]}} -sites E10
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[5]}} -sites E15
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[4]}} -sites D15
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[3]}} -sites F12
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[2]}} -sites E12
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[1]}} -sites D14
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[0]}} -sites E13
+hdi::floorplan save -name floorplan_1 -project HelloWorld
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LCDDATA[3]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LCDDATA[2]}} -ioStd LVDCI_33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LCDDATA[2]}} -ioStd LVCMOS33 -defaultDriveStrength yes -defaultSlewType yes -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LCDDATA[1]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LCDDATA[0]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LED[0]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LED[1]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LED[2]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LED[3]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LED[4]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LED[5]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LED[6]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{LED[7]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{DIP[7]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{DIP[6]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{DIP[5]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{DIP[4]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{DIP[3]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{DIP[2]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{DIP[1]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names {{DIP[0]}} -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::floorplan save -name floorplan_1 -project HelloWorld
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names CLK -ioStd LVDCI_33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names CLK_33MHZ_FPGA -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names nRST -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names BTN_N -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names BTN_E -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names BTN_S -ioStd LVDCI_33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names BTN_W -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names BTN_S -ioStd LVCMOS33 -defaultDriveStrength yes -defaultSlewType yes -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names BTN_C -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names LED_N -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names LED_E -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names LED_S -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names LED_W -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names LED_C -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names RS -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names RW -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names EN -ioStd LVCMOS33 -inTermType NONE -outTermType NONE
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names EN -sites P6
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names RW -sites R5
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names RS -sites R7
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names BTN_N -sites A22
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names BTN_E -sites A23
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names BTN_S -sites B22
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names BTN_W -sites C21
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names BTN_C -sites B21
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names CLK -ioStd LVCMOS33 -defaultDriveStrength yes -defaultSlewType yes -inTermType NONE -outTermType NONE
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names nRST -sites T23
+hdi::port configure -project HelloWorld -floorplan floorplan_1 -names nRST -pullType PULLUP -inTermType NONE -outTermType NONE
+hdi::floorplan save -name floorplan_1 -project HelloWorld
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names CLK -sites AD8
+hdi::floorplan save -name floorplan_1 -project HelloWorld
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{DIP[7]}} -sites T7
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{DIP[6]}} -sites U7
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{DIP[5]}} -sites U5
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{DIP[4]}} -sites U6
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{DIP[3]}} -sites T5
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{DIP[2]}} -sites T4
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{DIP[1]}} -sites V3
+hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{DIP[0]}} -sites U4
+hdi::floorplan save -name floorplan_1 -project HelloWorld
+#-----------------------------------------------------------
+# End of session at: 12/3/13 4:02:04 PM
+# Process ID: 4962
+#-----------------------------------------------------------

@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------
+Release 11.1 Trace  (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+/mnt/cad/Xilinx/11.1/ISE/bin/lin64/unwrapped/trce -ise
+/home/oneseg13/temp/HelloWorld/HelloWorld.ise -intstyle ise -v 3 -s 1
+-fastpaths -xml sysele.twx sysele.ncd -o sysele.twr sysele.pcf -ucf sysele.ucf
+
+Design file:              sysele.ncd
+Physical constraint file: sysele.pcf
+Device,package,speed:     xc5vlx50,ff676,-1 (PRODUCTION 1.66 2009-08-24, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+BTN_E       |   -2.596(R)|    6.422(R)|clk240            |   0.000|
+LCDDATA<3>  |   -3.809(R)|    7.531(R)|clk240            |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+EN          |   13.298(R)|clk240            |   0.000|
+LCDDATA<0>  |   14.027(R)|clk240            |   0.000|
+LCDDATA<1>  |   14.081(R)|clk240            |   0.000|
+LCDDATA<2>  |   14.045(R)|clk240            |   0.000|
+LCDDATA<3>  |   14.030(R)|clk240            |   0.000|
+RS          |   13.115(R)|clk240            |   0.000|
+RW          |   13.106(R)|clk240            |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.748|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Dec  9 14:59:09 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 400 MB
+
+
+

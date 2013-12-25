@@ -1,0 +1,102 @@
+INFO: [HD-Application 1] Opened log file /home/oneseg13/temp/HelloWorld//home/oneseg13/temp/HelloWorld/planAhead_run_1/planAhead.log
+INFO: [HD-Application 2] Opened journal file /home/oneseg13/temp/HelloWorld//home/oneseg13/temp/HelloWorld/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+# PlanAhead v11.3
+# Build 48858 by hdbuild on Fri Aug 21 18:43:38 PDT 2009
+# Start of session at: 12/3/13 2:01:21 PM
+# Process ID: 4716
+#-----------------------------------------------------------
+INFO: [HD-RTPRIM 0] Parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/ucf.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/ucf.xml'
+Command> source /home/oneseg13/temp/HelloWorld/pa.fromHdl.tcl
+# hdi::project new -name HelloWorld -dir /home/oneseg13/temp/HelloWorld/planAhead_run_1
+# hdi::project setArch -name HelloWorld -arch virtex5
+# hdi::design setOptions -project HelloWorld -top sysele
+# hdi::param set -name project.paUcfFile -svalue sysele.ucf
+# hdi::floorplan new -name floorplan_1 -part xc5vlx30ff676-1 -project HelloWorld
+INFO: [HD-ArchReader 15] Reading macro library /mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn
+INFO: [HD-EDIFIN 0] Parsing Edif File '/mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File '/mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn'
+INFO: [HD-ArchReader 12] Reading bus macro file /mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/pr_bus_macros.xml
+INFO: [HD-ArchReader 7] Loading clock regions from /mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/virtex5/virtex5lx/xc5vlx30/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from /mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/virtex5/virtex5lx/xc5vlx30/ClockBuffers.xml
+INFO: [HD-ArchReader 3] Loading package from /mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/virtex5/virtex5lx/xc5vlx30/ff676/Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from /mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/IOStandards.xml
+INFO: [HD-ArchReader 5] Loading pkg sso from /mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/virtex5/virtex5lx/xc5vlx30/ff676/SSORules.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : /mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/drc.xml
+# hdi::port import -project HelloWorld -verilog num2char.v work -verilog lcd_memory.v work -verilog lcd_control.v work -verilog lcd_comm.v work -verilog ber.v work -verilog switch.v work -verilog rstgen.v work -verilog lcd_ber_top.v work -verilog lcd.v work -verilog pll2.v work -verilog pll.v work -verilog top.v work
+INFO: [HD-RTLIN 0] Removing all analyzed parse trees
+INFO: [HD-RTLIN 0] Removing all libraries
+INFO: [HD-RTLIN 2] Parsing VHDL file "/mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+INFO: [HD-RTLIN 2] Parsing package <attributes>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "num2char.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <num2char>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "lcd_memory.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <lcd_memory>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "lcd_control.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <lcd_control>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "lcd_comm.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <lcd_comm>.
+WARN: [HD-RTLIN 1] lcd_comm.v(29) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(30) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(31) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(32) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(33) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(34) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(35) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(36) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(37) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(38) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(39) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(40) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(41) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd_comm.v(42) Parameter declaration becomes local in lcd_comm with formal parameter declaration list
+INFO: [HD-RTLIN 2] Parsing Verilog file "ber.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <ber>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "switch.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <switch>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "rstgen.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <rstgen>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "lcd_ber_top.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <lcd_ber_top>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "lcd.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <lcd>.
+WARN: [HD-RTLIN 1] lcd.v(25) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(26) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(27) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(28) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(29) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(30) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(31) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(32) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(33) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(34) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(35) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(36) Parameter declaration becomes local in lcd with formal parameter declaration list
+WARN: [HD-RTLIN 1] lcd.v(37) Parameter declaration becomes local in lcd with formal parameter declaration list
+INFO: [HD-RTLIN 2] Parsing Verilog file "pll2.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <pll2>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "pll.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <pll>.
+INFO: [HD-RTLIN 2] Parsing Verilog file "top.v" into library work
+INFO: [HD-RTLIN 2] Parsing module <sysele>.
+INFO: [HD-RTLIN 2] Elaborating module <sysele>.
+INFO: [HD-RTLIN 0] Removing all analyzed parse trees
+INFO: [HD-RTLIN 0] Memory usage after 'Elaborate()': 3194
+INFO: [HD-RTLIN 0] Translating model
+# hdi::port export -project HelloWorld -file HelloWorld_pa_ports.v -format verilog
+# hdi::pconst import -project HelloWorld -floorplan floorplan_1 -file sysele.ucf
+INFO: [HD-UCFReader 0] Parsing UCF File : sysele.ucf
+INFO: [HD-UCFReader 1] Finished Parsing UCF File : sysele.ucf
+Command> hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[7]}} -sites E11
+Command> hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[6]}} -sites E10
+Command> hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[5]}} -sites E15
+Command> hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[4]}} -sites D15
+Command> hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[3]}} -sites F12
+Command> hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[2]}} -sites E12
+Command> hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[1]}} -sites D14
+Command> hdi::port place -project HelloWorld -floorplan floorplan_1 -names {{LED[0]}} -sites E13

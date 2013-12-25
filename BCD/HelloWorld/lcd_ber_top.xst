@@ -1,0 +1,6 @@
+set -tmpdir "/home/oneseg13/temp/HelloWorld/xst/projnav.tmp"
+set -xsthdpdir "/home/oneseg13/temp/HelloWorld/xst"
+elaborate
+-lso lcd_ber_top.lso
+-ifn lcd_ber_top.prj
+-ifmt mixed
