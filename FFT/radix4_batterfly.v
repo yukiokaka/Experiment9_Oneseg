@@ -1,3 +1,7 @@
+//radix4のモジュール群
+//コメントアウトはクロック同期にてradix4を算出する場合のもの。
+//気持ち悪いけど消さないほうがいい気がする
+
 module complex_add(
                    input         clk,
                    input [21:0]  A,
