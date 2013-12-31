@@ -6,16 +6,20 @@ module complex_add(
                    );
    
    wire signed [10:0]            AR, AI, BR, BI;
-   reg signed [10:0]             YR, YI;
+   // reg signed [10:0]             YR, YI;
+   wire signed [10:0]             YR, YI;
    
    assign {AR, AI} = A;
    assign {BR, BI} = B;
    
+   assign YR = AR + BR;
+   assign YI = AI + BI;
+
    assign Y = {YR, YI};
    
    always@(posedge clk) begin
-      YR <= AR + BR;
-      YI <= AI + BI;
+      // YR <= AR + BR;
+      // YI <= AI + BI;
    end
    
 endmodule // complex_add
@@ -28,16 +32,20 @@ module complex_sub(
                    );
    
    wire signed [10:0]            AR, AI, BR, BI;
-   reg signed [10:0]             YR, YI;
-   
+   // reg signed [10:0]             YR, YI;
+   wire signed [10:0]             YR, YI;
    assign {AR, AI} = A;
    assign {BR, BI} = B;
+
+
+   assign YR = AR - BR;
+   assign YI = AI - BI;
 
    assign Y = {YR, YI};
 
    always@(posedge clk) begin
-      YR <= AR - BR;
-      YI <= AI - BI;
+      // YR <= AR - BR;
+      // YI <= AI - BI;
    end
 
 endmodule // complex_add
@@ -49,14 +57,17 @@ module j_multiplier(
                     );
    wire signed [10:0]             AR;
    wire signed [10:0]             AI;
-   reg signed [10:0]              YR, YI;
-   
+   // reg signed [10:0]              YR, YI;
+   wire signed [10:0]              YR, YI;
    assign {AR, AI} = A;
-   assign Y = {YR, YI};
+   assign YR = -AI;
+   assign YI = AR;
 
+   assign Y = {YR, YI};
+   
    always@(posedge clk) begin
-      YR <= -AI;
-      YI <= AR;
+      // YR <= -AI;
+      // YI <= AR;
    end
    
 endmodule // j_multiplier
@@ -102,20 +113,20 @@ module radix4_batterfly(
             cnt <= 1;
             valid_o <= 0;            
          end
+         // if(cnt == 1) begin
+         //    cnt <= cnt + 1;            
+         // end
+         // if(cnt == 2) begin
+         //    cnt <= cnt + 1;
+         // end
+         // if(cnt == 3) begin
+         //    cnt <= cnt + 1;
+         // end
          if(cnt == 1) begin
-            cnt <= cnt + 1;            
-         end
-         if(cnt == 2) begin
-            cnt <= cnt + 1;
-         end
-         if(cnt == 3) begin
-            cnt <= cnt + 1;
-         end
-         if(cnt == 4) begin
             cnt <= cnt + 1;
             valid_o <= 1;
          end
-         if(cnt == 5) begin
+         if(cnt == 2) begin
             cnt <= 0;
             valid_o <= 0;
          end         

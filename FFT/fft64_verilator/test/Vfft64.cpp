@@ -8,8 +8,6 @@
 //--------------------
 // STATIC VARIABLES
 
-VL_ST_SIG8(Vfft64::__Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[64],3,0);
-VL_ST_SIG8(Vfft64::__Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[64],0,0);
 
 //--------------------
 
@@ -320,24 +318,6 @@ VL_CTOR_IMP(Vfft64) {
     v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KR = VL_RAND_RESET_I(17);
     v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KI = VL_RAND_RESET_I(17);
     v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt = VL_RAND_RESET_I(4);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YI = VL_RAND_RESET_I(11);
     v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR = VL_RAND_RESET_I(11);
     v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI = VL_RAND_RESET_I(11);
     v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1 = VL_RAND_RESET_Q(45);
@@ -368,198 +348,6 @@ VL_CTOR_IMP(Vfft64) {
     __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select = VL_RAND_RESET_I(7);
     __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout = VL_RAND_RESET_I(17);
     __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select = VL_RAND_RESET_I(7);
-    __Vtablechg1[0] = 3;
-    __Vtablechg1[1] = 0;
-    __Vtablechg1[2] = 3;
-    __Vtablechg1[3] = 3;
-    __Vtablechg1[4] = 3;
-    __Vtablechg1[5] = 1;
-    __Vtablechg1[6] = 3;
-    __Vtablechg1[7] = 3;
-    __Vtablechg1[8] = 3;
-    __Vtablechg1[9] = 1;
-    __Vtablechg1[10] = 3;
-    __Vtablechg1[11] = 3;
-    __Vtablechg1[12] = 3;
-    __Vtablechg1[13] = 1;
-    __Vtablechg1[14] = 3;
-    __Vtablechg1[15] = 3;
-    __Vtablechg1[16] = 3;
-    __Vtablechg1[17] = 3;
-    __Vtablechg1[18] = 3;
-    __Vtablechg1[19] = 3;
-    __Vtablechg1[20] = 3;
-    __Vtablechg1[21] = 3;
-    __Vtablechg1[22] = 3;
-    __Vtablechg1[23] = 3;
-    __Vtablechg1[24] = 3;
-    __Vtablechg1[25] = 0;
-    __Vtablechg1[26] = 3;
-    __Vtablechg1[27] = 3;
-    __Vtablechg1[28] = 3;
-    __Vtablechg1[29] = 0;
-    __Vtablechg1[30] = 3;
-    __Vtablechg1[31] = 3;
-    __Vtablechg1[32] = 3;
-    __Vtablechg1[33] = 0;
-    __Vtablechg1[34] = 3;
-    __Vtablechg1[35] = 3;
-    __Vtablechg1[36] = 3;
-    __Vtablechg1[37] = 0;
-    __Vtablechg1[38] = 3;
-    __Vtablechg1[39] = 3;
-    __Vtablechg1[40] = 3;
-    __Vtablechg1[41] = 0;
-    __Vtablechg1[42] = 3;
-    __Vtablechg1[43] = 3;
-    __Vtablechg1[44] = 3;
-    __Vtablechg1[45] = 0;
-    __Vtablechg1[46] = 3;
-    __Vtablechg1[47] = 3;
-    __Vtablechg1[48] = 3;
-    __Vtablechg1[49] = 0;
-    __Vtablechg1[50] = 3;
-    __Vtablechg1[51] = 3;
-    __Vtablechg1[52] = 3;
-    __Vtablechg1[53] = 0;
-    __Vtablechg1[54] = 3;
-    __Vtablechg1[55] = 3;
-    __Vtablechg1[56] = 3;
-    __Vtablechg1[57] = 0;
-    __Vtablechg1[58] = 3;
-    __Vtablechg1[59] = 3;
-    __Vtablechg1[60] = 3;
-    __Vtablechg1[61] = 0;
-    __Vtablechg1[62] = 3;
-    __Vtablechg1[63] = 3;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[0] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[1] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[2] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[3] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[4] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[5] = 2;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[6] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[7] = 2;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[8] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[9] = 3;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[10] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[11] = 3;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[12] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[13] = 4;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[14] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[15] = 4;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[16] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[17] = 5;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[18] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[19] = 5;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[20] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[21] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[22] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[23] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[24] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[25] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[26] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[27] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[28] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[29] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[30] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[31] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[32] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[33] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[34] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[35] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[36] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[37] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[38] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[39] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[40] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[41] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[42] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[43] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[44] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[45] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[46] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[47] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[48] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[49] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[50] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[51] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[52] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[53] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[54] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[55] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[56] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[57] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[58] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[59] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[60] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[61] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[62] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[63] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[0] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[1] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[2] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[3] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[4] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[5] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[6] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[7] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[8] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[9] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[10] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[11] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[12] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[13] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[14] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[15] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[16] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[17] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[18] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[19] = 1;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[20] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[21] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[22] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[23] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[24] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[25] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[26] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[27] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[28] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[29] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[30] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[31] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[32] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[33] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[34] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[35] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[36] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[37] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[38] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[39] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[40] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[41] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[42] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[43] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[44] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[45] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[46] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[47] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[48] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[49] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[50] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[51] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[52] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[53] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[54] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[55] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[56] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[57] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[58] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[59] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[60] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[61] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[62] = 0;
-    __Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[63] = 0;
     __Vclklast__TOP__CLK = VL_RAND_RESET_I(1);
     __Vclklast__TOP__RST = VL_RAND_RESET_I(1);
     __Vm_traceActivity = VL_RAND_RESET_I(32);
@@ -615,93 +403,7 @@ void Vfft64::_eval_initial_loop(Vfft64__Syms* __restrict vlSymsp) {
 void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_PRINTF("    Vfft64::_sequent__TOP__1\n"); );
     Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    // ALWAYS at ../radix4_batterfly.v:58
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YR 
-	= (0x7ff & VL_NEGATE_I(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3));
-    // ALWAYS at ../radix4_batterfly.v:59
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YI 
-	= (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
-		    >> 0xb));
-    // ALWAYS at ../radix4_batterfly.v:39
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YR 
-	= (0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-		     >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
-				>> 0xb)));
-    // ALWAYS at ../radix4_batterfly.v:40
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YI 
-	= (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-		    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J));
-    // ALWAYS at ../radix4_batterfly.v:39
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YR 
-	= (0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-		     >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
-				>> 0xb)));
-    // ALWAYS at ../radix4_batterfly.v:40
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YI 
-	= (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-		    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1));
-    // ALWAYS at ../radix4_batterfly.v:17
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YR 
-	= (0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-		     >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
-				>> 0xb)));
-    // ALWAYS at ../radix4_batterfly.v:18
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YI 
-	= (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-		    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J));
-    // ALWAYS at ../radix4_batterfly.v:17
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YR 
-	= (0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
-		     >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
-				>> 0xb)));
-    // ALWAYS at ../radix4_batterfly.v:18
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YI 
-	= (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
-		    + vlTOPp->v__DOT__myFFT_module__DOT__AIN2));
-    // ALWAYS at ../radix4_batterfly.v:17
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YR 
-	= (0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-		     >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
-				>> 0xb)));
-    // ALWAYS at ../radix4_batterfly.v:18
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YI 
-	= (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-		    + vlTOPp->v__DOT__myFFT_module__DOT__AIN3));
-    // ALWAYS at ../radix4_batterfly.v:39
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YR 
-	= (0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
-		     >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
-				>> 0xb)));
-    // ALWAYS at ../radix4_batterfly.v:40
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YI 
-	= (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
-		    - vlTOPp->v__DOT__myFFT_module__DOT__AIN2));
-    // ALWAYS at ../radix4_batterfly.v:39
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YR 
-	= (0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-		     >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
-				>> 0xb)));
-    // ALWAYS at ../radix4_batterfly.v:40
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YI 
-	= (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-		    - vlTOPp->v__DOT__myFFT_module__DOT__AIN3));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YI));
-}
-
-void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_PRINTF("    Vfft64::_sequent__TOP__2\n"); );
-    Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Variables
-    VL_SIG8(__Vtableidx1,5,0);
     VL_SIG8(__Vdly__v__DOT__start,0,0);
     VL_SIG8(__Vdly__v__DOT__cnt,6,0);
     VL_SIG8(__Vdly__v__DOT__start_fft_flg,0,0);
@@ -714,7 +416,6 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
     VL_SIG8(__Vdly__v__DOT__myFFT_module__DOT__calculating_batterfly_flg,0,0);
     VL_SIG8(__Vdly__v__DOT__valid_o_from_myFFT,0,0);
     VL_SIG8(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt,3,0);
-    //char	__VpadToAlign37[3];
     VL_SIG(__Vdly__v__DOT__myFFT_module__DOT__B15,21,0);
     VL_SIG(__Vdly__v__DOT__myFFT_module__DOT__B31,21,0);
     VL_SIG(__Vdly__v__DOT__myFFT_module__DOT__B47,21,0);
@@ -1333,9 +1034,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__B15 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B31 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B47 
@@ -1345,9 +1053,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__B14 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B30 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B46 
@@ -1360,9 +1075,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__B13 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B29 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B45 
@@ -1372,9 +1094,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__B12 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B28 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B44 
@@ -1389,9 +1118,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__B11 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B27 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B43 
@@ -1401,9 +1137,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__B10 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B26 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B42 
@@ -1416,9 +1159,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__B9 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B25 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B41 
@@ -1428,9 +1178,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__B8 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B24 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B40 
@@ -1447,9 +1204,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__B7 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B23 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B39 
@@ -1459,9 +1223,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__B6 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B22 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B38 
@@ -1474,9 +1245,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__B5 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B21 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B37 
@@ -1486,9 +1264,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__B4 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B20 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B36 
@@ -1503,9 +1288,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__B3 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B19 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B35 
@@ -1515,9 +1307,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__B2 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B18 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B34 
@@ -1530,9 +1329,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__B1 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B17 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B33 
@@ -1542,9 +1348,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__B0 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B16 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B32 
@@ -1793,9 +1606,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__C51 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C55 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C59 
@@ -1805,9 +1625,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__C50 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C54 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C58 
@@ -1820,9 +1647,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__C49 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C53 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C57 
@@ -1832,9 +1666,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__C48 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C52 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C56 
@@ -1859,9 +1700,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__C35 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C39 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C43 
@@ -1871,9 +1719,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__C34 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C38 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C42 
@@ -1886,9 +1741,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__C33 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C37 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C41 
@@ -1898,9 +1760,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__C32 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C36 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C40 
@@ -1927,9 +1796,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__C19 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C23 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C27 
@@ -1939,9 +1815,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__C18 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C22 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C26 
@@ -1954,9 +1837,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__C17 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C21 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C25 
@@ -1966,9 +1856,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__C16 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C20 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C24 
@@ -1993,9 +1890,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__C3 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C7 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C11 
@@ -2005,9 +1909,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__C2 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C6 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C10 
@@ -2020,9 +1931,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 						 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 						__Vdly__v__DOT__myFFT_module__DOT__C1 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C5 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C9 
@@ -2032,9 +1950,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__myFFT_module__DOT__C0 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C4 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C8 
@@ -2332,9 +2257,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y60 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y61 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y62 
@@ -2355,9 +2287,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y56 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y57 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y58 
@@ -2380,9 +2319,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y52 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y53 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y54 
@@ -2403,9 +2349,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y48 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y49 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y50 
@@ -2430,9 +2383,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y44 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y45 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y46 
@@ -2453,9 +2413,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y40 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y41 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y42 
@@ -2478,9 +2445,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y36 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y37 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y38 
@@ -2501,9 +2475,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y32 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y33 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y34 
@@ -2530,9 +2511,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y28 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y29 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y30 
@@ -2553,9 +2541,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y24 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y25 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y26 
@@ -2578,9 +2573,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y20 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y21 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y22 
@@ -2601,9 +2603,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y16 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y17 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y18 
@@ -2628,9 +2637,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y12 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y13 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y14 
@@ -2651,9 +2667,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y8 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y9 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y10 
@@ -2676,9 +2699,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y4 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y5 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y6 
@@ -2699,9 +2729,16 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 					    } else {
 						__Vdly__v__DOT__Y0 
 						    = 
-						    (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR) 
-						      << 0xb) 
-						     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI));
+						    ((0x3ff800 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   >> 0xb) 
+							  + 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							   >> 0xb)) 
+							 << 0xb)) 
+						     | (0x7ff 
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
 						__Vdly__v__DOT__Y1 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__Y2 
@@ -3382,21 +3419,38 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
     vlTOPp->v__DOT__myFFT_module__DOT__Y3 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR) 
 					      << 0xb) 
 					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI));
-    // ALWAYS at ../radix4_batterfly.v:95
-    __Vtableidx1 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt) 
-		     << 2) | (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly) 
-			       << 1) | (IData)(vlTOPp->RST)));
-    if ((1 & (IData)(vlTOPp->__Vtablechg1)[(IData)(__Vtableidx1)])) {
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt 
-	    = (IData)(vlTOPp->__Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt)
-	    [(IData)(__Vtableidx1)];
+    // ALWAYS at ../radix4_batterfly.v:106
+    if (vlTOPp->RST) {
+	if (vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly) {
+	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt = 1;
+	    vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly = 0;
+	}
+	if ((1 == (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt))) {
+	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt 
+		= (0xf & ((IData)(1) + (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt)));
+	    vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly = 1;
+	}
+	if ((2 == (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt))) {
+	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt = 0;
+	    vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly = 0;
+	}
+    } else {
+	vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly = 0;
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt = 0;
     }
-    if ((2 & (IData)(vlTOPp->__Vtablechg1)[(IData)(__Vtableidx1)])) {
-	vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly 
-	    = (IData)(vlTOPp->__Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly)
-	    [(IData)(__Vtableidx1)];
-    }
-    // ALWAYS at ../radix4_batterfly.v:87
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN2)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN2)));
+    // ALWAYS at ../radix4_batterfly.v:98
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__Vfuncout 
@@ -3498,7 +3552,7 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0x1e6e9 : 0)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KI 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:88
+    // ALWAYS at ../radix4_batterfly.v:99
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__Vfuncout 
@@ -3600,7 +3654,7 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0x1ce0f : 0)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KI 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:89
+    // ALWAYS at ../radix4_batterfly.v:100
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__Vfuncout 
@@ -3702,7 +3756,7 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0x1b5b1 : 0)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KI 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:90
+    // ALWAYS at ../radix4_batterfly.v:101
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__Vfuncout 
@@ -3804,7 +3858,7 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0xfec3 : 0xffff)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KR 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:91
+    // ALWAYS at ../radix4_batterfly.v:102
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout 
@@ -3906,7 +3960,7 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0xfb13 : 0xffff)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KR 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:92
+    // ALWAYS at ../radix4_batterfly.v:103
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout 
@@ -4008,6 +4062,18 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0xf4f9 : 0xffff)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KR 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN3)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN3)));
     // ALWAYS at ../fft64.v:32
     if (vlTOPp->RST) {
 	if (vlTOPp->v__DOT__start_fft_flg) {
@@ -5239,10 +5305,10 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
 	__Vdly__v__DOT__start_fft_flg = 0;
 	__Vdly__v__DOT__fft_culculating_flg = 0;
     }
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt;
     vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly 
 	= __Vdly__v__DOT__myFFT_module__DOT__start_batterfly;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt;
     vlTOPp->v__DOT__start_fft_flg = __Vdly__v__DOT__start_fft_flg;
     vlTOPp->v__DOT__fft_culculating_flg = __Vdly__v__DOT__fft_culculating_flg;
     vlTOPp->v__DOT__cnt = __Vdly__v__DOT__cnt;
@@ -5316,28 +5382,10 @@ void Vfft64::_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
     vlTOPp->v__DOT__Y0 = __Vdly__v__DOT__Y0;
 }
 
-void Vfft64::_settle__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_PRINTF("    Vfft64::_settle__TOP__3\n"); );
+void Vfft64::_settle__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_PRINTF("    Vfft64::_settle__TOP__2\n"); );
     Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YI));
     vlTOPp->v__DOT__myFFT_module__DOT__Y1 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR) 
 					      << 0xb) 
 					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI));
@@ -5347,7 +5395,19 @@ void Vfft64::_settle__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
     vlTOPp->v__DOT__myFFT_module__DOT__Y3 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR) 
 					      << 0xb) 
 					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI));
-    // ALWAYS at ../radix4_batterfly.v:87
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN2)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN2)));
+    // ALWAYS at ../radix4_batterfly.v:98
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__Vfuncout 
@@ -5449,7 +5509,7 @@ void Vfft64::_settle__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0x1e6e9 : 0)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KI 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:88
+    // ALWAYS at ../radix4_batterfly.v:99
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__Vfuncout 
@@ -5551,7 +5611,7 @@ void Vfft64::_settle__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0x1ce0f : 0)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KI 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:89
+    // ALWAYS at ../radix4_batterfly.v:100
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__Vfuncout 
@@ -5653,7 +5713,7 @@ void Vfft64::_settle__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0x1b5b1 : 0)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KI 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:90
+    // ALWAYS at ../radix4_batterfly.v:101
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__Vfuncout 
@@ -5755,7 +5815,7 @@ void Vfft64::_settle__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0xfec3 : 0xffff)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KR 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:91
+    // ALWAYS at ../radix4_batterfly.v:102
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout 
@@ -5857,7 +5917,7 @@ void Vfft64::_settle__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0xfb13 : 0xffff)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KR 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:92
+    // ALWAYS at ../radix4_batterfly.v:103
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select 
 	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
     vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout 
@@ -5959,66 +6019,85 @@ void Vfft64::_settle__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
 				        ? 0xf4f9 : 0xffff)))))));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KR 
 	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN3)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN3)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+	= ((0x3ff800 & (VL_NEGATE_I(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3) 
+			<< 0xb)) | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
+					     >> 0xb)));
 }
 
-void Vfft64::_sequent__TOP__4(Vfft64__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_PRINTF("    Vfft64::_sequent__TOP__4\n"); );
+void Vfft64::_sequent__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_PRINTF("    Vfft64::_sequent__TOP__3\n"); );
+    Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+	= ((0x3ff800 & (VL_NEGATE_I(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3) 
+			<< 0xb)) | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
+					     >> 0xb)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J)));
+}
+
+void Vfft64::_settle__TOP__4(Vfft64__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_PRINTF("    Vfft64::_settle__TOP__4\n"); );
     Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YI));
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J)));
     vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YI));
-    // ALWAYS at ../radix4_batterfly.v:17
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR 
-	= (0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-		     >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
-				>> 0xb)));
-    // ALWAYS at ../radix4_batterfly.v:18
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI 
-	= (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-		    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YI));
-}
-
-void Vfft64::_settle__TOP__5(Vfft64__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_PRINTF("    Vfft64::_settle__TOP__5\n"); );
-    Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
-	= (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YR) 
-	    << 0xb) | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YI));
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J)));
 }
 
 void Vfft64::_eval(Vfft64__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_PRINTF("    Vfft64::_eval\n"); );
     Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    if (((IData)(vlTOPp->CLK) & (~ (IData)(vlTOPp->__Vclklast__TOP__CLK)))) {
-	vlTOPp->_sequent__TOP__1(vlSymsp);
-	vlTOPp->__Vm_traceActivity = (2 | vlTOPp->__Vm_traceActivity);
-    }
     if ((((IData)(vlTOPp->CLK) & (~ (IData)(vlTOPp->__Vclklast__TOP__CLK))) 
 	 | ((~ (IData)(vlTOPp->RST)) & (IData)(vlTOPp->__Vclklast__TOP__RST)))) {
-	vlTOPp->_sequent__TOP__2(vlSymsp);
-	vlTOPp->__Vm_traceActivity = (4 | vlTOPp->__Vm_traceActivity);
-    }
-    if (((IData)(vlTOPp->CLK) & (~ (IData)(vlTOPp->__Vclklast__TOP__CLK)))) {
-	vlTOPp->_sequent__TOP__4(vlSymsp);
-	vlTOPp->__Vm_traceActivity = (8 | vlTOPp->__Vm_traceActivity);
+	vlTOPp->_sequent__TOP__1(vlSymsp);
+	vlTOPp->__Vm_traceActivity = (2 | vlTOPp->__Vm_traceActivity);
+	vlTOPp->_sequent__TOP__3(vlSymsp);
     }
     // Final
     vlTOPp->__Vclklast__TOP__CLK = vlTOPp->CLK;
@@ -6041,9 +6120,9 @@ void Vfft64::_eval_settle(Vfft64__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_PRINTF("    Vfft64::_eval_settle\n"); );
     Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->_settle__TOP__3(vlSymsp);
+    vlTOPp->_settle__TOP__2(vlSymsp);
     vlTOPp->__Vm_traceActivity = (1 | vlTOPp->__Vm_traceActivity);
-    vlTOPp->_settle__TOP__5(vlSymsp);
+    vlTOPp->_settle__TOP__4(vlSymsp);
 }
 
 IData Vfft64::_change_request(Vfft64__Syms* __restrict vlSymsp) {

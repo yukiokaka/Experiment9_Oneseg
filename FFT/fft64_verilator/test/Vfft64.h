@@ -51,31 +51,13 @@ VL_MODULE(Vfft64) {
     VL_SIG8(v__DOT__myFFT_module__DOT__k1,6,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__fin_batterfly,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt,3,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u1__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u2__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u3__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u4__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u5__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u6__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u7__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u8__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u9__DOT__YI,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI,10,0);
-    //char	__VpadToAlign82[2];
+    //char	__VpadToAlign46[2];
     VL_SIG(v__DOT__A0,21,0);
     VL_SIG(v__DOT__A1,21,0);
     VL_SIG(v__DOT__A2,21,0);
@@ -353,6 +335,7 @@ VL_MODULE(Vfft64) {
     VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KI,16,0);
     VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KR,16,0);
     VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KI,16,0);
+    //char	__VpadToAlign1156[4];
     VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1,44,0);
     VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR2,44,0);
     VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI1,44,0);
@@ -368,8 +351,6 @@ VL_MODULE(Vfft64) {
     
     // LOCAL VARIABLES
     // Internals; generally not touched by application code
-    static VL_ST_SIG8(__Vtable1_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt[64],3,0);
-    static VL_ST_SIG8(__Vtable1_v__DOT__myFFT_module__DOT__fin_batterfly[64],0,0);
     VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select,6,0);
     VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select,6,0);
     VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select,6,0);
@@ -385,11 +366,10 @@ VL_MODULE(Vfft64) {
     VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout,16,0);
     VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout,16,0);
     VL_SIG(__Vm_traceActivity,31,0);
-    VL_SIG8(__Vtablechg1[64],1,0);
     
     // INTERNAL VARIABLES
     // Internals; generally not touched by application code
-    //char	__VpadToAlign1396[4];
+    //char	__VpadToAlign1300[4];
     Vfft64__Syms*	__VlSymsp;		// Symbol table
     
     // PARAMETERS
@@ -429,18 +409,13 @@ VL_MODULE(Vfft64) {
     static void	_eval_initial(Vfft64__Syms* __restrict vlSymsp);
     static void	_eval_settle(Vfft64__Syms* __restrict vlSymsp);
     static void	_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__2(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__4(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__3(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__5(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__3(Vfft64__Syms* __restrict vlSymsp);
+    static void	_settle__TOP__2(Vfft64__Syms* __restrict vlSymsp);
+    static void	_settle__TOP__4(Vfft64__Syms* __restrict vlSymsp);
     static void	traceChgThis(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void	traceChgThis__2(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void	traceChgThis__3(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void	traceChgThis__4(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceChgThis__5(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceChgThis__6(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceChgThis__7(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceChgThis__8(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void	traceFullThis(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void	traceFullThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void	traceInitThis(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
