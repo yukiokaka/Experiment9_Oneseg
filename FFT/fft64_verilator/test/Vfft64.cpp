@@ -293,6 +293,9 @@ VL_CTOR_IMP(Vfft64) {
     v__DOT__myFFT_module__DOT__Y1 = VL_RAND_RESET_I(22);
     v__DOT__myFFT_module__DOT__Y2 = VL_RAND_RESET_I(22);
     v__DOT__myFFT_module__DOT__Y3 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__Y9 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__Y10 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__Y11 = VL_RAND_RESET_I(22);
     v__DOT__myFFT_module__DOT__stage = VL_RAND_RESET_I(4);
     v__DOT__myFFT_module__DOT__stage_1_start_flg = VL_RAND_RESET_I(1);
     v__DOT__myFFT_module__DOT__stage_2_start_flg = VL_RAND_RESET_I(1);
@@ -303,56 +306,106 @@ VL_CTOR_IMP(Vfft64) {
     v__DOT__myFFT_module__DOT__AIN1 = VL_RAND_RESET_I(22);
     v__DOT__myFFT_module__DOT__AIN2 = VL_RAND_RESET_I(22);
     v__DOT__myFFT_module__DOT__AIN3 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__AIN8 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__AIN9 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__AIN10 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__AIN11 = VL_RAND_RESET_I(22);
     v__DOT__myFFT_module__DOT__cnt = VL_RAND_RESET_I(7);
     v__DOT__myFFT_module__DOT__start_batterfly = VL_RAND_RESET_I(1);
     v__DOT__myFFT_module__DOT__calculating_batterfly_flg = VL_RAND_RESET_I(1);
     v__DOT__myFFT_module__DOT__k1 = VL_RAND_RESET_I(7);
     v__DOT__myFFT_module__DOT__fin_batterfly = VL_RAND_RESET_I(1);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 = VL_RAND_RESET_I(22);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 = VL_RAND_RESET_I(22);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 = VL_RAND_RESET_I(22);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 = VL_RAND_RESET_I(22);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J = VL_RAND_RESET_I(22);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1 = VL_RAND_RESET_I(22);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2 = VL_RAND_RESET_I(22);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3 = VL_RAND_RESET_I(22);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KR = VL_RAND_RESET_I(17);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KI = VL_RAND_RESET_I(17);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KR = VL_RAND_RESET_I(17);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KI = VL_RAND_RESET_I(17);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KR = VL_RAND_RESET_I(17);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KI = VL_RAND_RESET_I(17);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt = VL_RAND_RESET_I(4);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR2 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI1 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI2 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR1 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR2 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI1 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI2 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI = VL_RAND_RESET_I(11);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR1 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR2 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI1 = VL_RAND_RESET_Q(45);
-    v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI2 = VL_RAND_RESET_Q(45);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__Vfuncout = VL_RAND_RESET_I(17);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select = VL_RAND_RESET_I(7);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__Vfuncout = VL_RAND_RESET_I(17);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select = VL_RAND_RESET_I(7);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__Vfuncout = VL_RAND_RESET_I(17);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select = VL_RAND_RESET_I(7);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__Vfuncout = VL_RAND_RESET_I(17);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select = VL_RAND_RESET_I(7);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout = VL_RAND_RESET_I(17);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select = VL_RAND_RESET_I(7);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout = VL_RAND_RESET_I(17);
-    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select = VL_RAND_RESET_I(7);
+    v__DOT__myFFT_module__DOT__fin_batterfly_3 = VL_RAND_RESET_I(1);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C1 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C2 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C3 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KR = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KI = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KR = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KI = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KR = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KI = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt = VL_RAND_RESET_I(4);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C1 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C2 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C3 = VL_RAND_RESET_I(22);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KR = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KI = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KR = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KI = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KR = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KI = VL_RAND_RESET_I(17);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt = VL_RAND_RESET_I(4);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI = VL_RAND_RESET_I(11);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1 = VL_RAND_RESET_Q(45);
+    v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2 = VL_RAND_RESET_Q(45);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select = VL_RAND_RESET_I(7);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__Vfuncout = VL_RAND_RESET_I(17);
+    __Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select = VL_RAND_RESET_I(7);
     __Vclklast__TOP__CLK = VL_RAND_RESET_I(1);
     __Vclklast__TOP__RST = VL_RAND_RESET_I(1);
     __Vm_traceActivity = VL_RAND_RESET_I(32);
@@ -425,8 +478,9 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
     VL_SIG8(__Vdly__v__DOT__myFFT_module__DOT__stage_4_start_flg,0,0);
     VL_SIG8(__Vdly__v__DOT__myFFT_module__DOT__stage_5_start_flg,0,0);
     VL_SIG8(__Vdly__v__DOT__valid_o_from_myFFT,0,0);
-    VL_SIG8(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt,3,0);
-    //char	__VpadToAlign21[3];
+    VL_SIG8(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt,3,0);
+    VL_SIG8(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt,3,0);
+    //char	__VpadToAlign22[2];
     VL_SIG(__Vdly__v__DOT__myFFT_module__DOT__B15,21,0);
     VL_SIG(__Vdly__v__DOT__myFFT_module__DOT__B31,21,0);
     VL_SIG(__Vdly__v__DOT__myFFT_module__DOT__B47,21,0);
@@ -619,45 +673,83 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
     VL_SIG(__Vdly__v__DOT__Y1,21,0);
     VL_SIG(__Vdly__v__DOT__Y2,21,0);
     VL_SIG(__Vdly__v__DOT__Y3,21,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR2,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI1,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI2,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR1,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR2,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI1,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI2,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR1,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR2,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI1,44,0);
-    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1,44,0);
+    VL_SIG64(__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2,44,0);
     // Body
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR2 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR2;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI1 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI1;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI2 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI2;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR1 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR1;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR2 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR2;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI1 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI1;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI2 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI2;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR1 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR1;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR2 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR2;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI1 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI1;
-    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI2 
-	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1;
+    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2 
+	= vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2;
     __Vdly__v__DOT__start = vlTOPp->v__DOT__start;
     __Vdly__v__DOT__cnt = vlTOPp->v__DOT__cnt;
     __Vdly__v__DOT__start_fft_flg = vlTOPp->v__DOT__start_fft_flg;
@@ -875,153 +967,303 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
     __Vdly__v__DOT__valid_o_from_myFFT = vlTOPp->v__DOT__valid_o_from_myFFT;
     // ALWAYS at ../twiddler.v:20
     if (vlTOPp->RST) {
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR 
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR 
 	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
-				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1 
-				    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR2) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1 
+				    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2) 
 				   >> 0x10))));
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI 
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI 
 	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
-				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI1 
-				    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI2) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1 
+				    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2) 
 				   >> 0x10))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1 
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C1 
 									 >> 0xb)))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KR))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR2 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KR))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1))), 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C1))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KI))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI1 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C1 
 									 >> 0xb)))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KI))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI2 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1))), 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C1))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KR))));
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KR))));
     } else {
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR = 0;
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI = 0;
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR = 0;
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI = 0;
     }
     // ALWAYS at ../twiddler.v:20
     if (vlTOPp->RST) {
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR 
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR 
 	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
-				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR1 
-				    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR2) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1 
+				    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2) 
 				   >> 0x10))));
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI 
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI 
 	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
-				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI1 
-				    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI2) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1 
+				    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2) 
 				   >> 0x10))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR1 
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C2 
 									 >> 0xb)))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KR))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR2 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KR))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2))), 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C2))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KI))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI1 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C2 
 									 >> 0xb)))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KI))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI2 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2))), 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C2))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KR))));
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KR))));
     } else {
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR = 0;
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI = 0;
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR = 0;
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI = 0;
     }
     // ALWAYS at ../twiddler.v:20
     if (vlTOPp->RST) {
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR 
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR 
 	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
-				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR1 
-				    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR2) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1 
+				    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2) 
 				   >> 0x10))));
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI 
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI 
 	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
-				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI1 
-				    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI2) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1 
+				    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2) 
 				   >> 0x10))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR1 
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C3 
 									 >> 0xb)))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KR))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR2 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KR))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3))), 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C3))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KI))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI1 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C3 
 									 >> 0xb)))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KI))));
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI2 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2 
 	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
 						    (VL_ULL(0x1fffffffffff) 
 						     & VL_EXTENDS_QI(45,11, 
 								     (0x7ff 
-								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3))), 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C3))), 
 						    (VL_ULL(0x1fffffffffff) 
-						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KR))));
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KR))));
     } else {
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR = 0;
-	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI = 0;
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR = 0;
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI = 0;
+    }
+    // ALWAYS at ../twiddler.v:20
+    if (vlTOPp->RST) {
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR 
+	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1 
+				    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2) 
+				   >> 0x10))));
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI 
+	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1 
+				    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2) 
+				   >> 0x10))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C1 
+									 >> 0xb)))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KR))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C1))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C1 
+									 >> 0xb)))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C1))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KR))));
+    } else {
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR = 0;
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI = 0;
+    }
+    // ALWAYS at ../twiddler.v:20
+    if (vlTOPp->RST) {
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR 
+	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1 
+				    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2) 
+				   >> 0x10))));
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI 
+	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1 
+				    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2) 
+				   >> 0x10))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C2 
+									 >> 0xb)))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KR))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C2))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C2 
+									 >> 0xb)))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C2))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KR))));
+    } else {
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR = 0;
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI = 0;
+    }
+    // ALWAYS at ../twiddler.v:20
+    if (vlTOPp->RST) {
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR 
+	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1 
+				    - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2) 
+				   >> 0x10))));
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI 
+	    = (0x7ff & (IData)((VL_ULL(0x1fffffff) 
+				& ((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1 
+				    + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2) 
+				   >> 0x10))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C3 
+									 >> 0xb)))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KR))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C3))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C3 
+									 >> 0xb)))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KI))));
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2 
+	    = (VL_ULL(0x1fffffffffff) & VL_MULS_QQQ(45,45,45, 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,11, 
+								     (0x7ff 
+								      & vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C3))), 
+						    (VL_ULL(0x1fffffffffff) 
+						     & VL_EXTENDS_QI(45,17, vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KR))));
+    } else {
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR = 0;
+	vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI = 0;
     }
     // ALWAYS at ../myfft.v:31
     if (vlTOPp->RST) {
@@ -1057,15 +1299,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B15 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B31 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B47 
@@ -1076,15 +1318,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B14 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B30 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B46 
@@ -1098,15 +1340,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B13 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B29 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B45 
@@ -1117,15 +1359,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B12 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B28 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B44 
@@ -1141,15 +1383,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B11 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B27 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B43 
@@ -1160,15 +1402,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B10 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B26 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B42 
@@ -1182,15 +1424,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B9 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B25 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B41 
@@ -1201,15 +1443,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B8 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B24 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B40 
@@ -1227,15 +1469,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B7 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B23 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B39 
@@ -1246,15 +1488,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B6 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B22 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B38 
@@ -1268,15 +1510,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B5 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B21 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B37 
@@ -1287,15 +1529,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B4 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B20 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B36 
@@ -1311,15 +1553,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B3 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B19 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B35 
@@ -1330,15 +1572,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B2 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B18 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B34 
@@ -1352,15 +1594,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B1 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B17 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B33 
@@ -1371,15 +1613,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__B0 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__B16 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__B32 
@@ -1631,15 +1873,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C51 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C55 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C59 
@@ -1650,15 +1892,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C50 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C54 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C58 
@@ -1672,15 +1914,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C49 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C53 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C57 
@@ -1691,15 +1933,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C48 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C52 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C56 
@@ -1725,15 +1967,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C35 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C39 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C43 
@@ -1744,15 +1986,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C34 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C38 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C42 
@@ -1766,15 +2008,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C33 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C37 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C41 
@@ -1785,15 +2027,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C32 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C36 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C40 
@@ -1821,15 +2063,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C19 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C23 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C27 
@@ -1840,15 +2082,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C18 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C22 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C26 
@@ -1862,15 +2104,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C17 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C21 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C25 
@@ -1881,15 +2123,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C16 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C20 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C24 
@@ -1915,15 +2157,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C3 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C7 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C11 
@@ -1934,15 +2176,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C2 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C6 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C10 
@@ -1956,15 +2198,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C1 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C5 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C9 
@@ -1975,15 +2217,15 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__myFFT_module__DOT__C0 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
 						__Vdly__v__DOT__myFFT_module__DOT__C4 
 						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
 						__Vdly__v__DOT__myFFT_module__DOT__C8 
@@ -2262,7 +2504,7 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 	if (vlTOPp->v__DOT__myFFT_module__DOT__stage_3_start_flg) {
 	    if (vlTOPp->v__DOT__myFFT_module__DOT__calculating_batterfly_flg) {
 		__Vdly__v__DOT__myFFT_module__DOT__start_batterfly = 0;
-		if (vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly) {
+		if (vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly_3) {
 		    __Vdly__v__DOT__myFFT_module__DOT__calculating_batterfly_flg = 0;
 		    if ((0x40 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 			__Vdly__v__DOT__myFFT_module__DOT__cnt 
@@ -2284,21 +2526,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y60 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y61 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y62 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y63 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    } else {
@@ -2314,21 +2556,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y56 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y57 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y58 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y59 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    }
@@ -2346,21 +2588,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y52 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y53 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y54 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y55 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    } else {
@@ -2376,21 +2618,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y48 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y49 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y50 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y51 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    }
@@ -2410,21 +2652,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y44 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y45 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y46 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y47 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    } else {
@@ -2440,21 +2682,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y40 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y41 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y42 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y43 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    }
@@ -2472,21 +2714,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y36 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y37 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y38 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y39 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    } else {
@@ -2502,21 +2744,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y32 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y33 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y34 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y35 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    }
@@ -2538,21 +2780,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y28 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y29 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y30 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y31 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    } else {
@@ -2568,21 +2810,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y24 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y25 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y26 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y27 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    }
@@ -2600,21 +2842,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y20 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y21 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y22 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y23 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    } else {
@@ -2630,21 +2872,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y16 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y17 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y18 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y19 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    }
@@ -2664,21 +2906,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y12 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y13 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y14 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y15 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    } else {
@@ -2694,21 +2936,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y8 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y9 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y10 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y11 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    }
@@ -2726,21 +2968,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y4 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y5 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y6 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y7 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    } else {
@@ -2756,21 +2998,21 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 						__Vdly__v__DOT__Y0 
 						    = 
 						    ((0x3ff800 
-						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+						      & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
 							   >> 0xb) 
 							  + 
-							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+							  (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 							   >> 0xb)) 
 							 << 0xb)) 
 						     | (0x7ff 
-							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
+							& (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+							   + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
 						__Vdly__v__DOT__Y1 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y1;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y9;
 						__Vdly__v__DOT__Y2 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y2;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y10;
 						__Vdly__v__DOT__Y3 
-						    = vlTOPp->v__DOT__myFFT_module__DOT__Y3;
+						    = vlTOPp->v__DOT__myFFT_module__DOT__Y11;
 					    }
 					}
 				    }
@@ -2791,57 +3033,57 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 		}
 	    } else {
 		if ((0x40 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-		    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-		    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-		    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-		    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+		    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+		    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+		    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+		    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 		} else {
 		    if ((0x20 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 			if ((0x10 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 			    if ((8 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				if ((4 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C60;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C61;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C62;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C63;
 					}
 				    }
 				} else {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C56;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C57;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C58;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C59;
 					}
 				    }
@@ -2849,47 +3091,47 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 			    } else {
 				if ((4 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C52;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C53;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C54;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C55;
 					}
 				    }
 				} else {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C48;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C49;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C50;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C51;
 					}
 				    }
@@ -2899,47 +3141,47 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 			    if ((8 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				if ((4 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C44;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C45;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C46;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C47;
 					}
 				    }
 				} else {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C40;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C41;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C42;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C43;
 					}
 				    }
@@ -2947,47 +3189,47 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 			    } else {
 				if ((4 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C36;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C37;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C38;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C39;
 					}
 				    }
 				} else {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C32;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C33;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C34;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C35;
 					}
 				    }
@@ -2999,47 +3241,47 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 			    if ((8 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				if ((4 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C28;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C29;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C30;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C31;
 					}
 				    }
 				} else {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C24;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C25;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C26;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C27;
 					}
 				    }
@@ -3047,47 +3289,47 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 			    } else {
 				if ((4 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C20;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C21;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C22;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C23;
 					}
 				    }
 				} else {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C16;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C17;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C18;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C19;
 					}
 				    }
@@ -3097,47 +3339,47 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 			    if ((8 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				if ((4 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C12;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C13;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C14;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C15;
 					}
 				    }
 				} else {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C8;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C9;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C10;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C11;
 					}
 				    }
@@ -3145,47 +3387,47 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 			    } else {
 				if ((4 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C4;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C5;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C6;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C7;
 					}
 				    }
 				} else {
 				    if ((2 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 				    } else {
 					if ((1 & (IData)(vlTOPp->v__DOT__myFFT_module__DOT__cnt))) {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 = 0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 = 0;
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 = 0;
 					} else {
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C0;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C1;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C2;
-					    vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					    vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 						= vlTOPp->v__DOT__myFFT_module__DOT__C3;
 					}
 				    }
@@ -3290,30 +3532,54 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 	vlTOPp->v__DOT__myFFT_module__DOT__k1 = 0;
 	__Vdly__v__DOT__myFFT_module__DOT__calculating_batterfly_flg = 0;
     }
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR1;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR2 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR2;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI1 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI1;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI2 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI2;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR1 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR1;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR2 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR2;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI1 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI1;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI2 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI2;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR1 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR1;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR2 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR2;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI1 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI1;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI2 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2;
     vlTOPp->v__DOT__myFFT_module__DOT__stage = __Vdly__v__DOT__myFFT_module__DOT__stage;
     vlTOPp->v__DOT__myFFT_module__DOT__stage_1_start_flg 
 	= __Vdly__v__DOT__myFFT_module__DOT__stage_1_start_flg;
@@ -3456,670 +3722,1334 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 	= __Vdly__v__DOT__myFFT_module__DOT__stage_4_start_flg;
     vlTOPp->v__DOT__myFFT_module__DOT__stage_5_start_flg 
 	= __Vdly__v__DOT__myFFT_module__DOT__stage_5_start_flg;
-    vlTOPp->v__DOT__myFFT_module__DOT__Y1 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR) 
+    vlTOPp->v__DOT__myFFT_module__DOT__Y1 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR) 
 					      << 0xb) 
-					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__Y2 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR) 
+					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y2 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR) 
 					      << 0xb) 
-					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__Y3 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR) 
+					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y3 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR) 
 					      << 0xb) 
-					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI));
+					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y9 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR) 
+					      << 0xb) 
+					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y10 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR) 
+					       << 0xb) 
+					      | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y11 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR) 
+					       << 0xb) 
+					      | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI));
     // ALWAYS at ../radix4_batterfly.v:110
     if (vlTOPp->RST) {
 	if (vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly) {
-	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt = 1;
+	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt = 1;
 	    vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly = 0;
 	}
-	if ((1 == (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt))) {
-	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt 
-		= (0xf & ((IData)(1) + (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt)));
+	if ((1 == (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt))) {
+	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt 
+		= (0xf & ((IData)(1) + (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt)));
 	    vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly = 1;
 	}
-	if ((2 == (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt))) {
-	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt = 0;
+	if ((2 == (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt))) {
+	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt = 0;
 	    vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly = 0;
 	}
     } else {
 	vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly = 0;
-	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt = 0;
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt = 0;
     }
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+    // ALWAYS at ../radix4_batterfly.v:110
+    if (vlTOPp->RST) {
+	if (vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly) {
+	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt = 1;
+	    vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly_3 = 0;
+	}
+	if ((1 == (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt))) {
+	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt 
+		= (0xf & ((IData)(1) + (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt)));
+	    vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly_3 = 1;
+	}
+	if ((2 == (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt))) {
+	    __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt = 0;
+	    vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly_3 = 0;
+	}
+    } else {
+	vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly_3 = 0;
+	__Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt = 0;
+    }
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
 				     >> 0xb)) << 0xb)) 
 	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN2)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
 	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
 				     >> 0xb)) << 0xb)) 
 	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN2)));
-    // ALWAYS at ../radix4_batterfly.v:102
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1917 : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x4a4f : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x78ac : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xa266 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xc5e3 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xe1c4 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xf4f9 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xfec3 : 0xffff))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xfec3 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xf4f9 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xe1c4 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xc5e3 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xa266 : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x78ac : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x4a4f : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1917 : 0)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1e6e9 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1b5b1 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x18754 : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x15d9a : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x13a1d : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x11e3c : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x10b07 : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1013d : 0x10001))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1013d : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x10b07 : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x11e3c : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x13a1d : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x15d9a : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x18754 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1b5b1 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1e6e9 : 0)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KI 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:103
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x31f1 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x8e39 : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xd4da : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xfb13 : 0xffff)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xfb13 : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xd4da : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x8e39 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x31f1 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x1ce0f : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x171c7 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x12b26 : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x104ed : 0x10001)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x104ed : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x12b26 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x171c7 : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x1ce0f : 0)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x31f1 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x8e39 : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xd4da : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xfb13 : 0xffff)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xfb13 : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xd4da : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x8e39 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x31f1 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x1ce0f : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x171c7 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x12b26 : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x104ed : 0x10001)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x104ed : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x12b26 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x171c7 : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x1ce0f : 0)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KI 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:104
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x4a4f : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xc5e3 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xfec3 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xe1c4 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x78ac : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1e6e9 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x15d9a : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x10b07 : 0x10001))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x10b07 : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x15d9a : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1e6e9 : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x78ac : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xe1c4 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xfec3 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xc5e3 : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x4a4f : 0)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1b5b1 : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x13a1d : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1013d : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x11e3c : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x18754 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1917 : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xa266 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xf4f9 : 0xffff))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xf4f9 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xa266 : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1917 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x18754 : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x11e3c : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1013d : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x13a1d : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1b5b1 : 0)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KI 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:105
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xfec3 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xf4f9 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xe1c4 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xc5e3 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xa266 : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x78ac : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x4a4f : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1917 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1e6e9 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1b5b1 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x18754 : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x15d9a : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x13a1d : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x11e3c : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x10b07 : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1013d : 0x10001)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1013d : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x10b07 : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x11e3c : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x13a1d : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x15d9a : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x18754 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1b5b1 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1e6e9 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1917 : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x4a4f : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x78ac : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xa266 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xc5e3 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xe1c4 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xf4f9 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xfec3 : 0xffff)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KR 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:106
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xfb13 : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xd4da : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x8e39 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x31f1 : 0)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x1ce0f : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x171c7 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x12b26 : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x104ed : 0x10001))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x104ed : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x12b26 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x171c7 : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x1ce0f : 0)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x31f1 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x8e39 : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xd4da : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xfb13 : 0xffff)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xfb13 : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xd4da : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x8e39 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x31f1 : 0)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x1ce0f : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x171c7 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x12b26 : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x104ed : 0x10001))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x104ed : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x12b26 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x171c7 : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x1ce0f : 0)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x31f1 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x8e39 : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xd4da : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xfb13 : 0xffff)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KR 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:107
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xf4f9 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xa266 : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1917 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x18754 : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x11e3c : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1013d : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x13a1d : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1b5b1 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x4a4f : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xc5e3 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xfec3 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xe1c4 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x78ac : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1e6e9 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x15d9a : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x10b07 : 0x10001)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x10b07 : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x15d9a : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1e6e9 : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x78ac : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xe1c4 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xfec3 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xc5e3 : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x4a4f : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1b5b1 : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x13a1d : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1013d : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x11e3c : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x18754 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1917 : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xa266 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xf4f9 : 0xffff)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KR 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN10)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN10)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
 				     >> 0xb)) << 0xb)) 
 	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN3)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3 
 	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
 				     >> 0xb)) << 0xb)) 
 	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN3)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN11)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN11)));
+    // ALWAYS at ../radix4_batterfly.v:102
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1917 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x4a4f : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x78ac : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xa266 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xc5e3 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xe1c4 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xf4f9 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xfec3 : 0xffff))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xf4f9 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xe1c4 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xc5e3 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xa266 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x78ac : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x4a4f : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1917 : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1e6e9 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1b5b1 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x18754 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x15d9a : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x13a1d : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x11e3c : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x10b07 : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1013d : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x10b07 : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x11e3c : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x13a1d : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x15d9a : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x18754 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1b5b1 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1e6e9 : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:103
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xfb13 : 0xffff)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x31f1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x104ed : 0x10001)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x1ce0f : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xfb13 : 0xffff)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x31f1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x104ed : 0x10001)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x1ce0f : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:104
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x4a4f : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xc5e3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xe1c4 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x78ac : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1e6e9 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x15d9a : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x10b07 : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x10b07 : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x15d9a : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1e6e9 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x78ac : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xe1c4 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xfec3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xc5e3 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x4a4f : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1b5b1 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x13a1d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x11e3c : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x18754 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1917 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xa266 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xf4f9 : 0xffff))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xf4f9 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xa266 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1917 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x18754 : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x11e3c : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1013d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x13a1d : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1b5b1 : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:105
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xf4f9 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xe1c4 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xc5e3 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xa266 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x78ac : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x4a4f : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1917 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1e6e9 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1b5b1 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x18754 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x15d9a : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x13a1d : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x11e3c : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x10b07 : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1013d : 0x10001)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x10b07 : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x11e3c : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x13a1d : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x15d9a : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x18754 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1b5b1 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1e6e9 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1917 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x4a4f : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x78ac : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xa266 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xc5e3 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xe1c4 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xf4f9 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xfec3 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:106
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x31f1 : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x104ed : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x1ce0f : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xfb13 : 0xffff)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x31f1 : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x104ed : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x1ce0f : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xfb13 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:107
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xf4f9 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xa266 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1917 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x18754 : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x11e3c : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1013d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x13a1d : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1b5b1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x4a4f : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xc5e3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xe1c4 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x78ac : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1e6e9 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x15d9a : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x10b07 : 0x10001)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x10b07 : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x15d9a : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1e6e9 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x78ac : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xe1c4 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xfec3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xc5e3 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x4a4f : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1b5b1 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x13a1d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x11e3c : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x18754 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1917 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xa266 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xf4f9 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:102
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1917 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x4a4f : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x78ac : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xa266 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xc5e3 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xe1c4 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xf4f9 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xfec3 : 0xffff))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xf4f9 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xe1c4 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xc5e3 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xa266 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x78ac : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x4a4f : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1917 : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1e6e9 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1b5b1 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x18754 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x15d9a : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x13a1d : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x11e3c : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x10b07 : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1013d : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x10b07 : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x11e3c : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x13a1d : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x15d9a : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x18754 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1b5b1 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1e6e9 : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:103
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xfb13 : 0xffff)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x31f1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x104ed : 0x10001)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x1ce0f : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xfb13 : 0xffff)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x31f1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x104ed : 0x10001)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x1ce0f : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:104
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x4a4f : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xc5e3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xe1c4 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x78ac : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1e6e9 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x15d9a : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x10b07 : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x10b07 : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x15d9a : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1e6e9 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x78ac : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xe1c4 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xfec3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xc5e3 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x4a4f : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1b5b1 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x13a1d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x11e3c : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x18754 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1917 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xa266 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xf4f9 : 0xffff))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xf4f9 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xa266 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1917 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x18754 : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x11e3c : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1013d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x13a1d : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1b5b1 : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:105
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xf4f9 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xe1c4 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xc5e3 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xa266 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x78ac : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x4a4f : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1917 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1e6e9 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1b5b1 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x18754 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x15d9a : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x13a1d : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x11e3c : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x10b07 : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1013d : 0x10001)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x10b07 : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x11e3c : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x13a1d : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x15d9a : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x18754 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1b5b1 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1e6e9 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1917 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x4a4f : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x78ac : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xa266 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xc5e3 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xe1c4 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xf4f9 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xfec3 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:106
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x31f1 : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x104ed : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x1ce0f : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xfb13 : 0xffff)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x31f1 : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x104ed : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x1ce0f : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xfb13 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:107
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xf4f9 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xa266 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1917 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x18754 : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x11e3c : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1013d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x13a1d : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1b5b1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x4a4f : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xc5e3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xe1c4 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x78ac : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1e6e9 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x15d9a : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x10b07 : 0x10001)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x10b07 : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x15d9a : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1e6e9 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x78ac : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xe1c4 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xfec3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xc5e3 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x4a4f : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1b5b1 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x13a1d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x11e3c : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x18754 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1917 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xa266 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xf4f9 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__Vfuncout;
     // ALWAYS at ../fft64.v:32
     if (vlTOPp->RST) {
 	if (vlTOPp->v__DOT__start_fft_flg) {
@@ -5351,10 +6281,12 @@ void Vfft64::_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp) {
 	__Vdly__v__DOT__start_fft_flg = 0;
 	__Vdly__v__DOT__fft_culculating_flg = 0;
     }
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt 
+	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt;
     vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly 
 	= __Vdly__v__DOT__myFFT_module__DOT__start_batterfly;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt 
-	= __Vdly__v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__cnt;
     vlTOPp->v__DOT__start_fft_flg = __Vdly__v__DOT__start_fft_flg;
     vlTOPp->v__DOT__fft_culculating_flg = __Vdly__v__DOT__fft_culculating_flg;
     vlTOPp->v__DOT__cnt = __Vdly__v__DOT__cnt;
@@ -5432,660 +6364,1315 @@ void Vfft64::_settle__TOP__2(Vfft64__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_PRINTF("    Vfft64::_settle__TOP__2\n"); );
     Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->v__DOT__myFFT_module__DOT__Y1 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YR) 
+    vlTOPp->v__DOT__myFFT_module__DOT__Y1 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR) 
 					      << 0xb) 
-					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u10__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__Y2 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YR) 
+					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y2 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR) 
 					      << 0xb) 
-					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u11__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__Y3 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YR) 
+					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y3 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR) 
 					      << 0xb) 
-					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__u12__DOT__YI));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
+					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y9 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR) 
+					      << 0xb) 
+					     | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y10 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR) 
+					       << 0xb) 
+					      | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__Y11 = (((IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR) 
+					       << 0xb) 
+					      | (IData)(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
 	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
 				     >> 0xb)) << 0xb)) 
 	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN2)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
 	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
 				     >> 0xb)) << 0xb)) 
 	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN2)));
-    // ALWAYS at ../radix4_batterfly.v:102
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1917 : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x4a4f : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x78ac : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xa266 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xc5e3 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xe1c4 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xf4f9 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xfec3 : 0xffff))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xfec3 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xf4f9 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xe1c4 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xc5e3 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0xa266 : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x78ac : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x4a4f : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1917 : 0)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1e6e9 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1b5b1 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x18754 : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x15d9a : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x13a1d : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x11e3c : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x10b07 : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1013d : 0x10001))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1013d : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x10b07 : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x11e3c : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x13a1d : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x15d9a : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x18754 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1b5b1 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__select))
-				        ? 0x1e6e9 : 0)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KI 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_sin__0__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:103
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x31f1 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x8e39 : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xd4da : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xfb13 : 0xffff)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xfb13 : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xd4da : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x8e39 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x31f1 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x1ce0f : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x171c7 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x12b26 : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x104ed : 0x10001)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x104ed : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x12b26 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x171c7 : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x1ce0f : 0)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x31f1 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x8e39 : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xd4da : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xfb13 : 0xffff)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xfb13 : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0xd4da : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x8e39 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x31f1 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x1ce0f : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x171c7 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x12b26 : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x104ed : 0x10001)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x104ed : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x12b26 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x171c7 : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__select))
-				        ? 0x1ce0f : 0)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KI 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_sin__1__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:104
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x4a4f : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xc5e3 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xfec3 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xe1c4 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x78ac : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1e6e9 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x15d9a : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x10b07 : 0x10001))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x10b07 : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x15d9a : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1e6e9 : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x78ac : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xe1c4 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xfec3 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xc5e3 : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x4a4f : 0)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1b5b1 : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x13a1d : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1013d : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x11e3c : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x18754 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1917 : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xa266 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xf4f9 : 0xffff))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xf4f9 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0xa266 : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1917 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x18754 : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x11e3c : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1013d : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x13a1d : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__select))
-				        ? 0x1b5b1 : 0)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KI 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_sin__2__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:105
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xfec3 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xf4f9 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xe1c4 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xc5e3 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xa266 : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x78ac : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x4a4f : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1917 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1e6e9 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1b5b1 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x18754 : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x15d9a : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x13a1d : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x11e3c : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x10b07 : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1013d : 0x10001)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1013d : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x10b07 : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x11e3c : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x13a1d : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x15d9a : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x18754 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1b5b1 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1e6e9 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x1917 : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x4a4f : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0x78ac : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xa266 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xc5e3 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xe1c4 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xf4f9 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__select))
-				        ? 0xfec3 : 0xffff)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W1KR 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k1_cos__3__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:106
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xfb13 : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xd4da : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x8e39 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x31f1 : 0)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x1ce0f : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x171c7 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x12b26 : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x104ed : 0x10001))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x104ed : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x12b26 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x171c7 : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x1ce0f : 0)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x31f1 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x8e39 : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xd4da : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xfb13 : 0xffff)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xfb13 : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xd4da : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x8e39 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x31f1 : 0)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x1ce0f : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x171c7 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x12b26 : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x104ed : 0x10001))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x104ed : 0x1137e)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x12b26 : 0x14afc))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x171c7 : 0x19e09)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x1ce0f : 0)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x31f1 : 0x61f7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0x8e39 : 0xb504))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xd4da : 0xec82)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__select))
-				        ? 0xfb13 : 0xffff)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W2KR 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k2_cos__4__Vfuncout;
-    // ALWAYS at ../radix4_batterfly.v:107
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select 
-	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
-    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout 
-	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xf4f9 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xa266 : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1917 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x18754 : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x11e3c : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1013d : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x13a1d : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1b5b1 : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x4a4f : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xc5e3 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xfec3 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xe1c4 : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x78ac : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1e6e9 : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x15d9a : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x10b07 : 0x10001)))))
-		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x10b07 : 0x12b26)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x15d9a : 0x19e09))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1e6e9 : 0x31f1)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x78ac : 0xb504)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xe1c4 : 0xfb13)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xfec3 : 0xec82))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xc5e3 : 0x8e39)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x4a4f : 0))))
-		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1b5b1 : 0x171c7)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x13a1d : 0x1137e))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1013d : 0x104ed)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x11e3c : 0x14afc)))
-			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x18754 : 0x1ce0f)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0x1917 : 0x61f7))
-			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xa266 : 0xd4da)
-				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__select))
-				        ? 0xf4f9 : 0xffff)))))));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__W3KR 
-	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__func_k3_cos__5__Vfuncout;
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN10)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN10)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
 				     >> 0xb)) << 0xb)) 
 	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN3)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3 
 	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
 				     >> 0xb)) << 0xb)) 
 	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN3)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2 
-	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 				     >> 0xb)) << 0xb)) 
-	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
-	= ((0x3ff800 & (VL_NEGATE_I(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3) 
-			<< 0xb)) | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__AIN11)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__AIN11)));
+    // ALWAYS at ../radix4_batterfly.v:102
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1917 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x4a4f : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x78ac : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xa266 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xc5e3 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xe1c4 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xf4f9 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xfec3 : 0xffff))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xf4f9 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xe1c4 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xc5e3 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0xa266 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x78ac : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x4a4f : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1917 : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1e6e9 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1b5b1 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x18754 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x15d9a : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x13a1d : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x11e3c : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x10b07 : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1013d : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x10b07 : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x11e3c : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x13a1d : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x15d9a : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x18754 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1b5b1 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select))
+				        ? 0x1e6e9 : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:103
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xfb13 : 0xffff)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x31f1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x104ed : 0x10001)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x1ce0f : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xfb13 : 0xffff)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x31f1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x104ed : 0x10001)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select))
+				        ? 0x1ce0f : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:104
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x4a4f : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xc5e3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xe1c4 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x78ac : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1e6e9 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x15d9a : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x10b07 : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x10b07 : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x15d9a : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1e6e9 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x78ac : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xe1c4 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xfec3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xc5e3 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x4a4f : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1b5b1 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x13a1d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x11e3c : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x18754 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1917 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xa266 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xf4f9 : 0xffff))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xf4f9 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0xa266 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1917 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x18754 : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x11e3c : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1013d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x13a1d : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select))
+				        ? 0x1b5b1 : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:105
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xf4f9 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xe1c4 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xc5e3 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xa266 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x78ac : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x4a4f : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1917 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1e6e9 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1b5b1 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x18754 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x15d9a : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x13a1d : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x11e3c : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x10b07 : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1013d : 0x10001)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x10b07 : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x11e3c : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x13a1d : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x15d9a : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x18754 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1b5b1 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1e6e9 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x1917 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x4a4f : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0x78ac : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xa266 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xc5e3 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xe1c4 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xf4f9 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select))
+				        ? 0xfec3 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:106
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x31f1 : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x104ed : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x1ce0f : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xfb13 : 0xffff)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x31f1 : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x104ed : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x1ce0f : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select))
+				        ? 0xfb13 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:107
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xf4f9 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xa266 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1917 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x18754 : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x11e3c : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1013d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x13a1d : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1b5b1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x4a4f : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xc5e3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xe1c4 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x78ac : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1e6e9 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x15d9a : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x10b07 : 0x10001)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x10b07 : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x15d9a : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1e6e9 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x78ac : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xe1c4 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xfec3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xc5e3 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x4a4f : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1b5b1 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x13a1d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x11e3c : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x18754 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0x1917 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xa266 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select))
+				        ? 0xf4f9 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:102
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1917 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x4a4f : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x78ac : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xa266 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xc5e3 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xe1c4 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xf4f9 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xfec3 : 0xffff))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xf4f9 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xe1c4 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xc5e3 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0xa266 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x78ac : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x4a4f : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1917 : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1e6e9 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1b5b1 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x18754 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x15d9a : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x13a1d : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x11e3c : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x10b07 : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1013d : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x10b07 : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x11e3c : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x13a1d : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x15d9a : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x18754 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1b5b1 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select))
+				        ? 0x1e6e9 : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:103
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xfb13 : 0xffff)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x31f1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x104ed : 0x10001)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x1ce0f : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xfb13 : 0xffff)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x31f1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x104ed : 0x10001)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select))
+				        ? 0x1ce0f : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:104
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x4a4f : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xc5e3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xe1c4 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x78ac : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1e6e9 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x15d9a : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x10b07 : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x10b07 : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x15d9a : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1e6e9 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x78ac : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xe1c4 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xfec3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xc5e3 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x4a4f : 0)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1b5b1 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x13a1d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x11e3c : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x18754 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1917 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xa266 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xf4f9 : 0xffff))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xf4f9 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0xa266 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1917 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x18754 : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x11e3c : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1013d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x13a1d : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select))
+				        ? 0x1b5b1 : 0)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KI 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:105
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xf4f9 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xe1c4 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xc5e3 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xa266 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x78ac : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x4a4f : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1917 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1e6e9 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1b5b1 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x18754 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x15d9a : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x13a1d : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x11e3c : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x10b07 : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1013d : 0x10001)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x10b07 : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x11e3c : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x13a1d : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x15d9a : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x18754 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1b5b1 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1e6e9 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x1917 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x4a4f : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0x78ac : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xa266 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xc5e3 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xe1c4 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xf4f9 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select))
+				        ? 0xfec3 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:106
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x31f1 : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x104ed : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x1ce0f : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xfb13 : 0xffff)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xfb13 : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xd4da : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x8e39 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x31f1 : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x1ce0f : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x171c7 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x12b26 : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x104ed : 0x10001))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x104ed : 0x1137e)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x12b26 : 0x14afc))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x171c7 : 0x19e09)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x1ce0f : 0)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x31f1 : 0x61f7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0x8e39 : 0xb504))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xd4da : 0xec82)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select))
+				        ? 0xfb13 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__Vfuncout;
+    // ALWAYS at ../radix4_batterfly.v:107
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select 
+	= vlTOPp->v__DOT__myFFT_module__DOT__k1;
+    vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__Vfuncout 
+	= ((0x40 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+	    ? 0 : ((0x20 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+		    ? ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xf4f9 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xa266 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1917 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x18754 : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x11e3c : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1013d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x13a1d : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1b5b1 : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x4a4f : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xc5e3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xfec3 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xe1c4 : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x78ac : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1e6e9 : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x15d9a : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x10b07 : 0x10001)))))
+		    : ((0x10 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+		        ? ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x10b07 : 0x12b26)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x15d9a : 0x19e09))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1e6e9 : 0x31f1)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x78ac : 0xb504)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xe1c4 : 0xfb13)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xfec3 : 0xec82))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xc5e3 : 0x8e39)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x4a4f : 0))))
+		        : ((8 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			    ? ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1b5b1 : 0x171c7)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x13a1d : 0x1137e))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1013d : 0x104ed)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x11e3c : 0x14afc)))
+			    : ((4 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+			        ? ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x18754 : 0x1ce0f)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0x1917 : 0x61f7))
+			        : ((2 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				    ? ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xa266 : 0xd4da)
+				    : ((1 & (IData)(vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select))
+				        ? 0xf4f9 : 0xffff)))))));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KR 
+	= vlTOPp->__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__Vfuncout;
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J 
+	= ((0x3ff800 & (VL_NEGATE_I(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3) 
+			<< 0xb)) | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3 
+					     >> 0xb)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J 
+	= ((0x3ff800 & (VL_NEGATE_I(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3) 
+			<< 0xb)) | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3 
 					     >> 0xb)));
 }
 
@@ -6093,46 +7680,80 @@ void Vfft64::_sequent__TOP__3(Vfft64__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_PRINTF("    Vfft64::_sequent__TOP__3\n"); );
     Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C2 
-	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1 
 				     >> 0xb)) << 0xb)) 
-	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B0 
-		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B1)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
-	= ((0x3ff800 & (VL_NEGATE_I(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3) 
-			<< 0xb)) | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J 
+	= ((0x3ff800 & (VL_NEGATE_I(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3) 
+			<< 0xb)) | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3 
 					     >> 0xb)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1 
-	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C2 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1 
 				     >> 0xb)) << 0xb)) 
-	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3 
-	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J 
+	= ((0x3ff800 & (VL_NEGATE_I(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3) 
+			<< 0xb)) | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3 
+					     >> 0xb)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C1 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J 
 				     >> 0xb)) << 0xb)) 
-	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-		       + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J)));
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C3 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C1 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C3 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J)));
 }
 
 void Vfft64::_settle__TOP__4(Vfft64__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_PRINTF("    Vfft64::_settle__TOP__4\n"); );
     Vfft64* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C1 
-	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C1 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J 
 				     >> 0xb)) << 0xb)) 
-	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J)));
-    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__C3 
-	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C3 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J 
 				     >> 0xb)) << 0xb)) 
-	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B2 
-		       + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module__DOT__B3J)));
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C1 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+			  >> 0xb) - (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+		       - vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J)));
+    vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C3 
+	= ((0x3ff800 & (((vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+			  >> 0xb) + (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J 
+				     >> 0xb)) << 0xb)) 
+	   | (0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2 
+		       + vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J)));
 }
 
 void Vfft64::_eval(Vfft64__Syms* __restrict vlSymsp) {

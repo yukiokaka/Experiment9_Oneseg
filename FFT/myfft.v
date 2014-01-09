@@ -9,7 +9,7 @@ module myFFT(
 
    reg [21:0]                  C0,C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24,C25,C26,C27,C28,C29,C30,C31,C32,C33,C34,C35,C36,C37,C38,C39,C40,C41,C42,C43,C44,C45,C46,C47,C48,C49,C50,C51,C52,C53,C54,C55,C56,C57,C58,C59,C60,C61,C62,C63;
    
-   wire [21:0]                 Y0,Y1,Y2,Y3;
+   wire [21:0]                 Y0,Y1,Y2,Y3,Y8,Y9,Y10,Y11;
    
    
    reg [3:0]                   stage;
@@ -19,13 +19,13 @@ module myFFT(
    reg                         stage_4_start_flg;
    reg                         stage_5_start_flg;
 
-   reg [21:0]                  AIN0,AIN1,AIN2,AIN3;
+   reg [21:0]                  AIN0,AIN1,AIN2,AIN3,AIN8,AIN9,AIN10,AIN11;
    
    reg [6:0]                   cnt;
    reg                         start_batterfly, calculating_batterfly_flg;
    
    reg [6:0]                   k1;
-   wire                        fin_batterfly;
+   wire                        fin_batterfly, fin_batterfly_3;
    
    
    always@(posedge clk or negedge rst) begin
@@ -519,106 +519,106 @@ module myFFT(
             if(!calculating_batterfly_flg) begin               
                case(cnt)
                  6'd0: begin
-                    AIN0 <= C0;
-                    AIN1 <= C1;
-                    AIN2 <= C2;
-                    AIN3 <= C3;
+                    AIN8 <= C0;
+                    AIN9 <= C1;
+                    AIN10 <= C2;
+                    AIN11 <= C3;
                  end
                  6'd4: begin
-                    AIN0 <= C4;
-                    AIN1 <= C5;
-                    AIN2 <= C6;
-                    AIN3 <= C7;
+                    AIN8 <= C4;
+                    AIN9 <= C5;
+                    AIN10 <= C6;
+                    AIN11 <= C7;
                  end
                  6'd8: begin
-                    AIN0 <= C8;
-                    AIN1 <= C9;
-                    AIN2 <= C10;
-                    AIN3 <= C11;
+                    AIN8 <= C8;
+                    AIN9 <= C9;
+                    AIN10 <= C10;
+                    AIN11 <= C11;
                  end
                  6'd12: begin
-                    AIN0 <= C12;
-                    AIN1 <= C13;
-                    AIN2 <= C14;
-                    AIN3 <= C15;
+                    AIN8 <= C12;
+                    AIN9 <= C13;
+                    AIN10 <= C14;
+                    AIN11 <= C15;
                  end
                  6'd16: begin
-                    AIN0 <= C16;
-                    AIN1 <= C17;
-                    AIN2 <= C18;
-                    AIN3 <= C19;
+                    AIN8 <= C16;
+                    AIN9 <= C17;
+                    AIN10 <= C18;
+                    AIN11 <= C19;
                  end
                  6'd20: begin
-                    AIN0 <= C20;
-                    AIN1 <= C21;
-                    AIN2 <= C22;
-                    AIN3 <= C23;
+                    AIN8 <= C20;
+                    AIN9 <= C21;
+                    AIN10 <= C22;
+                    AIN11 <= C23;
                  end
                  6'd24: begin
-                    AIN0 <= C24;
-                    AIN1 <= C25;
-                    AIN2 <= C26;
-                    AIN3 <= C27;
+                    AIN8 <= C24;
+                    AIN9 <= C25;
+                    AIN10 <= C26;
+                    AIN11 <= C27;
                  end
                  6'd28: begin
-                    AIN0 <= C28;
-                    AIN1 <= C29;
-                    AIN2 <= C30;
-                    AIN3 <= C31;
+                    AIN8 <= C28;
+                    AIN9 <= C29;
+                    AIN10 <= C30;
+                    AIN11 <= C31;
                  end
                  6'd32: begin
-                    AIN0 <= C32;
-                    AIN1 <= C33;
-                    AIN2 <= C34;
-                    AIN3 <= C35;
+                    AIN8 <= C32;
+                    AIN9 <= C33;
+                    AIN10 <= C34;
+                    AIN11 <= C35;
                  end
                  6'd36: begin
-                    AIN0 <= C36;
-                    AIN1 <= C37;
-                    AIN2 <= C38;
-                    AIN3 <= C39;
+                    AIN8 <= C36;
+                    AIN9 <= C37;
+                    AIN10 <= C38;
+                    AIN11 <= C39;
                  end
                  6'd40: begin
-                    AIN0 <= C40;
-                    AIN1 <= C41;
-                    AIN2 <= C42;
-                    AIN3 <= C43;
+                    AIN8 <= C40;
+                    AIN9 <= C41;
+                    AIN10 <= C42;
+                    AIN11 <= C43;
                  end
                  6'd44: begin
-                    AIN0 <= C44;
-                    AIN1 <= C45;
-                    AIN2 <= C46;
-                    AIN3 <= C47;
+                    AIN8 <= C44;
+                    AIN9 <= C45;
+                    AIN10 <= C46;
+                    AIN11 <= C47;
                  end
                  6'd48: begin
-                    AIN0 <= C48;
-                    AIN1 <= C49;
-                    AIN2 <= C50;
-                    AIN3 <= C51;
+                    AIN8 <= C48;
+                    AIN9 <= C49;
+                    AIN10 <= C50;
+                    AIN11 <= C51;
                  end
                  6'd52: begin
-                    AIN0 <= C52;
-                    AIN1 <= C53;
-                    AIN2 <= C54;
-                    AIN3 <= C55;
+                    AIN8 <= C52;
+                    AIN9 <= C53;
+                    AIN10 <= C54;
+                    AIN11 <= C55;
                  end
                  6'd56: begin
-                    AIN0 <= C56;
-                    AIN1 <= C57;
-                    AIN2 <= C58;
-                    AIN3 <= C59;
+                    AIN8 <= C56;
+                    AIN9 <= C57;
+                    AIN10 <= C58;
+                    AIN11 <= C59;
                  end
                  6'd60: begin
-                    AIN0 <= C60;
-                    AIN1 <= C61;
-                    AIN2 <= C62;
-                    AIN3 <= C63;
+                    AIN8 <= C60;
+                    AIN9 <= C61;
+                    AIN10 <= C62;
+                    AIN11 <= C63;
                  end
                  default: begin
-                    AIN0 <= 0;
-                    AIN1 <= 0;
-                    AIN2 <= 0;
-                    AIN3 <= 0;
+                    AIN8 <= 0;
+                    AIN9 <= 0;
+                    AIN10 <= 0;
+                    AIN11 <= 0;
                  end
                endcase
                k1 <= 0;               
@@ -629,104 +629,104 @@ module myFFT(
 
             else begin
                start_batterfly <= 0;
-               if(fin_batterfly) begin                   
+               if(fin_batterfly_3) begin                   
                   calculating_batterfly_flg <= 0;
                   case(cnt) 
                     6'd0: begin
-                       YOUT0 <= Y0;
-                       YOUT1 <= Y1;
-                       YOUT2 <= Y2;
-                       YOUT3 <= Y3;
+                       YOUT0 <= Y8;
+                       YOUT1 <= Y9;
+                       YOUT2 <= Y10;
+                       YOUT3 <= Y11;
                     end
                     6'd4: begin
-                       YOUT4 <= Y0;
-                       YOUT5 <= Y1;
-                       YOUT6 <= Y2;
-                       YOUT7 <= Y3;
+                       YOUT4 <= Y8;
+                       YOUT5 <= Y9;
+                       YOUT6 <= Y10;
+                       YOUT7 <= Y11;
                     end
                     6'd8: begin
-                       YOUT8 <= Y0;
-                       YOUT9 <= Y1;
-                       YOUT10 <= Y2;
-                       YOUT11 <= Y3;
+                       YOUT8 <= Y8;
+                       YOUT9 <= Y9;
+                       YOUT10 <= Y10;
+                       YOUT11 <= Y11;
                     end
                     6'd12: begin
-                       YOUT12 <= Y0;
-                       YOUT13 <= Y1;
-                       YOUT14 <= Y2;
-                       YOUT15 <= Y3;
+                       YOUT12 <= Y8;
+                       YOUT13 <= Y9;
+                       YOUT14 <= Y10;
+                       YOUT15 <= Y11;
                     end
                     6'd16: begin
-                       YOUT16 <= Y0;
-                       YOUT17 <= Y1;
-                       YOUT18 <= Y2;
-                       YOUT19 <= Y3;
+                       YOUT16 <= Y8;
+                       YOUT17 <= Y9;
+                       YOUT18 <= Y10;
+                       YOUT19 <= Y11;
                     end
                     6'd20: begin
-                       YOUT20 <= Y0;
-                       YOUT21 <= Y1;
-                       YOUT22 <= Y2;
-                       YOUT23 <= Y3;
+                       YOUT20 <= Y8;
+                       YOUT21 <= Y9;
+                       YOUT22 <= Y10;
+                       YOUT23 <= Y11;
                     end
                     6'd24: begin
-                       YOUT24 <= Y0;
-                       YOUT25 <= Y1;
-                       YOUT26 <= Y2;
-                       YOUT27 <= Y3;
+                       YOUT24 <= Y8;
+                       YOUT25 <= Y9;
+                       YOUT26 <= Y10;
+                       YOUT27 <= Y11;
                     end
                     6'd28: begin
-                       YOUT28 <= Y0;
-                       YOUT29 <= Y1;
-                       YOUT30 <= Y2;
-                       YOUT31 <= Y3;
+                       YOUT28 <= Y8;
+                       YOUT29 <= Y9;
+                       YOUT30 <= Y10;
+                       YOUT31 <= Y11;
                     end
                     6'd32: begin
-                       YOUT32 <= Y0;
-                       YOUT33 <= Y1;
-                       YOUT34 <= Y2;
-                       YOUT35 <= Y3;
+                       YOUT32 <= Y8;
+                       YOUT33 <= Y9;
+                       YOUT34 <= Y10;
+                       YOUT35 <= Y11;
                     end
                     6'd36: begin
-                       YOUT36 <= Y0;
-                       YOUT37 <= Y1;
-                       YOUT38 <= Y2;
-                       YOUT39 <= Y3;
+                       YOUT36 <= Y8;
+                       YOUT37 <= Y9;
+                       YOUT38 <= Y10;
+                       YOUT39 <= Y11;
                     end
                     6'd40: begin
-                       YOUT40 <= Y0;
-                       YOUT41 <= Y1;
-                       YOUT42 <= Y2;
-                       YOUT43 <= Y3;
+                       YOUT40 <= Y8;
+                       YOUT41 <= Y9;
+                       YOUT42 <= Y10;
+                       YOUT43 <= Y11;
                     end
                     6'd44: begin
-                       YOUT44 <= Y0;
-                       YOUT45 <= Y1;
-                       YOUT46 <= Y2;
-                       YOUT47 <= Y3;
+                       YOUT44 <= Y8;
+                       YOUT45 <= Y9;
+                       YOUT46 <= Y10;
+                       YOUT47 <= Y11;
                     end
                     6'd48: begin
-                       YOUT48 <= Y0;
-                       YOUT49 <= Y1;
-                       YOUT50 <= Y2;
-                       YOUT51 <= Y3;
+                       YOUT48 <= Y8;
+                       YOUT49 <= Y9;
+                       YOUT50 <= Y10;
+                       YOUT51 <= Y11;
                     end
                     6'd52: begin
-                       YOUT52 <= Y0;
-                       YOUT53 <= Y1;
-                       YOUT54 <= Y2;
-                       YOUT55 <= Y3;
+                       YOUT52 <= Y8;
+                       YOUT53 <= Y9;
+                       YOUT54 <= Y10;
+                       YOUT55 <= Y11;
                     end
                     6'd56: begin
-                       YOUT56 <= Y0;
-                       YOUT57 <= Y1;
-                       YOUT58 <= Y2;
-                       YOUT59 <= Y3;
+                       YOUT56 <= Y8;
+                       YOUT57 <= Y9;
+                       YOUT58 <= Y10;
+                       YOUT59 <= Y11;
                     end
                     6'd60: begin
-                       YOUT60 <= Y0;
-                       YOUT61 <= Y1;
-                       YOUT62 <= Y2;
-                       YOUT63 <= Y3;
+                       YOUT60 <= Y8;
+                       YOUT61 <= Y9;
+                       YOUT62 <= Y10;
+                       YOUT63 <= Y11;
                     end
                     default: begin
                        cnt <= cnt;
@@ -828,6 +828,7 @@ module myFFT(
       end // else: !if(!rst)
    end // always@ (posedge clk or negedge rst)
    
-   radix4_batterfly radix4_batterfly_module(.clk(clk),.rst(rst),.valid_i(start_batterfly), .valid_o(fin_batterfly),.A0(AIN0), .A1(AIN1), .A2(AIN2), .A3(AIN3), .Y0(Y0), .Y1(Y1), .Y2(Y2), .Y3(Y3),.k(k1));
+   radix4_batterfly radix4_batterfly_module1(.clk(clk),.rst(rst),.valid_i(start_batterfly), .valid_o(fin_batterfly),.A0(AIN0), .A1(AIN1), .A2(AIN2), .A3(AIN3), .Y0(Y0), .Y1(Y1), .Y2(Y2), .Y3(Y3),.k(k1));
+   radix4_batterfly radix4_batterfly_module2(.clk(clk),.rst(rst),.valid_i(start_batterfly), .valid_o(fin_batterfly_3),.A0(AIN8), .A1(AIN9), .A2(AIN10), .A3(AIN11), .Y0(Y8), .Y1(Y9), .Y2(Y10), .Y3(Y11),.k(k1));
    
 endmodule
