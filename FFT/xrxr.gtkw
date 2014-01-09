@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.49 (w)1999-2013 BSI
+[*] Thu Jan  9 04:37:10 2014
+[*]
+[dumpfile] "/home/yuki/github/Experiment9_Oneseg/FFT/fft64.vcd"
+[dumpfile_mtime] "Thu Jan  9 04:32:58 2014"
+[dumpfile_size] 485273
+[savefile] "/home/yuki/github/Experiment9_Oneseg/FFT/xrxr.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-6.388526 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_fft64.
+[sst_width] 220
+[signals_width] 94
+[sst_expanded] 1
+[sst_vpaned_height] 146
+@420
+test_fft64.FFT64_module.xi[10:0]
+test_fft64.FFT64_module.xr[10:0]
+@28
+test_fft64.FFT64_module.valid_a
+@421
+test_fft64.ai[10:0]
+test_fft64.ar[10:0]
+@28
+test_fft64.CLK
+[pattern_trace] 1
+[pattern_trace] 0

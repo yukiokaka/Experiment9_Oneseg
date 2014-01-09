@@ -37,10 +37,10 @@ int main(void)
         for(m=0;m<4;m++) {
             i = n+m;
             printf("    6'd%d: begin\n",i);
-            printf("        AIN0 <= B%d;\n",i);
-            printf("        AIN1 <= B%d;\n",i+4);
-            printf("        AIN2 <= B%d;\n",i+8);
-            printf("        AIN3 <= B%d;\n",i+12);
+            printf("        AIN4 <= B%d;\n",i);
+            printf("        AIN5 <= B%d;\n",i+4);
+            printf("        AIN6 <= B%d;\n",i+8);
+            printf("        AIN7 <= B%d;\n",i+12);
             printf("    end\n");
             }
         }
@@ -52,10 +52,10 @@ int main(void)
         for(m=0;m<4;m++) {
             i = n+m;
             printf("    6'd%d: begin\n",i);
-            printf("        C%d <= Y0;\n",i);
-            printf("        C%d <= Y1;\n",i+4);
-            printf("        C%d <= Y2;\n",i+8);
-            printf("        C%d <= Y3;\n",i+12);
+            printf("        C%d <= Y4;\n",i);
+            printf("        C%d <= Y5;\n",i+4);
+            printf("        C%d <= Y6;\n",i+8);
+            printf("        C%d <= Y7;\n",i+12);
             printf("    end\n");
             }
         }
@@ -67,10 +67,10 @@ int main(void)
 
     for (i=0;i<64;i+=4) {
         printf("    6'd%d: begin\n",i);
-        printf("        AIN0 <= C%d;\n",i);
-        printf("        AIN1 <= C%d;\n",i+1);
-        printf("        AIN2 <= C%d;\n",i+2);
-        printf("        AIN3 <= C%d;\n",i+3);
+        printf("        AIN8 <= C%d;\n",i);
+        printf("        AIN9 <= C%d;\n",i+1);
+        printf("        AIN10 <= C%d;\n",i+2);
+        printf("        AIN11 <= C%d;\n",i+3);
         printf("    end\n");
 
     }
@@ -80,10 +80,10 @@ int main(void)
 
     for (i=0;i<64;i+=4) {
         printf("    6'd%d: begin\n",i);
-        printf("        YOUT%d <= Y0;\n",i);
-        printf("        YOUT%d <= Y1;\n",i+1);
-        printf("        YOUT%d <= Y2;\n",i+2);
-        printf("        YOUT%d <= Y3;\n",i+3);
+        printf("        YOUT%d <= Y4;\n",i);
+        printf("        YOUT%d <= Y5;\n",i+1);
+        printf("        YOUT%d <= Y6;\n",i+2);
+        printf("        YOUT%d <= Y7;\n",i+3);
         printf("    end\n");
 
     }

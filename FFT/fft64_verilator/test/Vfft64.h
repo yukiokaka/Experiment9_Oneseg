@@ -10,6 +10,9 @@
 
 #include "verilated.h"
 class Vfft64__Syms;
+class Vfft64_radix4_batterfly;
+class Vfft64_radix4_batterfly;
+class Vfft64_radix4_batterfly;
 class VerilatedVcd;
 
 //----------
@@ -19,6 +22,9 @@ VL_MODULE(Vfft64) {
     // CELLS
     // Public to allow access to /*verilator_public*/ items;
     // otherwise the application code can consider these internals.
+    Vfft64_radix4_batterfly*	__PVT__v__DOT__myFFT_module__DOT__radix4_batterfly_module1;
+    Vfft64_radix4_batterfly*	__PVT__v__DOT__myFFT_module__DOT__radix4_batterfly_module2;
+    Vfft64_radix4_batterfly*	__PVT__v__DOT__myFFT_module__DOT__radix4_batterfly_module3;
     
     // PORTS
     // The application code writes and reads these signals to
@@ -54,28 +60,13 @@ VL_MODULE(Vfft64) {
     VL_SIG8(v__DOT__myFFT_module__DOT__cnt3,6,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__start_batterfly,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__calculating_batterfly_flg,0,0);
+    VL_SIG8(v__DOT__myFFT_module__DOT__start_batterfly_2,0,0);
+    VL_SIG8(v__DOT__myFFT_module__DOT__calculating_batterfly_flg_2,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__start_batterfly_3,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__calculating_batterfly_flg_3,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__k1,6,0);
+    VL_SIG8(v__DOT__myFFT_module__DOT__k2,6,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__k3,6,0);
-    VL_SIG8(v__DOT__myFFT_module__DOT__fin_batterfly,0,0);
-    VL_SIG8(v__DOT__myFFT_module__DOT__fin_batterfly_3,0,0);
-    VL_SIG8(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt,3,0);
-    VL_SIG8(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt,3,0);
-    //char	__VpadToAlign45[1];
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR,10,0);
-    VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI,10,0);
-    //char	__VpadToAlign70[2];
     VL_SIG(v__DOT__A0,21,0);
     VL_SIG(v__DOT__A1,21,0);
     VL_SIG(v__DOT__A2,21,0);
@@ -332,107 +323,29 @@ VL_MODULE(Vfft64) {
     VL_SIG(v__DOT__myFFT_module__DOT__C61,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__C62,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__C63,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__Y1,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__Y2,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__Y3,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__Y9,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__Y10,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__Y11,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN0,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN1,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN2,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN3,21,0);
+    VL_SIG(v__DOT__myFFT_module__DOT__AIN4,21,0);
+    VL_SIG(v__DOT__myFFT_module__DOT__AIN5,21,0);
+    VL_SIG(v__DOT__myFFT_module__DOT__AIN6,21,0);
+    VL_SIG(v__DOT__myFFT_module__DOT__AIN7,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN8,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN9,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN10,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN11,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B0,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B1,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B2,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__B3J,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C1,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C2,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__C3,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KR,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W1KI,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KR,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W2KI,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KR,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__W3KI,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B0,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B1,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B2,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__B3J,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C1,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C2,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__C3,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KR,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W1KI,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KR,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KI,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KR,16,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KI,16,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1,44,0);
-    VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2,44,0);
     
     // LOCAL VARIABLES
     // Internals; generally not touched by application code
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__select,6,0);
-    VL_SIG8(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__select,6,0);
     VL_SIG8(__Vclklast__TOP__CLK,0,0);
     VL_SIG8(__Vclklast__TOP__RST,0,0);
-    //char	__VpadToAlign1474[2];
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_sin__0__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_sin__1__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_sin__2__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k1_cos__3__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k2_cos__4__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__func_k3_cos__5__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_sin__6__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_sin__7__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_sin__8__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k1_cos__9__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k2_cos__10__Vfuncout,16,0);
-    VL_SIG(__Vfunc_v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__func_k3_cos__11__Vfuncout,16,0);
+    //char	__VpadToAlign1122[2];
     VL_SIG(__Vm_traceActivity,31,0);
     
     // INTERNAL VARIABLES
     // Internals; generally not touched by application code
-    //char	__VpadToAlign1532[4];
+    //char	__VpadToAlign1132[4];
     Vfft64__Syms*	__VlSymsp;		// Symbol table
     
     // PARAMETERS
@@ -472,9 +385,6 @@ VL_MODULE(Vfft64) {
     static void	_eval_initial(Vfft64__Syms* __restrict vlSymsp);
     static void	_eval_settle(Vfft64__Syms* __restrict vlSymsp);
     static void	_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__3(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__2(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__4(Vfft64__Syms* __restrict vlSymsp);
     static void	traceChgThis(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void	traceChgThis__2(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void	traceChgThis__3(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);

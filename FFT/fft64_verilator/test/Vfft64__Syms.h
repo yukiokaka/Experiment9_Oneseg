@@ -10,6 +10,7 @@
 
 // INCLUDE MODULE CLASSES
 #include "Vfft64.h"
+#include "Vfft64_radix4_batterfly.h"
 
 // SYMS CLASS
 class Vfft64__Syms : public VerilatedSyms {
@@ -23,6 +24,9 @@ class Vfft64__Syms : public VerilatedSyms {
     
     // SUBCELL STATE
     Vfft64*                        TOPp;
+    Vfft64_radix4_batterfly        TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module1;
+    Vfft64_radix4_batterfly        TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module2;
+    Vfft64_radix4_batterfly        TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module3;
     
     // COVERAGE
     

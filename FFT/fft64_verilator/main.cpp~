@@ -254,7 +254,7 @@ void testbench::verify_output(Vfft64 *top)
     //          // << (int)(char)top->yi << "\t(" << (int)yi[eindex] << ")" << "\t"
     //          << "\n";
 
-    int error_limit = 20;    // 0.5 * 6 stages
+    int error_limit = 10;    // 0.5 * 6 stages
     if (top->valid_o) {
         if (txr != xr[eindex]) {
             if (abs(txr - xr[eindex]) <= error_limit) {

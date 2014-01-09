@@ -144,21 +144,21 @@ VL_MODULE(Vfft64_radix4_batterfly) {
     
     // INTERNAL METHODS
     void __Vconfigure(Vfft64__Syms* symsp, bool first);
-    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_1__1(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_1__10(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_1__4(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_2__11(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_2__2(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_2__5(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_3__12(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_3__3(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_3__6(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_1__13(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_1__7(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_2__14(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_2__8(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_3__15(Vfft64__Syms* __restrict vlSymsp);
-    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module_3__9(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__1(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__10(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__4(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__11(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__2(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__5(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module3__12(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module3__3(Vfft64__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module3__6(Vfft64__Syms* __restrict vlSymsp);
+    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__13(Vfft64__Syms* __restrict vlSymsp);
+    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module1__7(Vfft64__Syms* __restrict vlSymsp);
+    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__14(Vfft64__Syms* __restrict vlSymsp);
+    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module2__8(Vfft64__Syms* __restrict vlSymsp);
+    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module3__15(Vfft64__Syms* __restrict vlSymsp);
+    static void	_settle__TOP__v__DOT__myFFT_module__DOT__radix4_batterfly_module3__9(Vfft64__Syms* __restrict vlSymsp);
     static void traceInit (VerilatedVcd* vcdp, void* userthis, uint32_t code);
     static void traceFull (VerilatedVcd* vcdp, void* userthis, uint32_t code);
     static void traceChg  (VerilatedVcd* vcdp, void* userthis, uint32_t code);
