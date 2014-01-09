@@ -461,129 +461,133 @@ void Vfft64::traceChgThis__3(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcd
 	vcdp->chgBit  (c+354,(vlTOPp->v__DOT__myFFT_module__DOT__stage_4_start_flg));
 	vcdp->chgBit  (c+355,(vlTOPp->v__DOT__myFFT_module__DOT__stage_5_start_flg));
 	vcdp->chgBus  (c+364,(vlTOPp->v__DOT__myFFT_module__DOT__cnt),7);
-	vcdp->chgBit  (c+366,(vlTOPp->v__DOT__myFFT_module__DOT__calculating_batterfly_flg));
-	vcdp->chgBit  (c+368,(vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly));
-	vcdp->chgBit  (c+369,(vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly_3));
-	vcdp->chgBus  (c+370,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt),4);
-	vcdp->chgBus  (c+371,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+	vcdp->chgBus  (c+365,(vlTOPp->v__DOT__myFFT_module__DOT__cnt3),7);
+	vcdp->chgBit  (c+366,(vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly));
+	vcdp->chgBit  (c+367,(vlTOPp->v__DOT__myFFT_module__DOT__calculating_batterfly_flg));
+	vcdp->chgBit  (c+368,(vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly_3));
+	vcdp->chgBit  (c+369,(vlTOPp->v__DOT__myFFT_module__DOT__calculating_batterfly_flg_3));
+	vcdp->chgBus  (c+370,(vlTOPp->v__DOT__myFFT_module__DOT__k1),7);
+	vcdp->chgBus  (c+371,(vlTOPp->v__DOT__myFFT_module__DOT__k3),7);
+	vcdp->chgBit  (c+372,(vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly));
+	vcdp->chgBit  (c+373,(vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly_3));
+	vcdp->chgBus  (c+374,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt),4);
+	vcdp->chgBus  (c+375,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 					>> 0xb))),11);
-	vcdp->chgBus  (c+372,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN0)),11);
-	vcdp->chgBus  (c+373,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+	vcdp->chgBus  (c+376,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN0)),11);
+	vcdp->chgBus  (c+377,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
 					>> 0xb))),11);
-	vcdp->chgBus  (c+374,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN2)),11);
-	vcdp->chgBus  (c+375,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+	vcdp->chgBus  (c+378,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN2)),11);
+	vcdp->chgBus  (c+379,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 					 >> 0xb) + 
 					(vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
 					 >> 0xb)))),11);
-	vcdp->chgBus  (c+376,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+	vcdp->chgBus  (c+380,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 					+ vlTOPp->v__DOT__myFFT_module__DOT__AIN2))),11);
-	vcdp->chgBus  (c+377,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+	vcdp->chgBus  (c+381,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 					>> 0xb))),11);
-	vcdp->chgBus  (c+378,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN1)),11);
-	vcdp->chgBus  (c+379,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+	vcdp->chgBus  (c+382,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN1)),11);
+	vcdp->chgBus  (c+383,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
 					>> 0xb))),11);
-	vcdp->chgBus  (c+380,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN3)),11);
-	vcdp->chgBus  (c+381,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-					 >> 0xb) + 
-					(vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
-					 >> 0xb)))),11);
-	vcdp->chgBus  (c+382,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-					+ vlTOPp->v__DOT__myFFT_module__DOT__AIN3))),11);
-	vcdp->chgBus  (c+356,(vlTOPp->v__DOT__myFFT_module__DOT__AIN0),22);
-	vcdp->chgBus  (c+358,(vlTOPp->v__DOT__myFFT_module__DOT__AIN2),22);
-	vcdp->chgBus  (c+383,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
-					 >> 0xb) - 
-					(vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
-					 >> 0xb)))),11);
-	vcdp->chgBus  (c+384,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
-					- vlTOPp->v__DOT__myFFT_module__DOT__AIN2))),11);
-	vcdp->chgBus  (c+357,(vlTOPp->v__DOT__myFFT_module__DOT__AIN1),22);
-	vcdp->chgBus  (c+359,(vlTOPp->v__DOT__myFFT_module__DOT__AIN3),22);
+	vcdp->chgBus  (c+384,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN3)),11);
 	vcdp->chgBus  (c+385,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-					 >> 0xb) - 
+					 >> 0xb) + 
 					(vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
 					 >> 0xb)))),11);
 	vcdp->chgBus  (c+386,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					+ vlTOPp->v__DOT__myFFT_module__DOT__AIN3))),11);
+	vcdp->chgBus  (c+356,(vlTOPp->v__DOT__myFFT_module__DOT__AIN0),22);
+	vcdp->chgBus  (c+358,(vlTOPp->v__DOT__myFFT_module__DOT__AIN2),22);
+	vcdp->chgBus  (c+387,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					 >> 0xb) - 
+					(vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					 >> 0xb)))),11);
+	vcdp->chgBus  (c+388,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					- vlTOPp->v__DOT__myFFT_module__DOT__AIN2))),11);
+	vcdp->chgBus  (c+357,(vlTOPp->v__DOT__myFFT_module__DOT__AIN1),22);
+	vcdp->chgBus  (c+359,(vlTOPp->v__DOT__myFFT_module__DOT__AIN3),22);
+	vcdp->chgBus  (c+389,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					 >> 0xb) - 
+					(vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					 >> 0xb)))),11);
+	vcdp->chgBus  (c+390,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 					- vlTOPp->v__DOT__myFFT_module__DOT__AIN3))),11);
-	vcdp->chgBus  (c+387,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR),11);
-	vcdp->chgBus  (c+388,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI),11);
-	vcdp->chgQuad (c+389,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1),45);
-	vcdp->chgQuad (c+391,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2),45);
-	vcdp->chgQuad (c+393,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1),45);
-	vcdp->chgQuad (c+395,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2),45);
-	vcdp->chgBus  (c+397,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR),11);
-	vcdp->chgBus  (c+398,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI),11);
-	vcdp->chgQuad (c+399,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1),45);
-	vcdp->chgQuad (c+401,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2),45);
-	vcdp->chgQuad (c+403,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1),45);
-	vcdp->chgQuad (c+405,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2),45);
-	vcdp->chgBus  (c+407,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR),11);
-	vcdp->chgBus  (c+408,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI),11);
-	vcdp->chgQuad (c+409,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1),45);
-	vcdp->chgQuad (c+411,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2),45);
-	vcdp->chgQuad (c+413,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1),45);
-	vcdp->chgQuad (c+415,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2),45);
-	vcdp->chgBus  (c+367,(vlTOPp->v__DOT__myFFT_module__DOT__k1),7);
-	vcdp->chgBit  (c+365,(vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly));
-	vcdp->chgBus  (c+417,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt),4);
-	vcdp->chgBus  (c+418,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+	vcdp->chgBus  (c+391,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR),11);
+	vcdp->chgBus  (c+392,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI),11);
+	vcdp->chgQuad (c+393,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1),45);
+	vcdp->chgQuad (c+395,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2),45);
+	vcdp->chgQuad (c+397,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1),45);
+	vcdp->chgQuad (c+399,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2),45);
+	vcdp->chgBus  (c+401,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR),11);
+	vcdp->chgBus  (c+402,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI),11);
+	vcdp->chgQuad (c+403,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1),45);
+	vcdp->chgQuad (c+405,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2),45);
+	vcdp->chgQuad (c+407,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1),45);
+	vcdp->chgQuad (c+409,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2),45);
+	vcdp->chgBus  (c+411,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR),11);
+	vcdp->chgBus  (c+412,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI),11);
+	vcdp->chgQuad (c+413,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1),45);
+	vcdp->chgQuad (c+415,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2),45);
+	vcdp->chgQuad (c+417,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1),45);
+	vcdp->chgQuad (c+419,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2),45);
+	vcdp->chgBus  (c+421,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt),4);
+	vcdp->chgBus  (c+422,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 					>> 0xb))),11);
-	vcdp->chgBus  (c+419,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN8)),11);
-	vcdp->chgBus  (c+420,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
+	vcdp->chgBus  (c+423,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN8)),11);
+	vcdp->chgBus  (c+424,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 					>> 0xb))),11);
-	vcdp->chgBus  (c+421,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN10)),11);
-	vcdp->chgBus  (c+422,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+	vcdp->chgBus  (c+425,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN10)),11);
+	vcdp->chgBus  (c+426,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 					 >> 0xb) + 
 					(vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 					 >> 0xb)))),11);
-	vcdp->chgBus  (c+423,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+	vcdp->chgBus  (c+427,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 					+ vlTOPp->v__DOT__myFFT_module__DOT__AIN10))),11);
-	vcdp->chgBus  (c+424,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+	vcdp->chgBus  (c+428,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 					>> 0xb))),11);
-	vcdp->chgBus  (c+425,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN9)),11);
-	vcdp->chgBus  (c+426,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
+	vcdp->chgBus  (c+429,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN9)),11);
+	vcdp->chgBus  (c+430,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 					>> 0xb))),11);
-	vcdp->chgBus  (c+427,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN11)),11);
-	vcdp->chgBus  (c+428,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
-					 >> 0xb) + 
-					(vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
-					 >> 0xb)))),11);
-	vcdp->chgBus  (c+429,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
-					+ vlTOPp->v__DOT__myFFT_module__DOT__AIN11))),11);
-	vcdp->chgBus  (c+360,(vlTOPp->v__DOT__myFFT_module__DOT__AIN8),22);
-	vcdp->chgBus  (c+362,(vlTOPp->v__DOT__myFFT_module__DOT__AIN10),22);
-	vcdp->chgBus  (c+430,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
-					 >> 0xb) - 
-					(vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
-					 >> 0xb)))),11);
-	vcdp->chgBus  (c+431,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
-					- vlTOPp->v__DOT__myFFT_module__DOT__AIN10))),11);
-	vcdp->chgBus  (c+361,(vlTOPp->v__DOT__myFFT_module__DOT__AIN9),22);
-	vcdp->chgBus  (c+363,(vlTOPp->v__DOT__myFFT_module__DOT__AIN11),22);
+	vcdp->chgBus  (c+431,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN11)),11);
 	vcdp->chgBus  (c+432,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
-					 >> 0xb) - 
+					 >> 0xb) + 
 					(vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 					 >> 0xb)))),11);
 	vcdp->chgBus  (c+433,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+					+ vlTOPp->v__DOT__myFFT_module__DOT__AIN11))),11);
+	vcdp->chgBus  (c+360,(vlTOPp->v__DOT__myFFT_module__DOT__AIN8),22);
+	vcdp->chgBus  (c+362,(vlTOPp->v__DOT__myFFT_module__DOT__AIN10),22);
+	vcdp->chgBus  (c+434,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+					 >> 0xb) - 
+					(vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
+					 >> 0xb)))),11);
+	vcdp->chgBus  (c+435,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+					- vlTOPp->v__DOT__myFFT_module__DOT__AIN10))),11);
+	vcdp->chgBus  (c+361,(vlTOPp->v__DOT__myFFT_module__DOT__AIN9),22);
+	vcdp->chgBus  (c+363,(vlTOPp->v__DOT__myFFT_module__DOT__AIN11),22);
+	vcdp->chgBus  (c+436,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+					 >> 0xb) - 
+					(vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
+					 >> 0xb)))),11);
+	vcdp->chgBus  (c+437,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 					- vlTOPp->v__DOT__myFFT_module__DOT__AIN11))),11);
-	vcdp->chgBus  (c+434,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR),11);
-	vcdp->chgBus  (c+435,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI),11);
-	vcdp->chgQuad (c+436,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1),45);
-	vcdp->chgQuad (c+438,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2),45);
-	vcdp->chgQuad (c+440,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1),45);
-	vcdp->chgQuad (c+442,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2),45);
-	vcdp->chgBus  (c+444,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR),11);
-	vcdp->chgBus  (c+445,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI),11);
-	vcdp->chgQuad (c+446,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1),45);
-	vcdp->chgQuad (c+448,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2),45);
-	vcdp->chgQuad (c+450,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1),45);
-	vcdp->chgQuad (c+452,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2),45);
-	vcdp->chgBus  (c+454,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR),11);
-	vcdp->chgBus  (c+455,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI),11);
-	vcdp->chgQuad (c+456,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1),45);
-	vcdp->chgQuad (c+458,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2),45);
-	vcdp->chgQuad (c+460,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1),45);
-	vcdp->chgQuad (c+462,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2),45);
+	vcdp->chgBus  (c+438,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR),11);
+	vcdp->chgBus  (c+439,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI),11);
+	vcdp->chgQuad (c+440,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1),45);
+	vcdp->chgQuad (c+442,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2),45);
+	vcdp->chgQuad (c+444,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1),45);
+	vcdp->chgQuad (c+446,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2),45);
+	vcdp->chgBus  (c+448,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR),11);
+	vcdp->chgBus  (c+449,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI),11);
+	vcdp->chgQuad (c+450,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1),45);
+	vcdp->chgQuad (c+452,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2),45);
+	vcdp->chgQuad (c+454,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1),45);
+	vcdp->chgQuad (c+456,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2),45);
+	vcdp->chgBus  (c+458,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR),11);
+	vcdp->chgBus  (c+459,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI),11);
+	vcdp->chgQuad (c+460,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1),45);
+	vcdp->chgQuad (c+462,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2),45);
+	vcdp->chgQuad (c+464,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1),45);
+	vcdp->chgQuad (c+466,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2),45);
     }
 }
 
@@ -593,15 +597,15 @@ void Vfft64::traceChgThis__4(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcd
     if (0 && vcdp && c) {}  // Prevent unused
     // Body
     {
-	vcdp->chgBit  (c+466,(vlTOPp->valid_a));
-	vcdp->chgBus  (c+467,(vlTOPp->ar),11);
-	vcdp->chgBus  (c+468,(vlTOPp->ai),11);
-	vcdp->chgBit  (c+469,(vlTOPp->valid_o));
-	vcdp->chgBit  (c+470,(vlTOPp->rd_en));
-	vcdp->chgBit  (c+471,(vlTOPp->full));
-	vcdp->chgBus  (c+472,(vlTOPp->xr),11);
-	vcdp->chgBus  (c+473,(vlTOPp->xi),11);
-	vcdp->chgBit  (c+464,(vlTOPp->CLK));
-	vcdp->chgBit  (c+465,(vlTOPp->RST));
+	vcdp->chgBit  (c+470,(vlTOPp->valid_a));
+	vcdp->chgBus  (c+471,(vlTOPp->ar),11);
+	vcdp->chgBus  (c+472,(vlTOPp->ai),11);
+	vcdp->chgBit  (c+473,(vlTOPp->valid_o));
+	vcdp->chgBit  (c+474,(vlTOPp->rd_en));
+	vcdp->chgBit  (c+475,(vlTOPp->full));
+	vcdp->chgBus  (c+476,(vlTOPp->xr),11);
+	vcdp->chgBus  (c+477,(vlTOPp->xi),11);
+	vcdp->chgBit  (c+468,(vlTOPp->CLK));
+	vcdp->chgBit  (c+469,(vlTOPp->RST));
     }
 }

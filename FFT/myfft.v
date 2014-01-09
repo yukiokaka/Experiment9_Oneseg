@@ -22,9 +22,11 @@ module myFFT(
    reg [21:0]                  AIN0,AIN1,AIN2,AIN3,AIN8,AIN9,AIN10,AIN11;
    
    reg [6:0]                   cnt;
+   reg [6:0]                   cnt3;
    reg                         start_batterfly, calculating_batterfly_flg;
+   reg                         start_batterfly_3, calculating_batterfly_flg_3;
    
-   reg [6:0]                   k1;
+   reg [6:0]                   k1,k3;
    wire                        fin_batterfly, fin_batterfly_3;
    
    
@@ -504,11 +506,11 @@ module myFFT(
                   cnt <= cnt + 1;
                   if(((cnt+1) % 4) == 0) cnt <= cnt + 13; 
                   if(cnt>51) begin
-                     cnt <= 0;
+                     cnt3 <= 0;
                      stage_2_start_flg <= 0;         
                      stage_3_start_flg <= 1;            
                      stage <= stage + 1;
-                     k1 <= 0;                     
+                     k3 <= 0;                     
                   end                  
                end // if (fin_batterfly)
                
@@ -516,8 +518,8 @@ module myFFT(
          end // if (stage == 2)
          
          if(stage_3_start_flg) begin
-            if(!calculating_batterfly_flg) begin               
-               case(cnt)
+            if(!calculating_batterfly_flg_3) begin               
+               case(cnt3)
                  6'd0: begin
                     AIN8 <= C0;
                     AIN9 <= C1;
@@ -621,17 +623,17 @@ module myFFT(
                     AIN11 <= 0;
                  end
                endcase
-               k1 <= 0;               
-               start_batterfly <= 1;
-               calculating_batterfly_flg <= 1;
+               k3 <= 0;               
+               start_batterfly_3 <= 1;
+               calculating_batterfly_flg_3 <= 1;
                
             end // if (!calculating_batterfly_flg)
 
             else begin
-               start_batterfly <= 0;
+               start_batterfly_3 <= 0;
                if(fin_batterfly_3) begin                   
-                  calculating_batterfly_flg <= 0;
-                  case(cnt) 
+                  calculating_batterfly_flg_3 <= 0;
+                  case(cnt3) 
                     6'd0: begin
                        YOUT0 <= Y8;
                        YOUT1 <= Y9;
@@ -729,13 +731,13 @@ module myFFT(
                        YOUT63 <= Y11;
                     end
                     default: begin
-                       cnt <= cnt;
+                       cnt3 <= cnt3;
                     end
                   endcase
-                  cnt <= cnt + 4;
-                  if(cnt > 60)
+                  cnt3 <= cnt3 + 4;
+                  if(cnt3 > 60)
                     begin
-                       cnt <= 0;
+                       cnt3 <= 0;
                        stage_3_start_flg <= 0;         
                        stage_4_start_flg <= 1;            
                        stage <= stage + 1;
@@ -829,6 +831,6 @@ module myFFT(
    end // always@ (posedge clk or negedge rst)
    
    radix4_batterfly radix4_batterfly_module1(.clk(clk),.rst(rst),.valid_i(start_batterfly), .valid_o(fin_batterfly),.A0(AIN0), .A1(AIN1), .A2(AIN2), .A3(AIN3), .Y0(Y0), .Y1(Y1), .Y2(Y2), .Y3(Y3),.k(k1));
-   radix4_batterfly radix4_batterfly_module2(.clk(clk),.rst(rst),.valid_i(start_batterfly), .valid_o(fin_batterfly_3),.A0(AIN8), .A1(AIN9), .A2(AIN10), .A3(AIN11), .Y0(Y8), .Y1(Y9), .Y2(Y10), .Y3(Y11),.k(k1));
+   radix4_batterfly radix4_batterfly_module2(.clk(clk),.rst(rst),.valid_i(start_batterfly_3), .valid_o(fin_batterfly_3),.A0(AIN8), .A1(AIN9), .A2(AIN10), .A3(AIN11), .Y0(Y8), .Y1(Y9), .Y2(Y10), .Y3(Y11),.k(k3));
    
 endmodule

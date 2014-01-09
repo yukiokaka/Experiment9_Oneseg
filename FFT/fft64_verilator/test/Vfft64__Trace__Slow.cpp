@@ -57,26 +57,26 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
     if (0 && vcdp && c) {}  // Prevent unused
     // Body
     {
-	vcdp->declBit  (c+464,"CLK",-1);
-	vcdp->declBit  (c+465,"RST",-1);
-	vcdp->declBit  (c+466,"valid_a",-1);
-	vcdp->declBus  (c+467,"ar",-1,10,0);
-	vcdp->declBus  (c+468,"ai",-1,10,0);
-	vcdp->declBit  (c+469,"valid_o",-1);
-	vcdp->declBit  (c+470,"rd_en",-1);
-	vcdp->declBit  (c+471,"full",-1);
-	vcdp->declBus  (c+472,"xr",-1,10,0);
-	vcdp->declBus  (c+473,"xi",-1,10,0);
-	vcdp->declBit  (c+464,"v CLK",-1);
-	vcdp->declBit  (c+465,"v RST",-1);
-	vcdp->declBit  (c+466,"v valid_a",-1);
-	vcdp->declBus  (c+467,"v ar",-1,10,0);
-	vcdp->declBus  (c+468,"v ai",-1,10,0);
-	vcdp->declBit  (c+469,"v valid_o",-1);
-	vcdp->declBit  (c+470,"v rd_en",-1);
-	vcdp->declBit  (c+471,"v full",-1);
-	vcdp->declBus  (c+472,"v xr",-1,10,0);
-	vcdp->declBus  (c+473,"v xi",-1,10,0);
+	vcdp->declBit  (c+468,"CLK",-1);
+	vcdp->declBit  (c+469,"RST",-1);
+	vcdp->declBit  (c+470,"valid_a",-1);
+	vcdp->declBus  (c+471,"ar",-1,10,0);
+	vcdp->declBus  (c+472,"ai",-1,10,0);
+	vcdp->declBit  (c+473,"valid_o",-1);
+	vcdp->declBit  (c+474,"rd_en",-1);
+	vcdp->declBit  (c+475,"full",-1);
+	vcdp->declBus  (c+476,"xr",-1,10,0);
+	vcdp->declBus  (c+477,"xi",-1,10,0);
+	vcdp->declBit  (c+468,"v CLK",-1);
+	vcdp->declBit  (c+469,"v RST",-1);
+	vcdp->declBit  (c+470,"v valid_a",-1);
+	vcdp->declBus  (c+471,"v ar",-1,10,0);
+	vcdp->declBus  (c+472,"v ai",-1,10,0);
+	vcdp->declBit  (c+473,"v valid_o",-1);
+	vcdp->declBit  (c+474,"v rd_en",-1);
+	vcdp->declBit  (c+475,"v full",-1);
+	vcdp->declBus  (c+476,"v xr",-1,10,0);
+	vcdp->declBus  (c+477,"v xi",-1,10,0);
 	vcdp->declBus  (c+87,"v cnt",-1,6,0);
 	vcdp->declBus  (c+88,"v cnt_o",-1,6,0);
 	vcdp->declBus  (c+89,"v A0",-1,21,0);
@@ -212,8 +212,8 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBit  (c+219,"v fin_fft_flg",-1);
 	vcdp->declBit  (c+220,"v valid_o_from_myFFT",-1);
 	vcdp->declBit  (c+221,"v fft_culculating_flg",-1);
-	vcdp->declBit  (c+464,"v myFFT_module clk",-1);
-	vcdp->declBit  (c+465,"v myFFT_module rst",-1);
+	vcdp->declBit  (c+468,"v myFFT_module clk",-1);
+	vcdp->declBit  (c+469,"v myFFT_module rst",-1);
 	vcdp->declBit  (c+217,"v myFFT_module start",-1);
 	vcdp->declBit  (c+220,"v myFFT_module valid_o",-1);
 	vcdp->declBus  (c+153,"v myFFT_module YOUT0",-1,21,0);
@@ -495,24 +495,28 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+362,"v myFFT_module AIN10",-1,21,0);
 	vcdp->declBus  (c+363,"v myFFT_module AIN11",-1,21,0);
 	vcdp->declBus  (c+364,"v myFFT_module cnt",-1,6,0);
-	vcdp->declBit  (c+365,"v myFFT_module start_batterfly",-1);
-	vcdp->declBit  (c+366,"v myFFT_module calculating_batterfly_flg",-1);
-	vcdp->declBus  (c+367,"v myFFT_module k1",-1,6,0);
-	vcdp->declBit  (c+368,"v myFFT_module fin_batterfly",-1);
-	vcdp->declBit  (c+369,"v myFFT_module fin_batterfly_3",-1);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 clk",-1);
-	vcdp->declBit  (c+465,"v myFFT_module radix4_batterfly_module1 rst",-1);
-	vcdp->declBus  (c+367,"v myFFT_module radix4_batterfly_module1 k",-1,6,0);
+	vcdp->declBus  (c+365,"v myFFT_module cnt3",-1,6,0);
+	vcdp->declBit  (c+366,"v myFFT_module start_batterfly",-1);
+	vcdp->declBit  (c+367,"v myFFT_module calculating_batterfly_flg",-1);
+	vcdp->declBit  (c+368,"v myFFT_module start_batterfly_3",-1);
+	vcdp->declBit  (c+369,"v myFFT_module calculating_batterfly_flg_3",-1);
+	vcdp->declBus  (c+370,"v myFFT_module k1",-1,6,0);
+	vcdp->declBus  (c+371,"v myFFT_module k3",-1,6,0);
+	vcdp->declBit  (c+372,"v myFFT_module fin_batterfly",-1);
+	vcdp->declBit  (c+373,"v myFFT_module fin_batterfly_3",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 clk",-1);
+	vcdp->declBit  (c+469,"v myFFT_module radix4_batterfly_module1 rst",-1);
+	vcdp->declBus  (c+370,"v myFFT_module radix4_batterfly_module1 k",-1,6,0);
 	vcdp->declBus  (c+356,"v myFFT_module radix4_batterfly_module1 A0",-1,21,0);
 	vcdp->declBus  (c+357,"v myFFT_module radix4_batterfly_module1 A1",-1,21,0);
 	vcdp->declBus  (c+358,"v myFFT_module radix4_batterfly_module1 A2",-1,21,0);
 	vcdp->declBus  (c+359,"v myFFT_module radix4_batterfly_module1 A3",-1,21,0);
-	vcdp->declBit  (c+365,"v myFFT_module radix4_batterfly_module1 valid_i",-1);
+	vcdp->declBit  (c+366,"v myFFT_module radix4_batterfly_module1 valid_i",-1);
 	vcdp->declBus  (c+1,"v myFFT_module radix4_batterfly_module1 Y0",-1,21,0);
 	vcdp->declBus  (c+2,"v myFFT_module radix4_batterfly_module1 Y1",-1,21,0);
 	vcdp->declBus  (c+3,"v myFFT_module radix4_batterfly_module1 Y2",-1,21,0);
 	vcdp->declBus  (c+4,"v myFFT_module radix4_batterfly_module1 Y3",-1,21,0);
-	vcdp->declBit  (c+368,"v myFFT_module radix4_batterfly_module1 valid_o",-1);
+	vcdp->declBit  (c+372,"v myFFT_module radix4_batterfly_module1 valid_o",-1);
 	vcdp->declBus  (c+9,"v myFFT_module radix4_batterfly_module1 B0",-1,21,0);
 	vcdp->declBus  (c+10,"v myFFT_module radix4_batterfly_module1 B1",-1,21,0);
 	vcdp->declBus  (c+11,"v myFFT_module radix4_batterfly_module1 B2",-1,21,0);
@@ -528,55 +532,55 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+20,"v myFFT_module radix4_batterfly_module1 W2KI",-1,16,0);
 	vcdp->declBus  (c+21,"v myFFT_module radix4_batterfly_module1 W3KR",-1,16,0);
 	vcdp->declBus  (c+22,"v myFFT_module radix4_batterfly_module1 W3KI",-1,16,0);
-	vcdp->declBus  (c+370,"v myFFT_module radix4_batterfly_module1 cnt",-1,3,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u1 clk",-1);
+	vcdp->declBus  (c+374,"v myFFT_module radix4_batterfly_module1 cnt",-1,3,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u1 clk",-1);
 	vcdp->declBus  (c+356,"v myFFT_module radix4_batterfly_module1 u1 A",-1,21,0);
 	vcdp->declBus  (c+358,"v myFFT_module radix4_batterfly_module1 u1 B",-1,21,0);
 	vcdp->declBus  (c+9,"v myFFT_module radix4_batterfly_module1 u1 Y",-1,21,0);
-	vcdp->declBus  (c+371,"v myFFT_module radix4_batterfly_module1 u1 AR",-1,10,0);
-	vcdp->declBus  (c+372,"v myFFT_module radix4_batterfly_module1 u1 AI",-1,10,0);
-	vcdp->declBus  (c+373,"v myFFT_module radix4_batterfly_module1 u1 BR",-1,10,0);
-	vcdp->declBus  (c+374,"v myFFT_module radix4_batterfly_module1 u1 BI",-1,10,0);
-	vcdp->declBus  (c+375,"v myFFT_module radix4_batterfly_module1 u1 YR",-1,10,0);
-	vcdp->declBus  (c+376,"v myFFT_module radix4_batterfly_module1 u1 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u2 clk",-1);
+	vcdp->declBus  (c+375,"v myFFT_module radix4_batterfly_module1 u1 AR",-1,10,0);
+	vcdp->declBus  (c+376,"v myFFT_module radix4_batterfly_module1 u1 AI",-1,10,0);
+	vcdp->declBus  (c+377,"v myFFT_module radix4_batterfly_module1 u1 BR",-1,10,0);
+	vcdp->declBus  (c+378,"v myFFT_module radix4_batterfly_module1 u1 BI",-1,10,0);
+	vcdp->declBus  (c+379,"v myFFT_module radix4_batterfly_module1 u1 YR",-1,10,0);
+	vcdp->declBus  (c+380,"v myFFT_module radix4_batterfly_module1 u1 YI",-1,10,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u2 clk",-1);
 	vcdp->declBus  (c+357,"v myFFT_module radix4_batterfly_module1 u2 A",-1,21,0);
 	vcdp->declBus  (c+359,"v myFFT_module radix4_batterfly_module1 u2 B",-1,21,0);
 	vcdp->declBus  (c+10,"v myFFT_module radix4_batterfly_module1 u2 Y",-1,21,0);
-	vcdp->declBus  (c+377,"v myFFT_module radix4_batterfly_module1 u2 AR",-1,10,0);
-	vcdp->declBus  (c+378,"v myFFT_module radix4_batterfly_module1 u2 AI",-1,10,0);
-	vcdp->declBus  (c+379,"v myFFT_module radix4_batterfly_module1 u2 BR",-1,10,0);
-	vcdp->declBus  (c+380,"v myFFT_module radix4_batterfly_module1 u2 BI",-1,10,0);
-	vcdp->declBus  (c+381,"v myFFT_module radix4_batterfly_module1 u2 YR",-1,10,0);
-	vcdp->declBus  (c+382,"v myFFT_module radix4_batterfly_module1 u2 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u3 clk",-1);
+	vcdp->declBus  (c+381,"v myFFT_module radix4_batterfly_module1 u2 AR",-1,10,0);
+	vcdp->declBus  (c+382,"v myFFT_module radix4_batterfly_module1 u2 AI",-1,10,0);
+	vcdp->declBus  (c+383,"v myFFT_module radix4_batterfly_module1 u2 BR",-1,10,0);
+	vcdp->declBus  (c+384,"v myFFT_module radix4_batterfly_module1 u2 BI",-1,10,0);
+	vcdp->declBus  (c+385,"v myFFT_module radix4_batterfly_module1 u2 YR",-1,10,0);
+	vcdp->declBus  (c+386,"v myFFT_module radix4_batterfly_module1 u2 YI",-1,10,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u3 clk",-1);
 	vcdp->declBus  (c+356,"v myFFT_module radix4_batterfly_module1 u3 A",-1,21,0);
 	vcdp->declBus  (c+358,"v myFFT_module radix4_batterfly_module1 u3 B",-1,21,0);
 	vcdp->declBus  (c+11,"v myFFT_module radix4_batterfly_module1 u3 Y",-1,21,0);
-	vcdp->declBus  (c+371,"v myFFT_module radix4_batterfly_module1 u3 AR",-1,10,0);
-	vcdp->declBus  (c+372,"v myFFT_module radix4_batterfly_module1 u3 AI",-1,10,0);
-	vcdp->declBus  (c+373,"v myFFT_module radix4_batterfly_module1 u3 BR",-1,10,0);
-	vcdp->declBus  (c+374,"v myFFT_module radix4_batterfly_module1 u3 BI",-1,10,0);
-	vcdp->declBus  (c+383,"v myFFT_module radix4_batterfly_module1 u3 YR",-1,10,0);
-	vcdp->declBus  (c+384,"v myFFT_module radix4_batterfly_module1 u3 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u4 clk",-1);
+	vcdp->declBus  (c+375,"v myFFT_module radix4_batterfly_module1 u3 AR",-1,10,0);
+	vcdp->declBus  (c+376,"v myFFT_module radix4_batterfly_module1 u3 AI",-1,10,0);
+	vcdp->declBus  (c+377,"v myFFT_module radix4_batterfly_module1 u3 BR",-1,10,0);
+	vcdp->declBus  (c+378,"v myFFT_module radix4_batterfly_module1 u3 BI",-1,10,0);
+	vcdp->declBus  (c+387,"v myFFT_module radix4_batterfly_module1 u3 YR",-1,10,0);
+	vcdp->declBus  (c+388,"v myFFT_module radix4_batterfly_module1 u3 YI",-1,10,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u4 clk",-1);
 	vcdp->declBus  (c+357,"v myFFT_module radix4_batterfly_module1 u4 A",-1,21,0);
 	vcdp->declBus  (c+359,"v myFFT_module radix4_batterfly_module1 u4 B",-1,21,0);
 	vcdp->declBus  (c+12,"v myFFT_module radix4_batterfly_module1 u4 Y",-1,21,0);
-	vcdp->declBus  (c+377,"v myFFT_module radix4_batterfly_module1 u4 AR",-1,10,0);
-	vcdp->declBus  (c+378,"v myFFT_module radix4_batterfly_module1 u4 AI",-1,10,0);
-	vcdp->declBus  (c+379,"v myFFT_module radix4_batterfly_module1 u4 BR",-1,10,0);
-	vcdp->declBus  (c+380,"v myFFT_module radix4_batterfly_module1 u4 BI",-1,10,0);
-	vcdp->declBus  (c+385,"v myFFT_module radix4_batterfly_module1 u4 YR",-1,10,0);
-	vcdp->declBus  (c+386,"v myFFT_module radix4_batterfly_module1 u4 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u5 clk",-1);
+	vcdp->declBus  (c+381,"v myFFT_module radix4_batterfly_module1 u4 AR",-1,10,0);
+	vcdp->declBus  (c+382,"v myFFT_module radix4_batterfly_module1 u4 AI",-1,10,0);
+	vcdp->declBus  (c+383,"v myFFT_module radix4_batterfly_module1 u4 BR",-1,10,0);
+	vcdp->declBus  (c+384,"v myFFT_module radix4_batterfly_module1 u4 BI",-1,10,0);
+	vcdp->declBus  (c+389,"v myFFT_module radix4_batterfly_module1 u4 YR",-1,10,0);
+	vcdp->declBus  (c+390,"v myFFT_module radix4_batterfly_module1 u4 YI",-1,10,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u5 clk",-1);
 	vcdp->declBus  (c+12,"v myFFT_module radix4_batterfly_module1 u5 A",-1,21,0);
 	vcdp->declBus  (c+13,"v myFFT_module radix4_batterfly_module1 u5 Y",-1,21,0);
 	vcdp->declBus  (c+23,"v myFFT_module radix4_batterfly_module1 u5 AR",-1,10,0);
 	vcdp->declBus  (c+24,"v myFFT_module radix4_batterfly_module1 u5 AI",-1,10,0);
 	vcdp->declBus  (c+25,"v myFFT_module radix4_batterfly_module1 u5 YR",-1,10,0);
 	vcdp->declBus  (c+23,"v myFFT_module radix4_batterfly_module1 u5 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u6 clk",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u6 clk",-1);
 	vcdp->declBus  (c+9,"v myFFT_module radix4_batterfly_module1 u6 A",-1,21,0);
 	vcdp->declBus  (c+10,"v myFFT_module radix4_batterfly_module1 u6 B",-1,21,0);
 	vcdp->declBus  (c+1,"v myFFT_module radix4_batterfly_module1 u6 Y",-1,21,0);
@@ -586,7 +590,7 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+29,"v myFFT_module radix4_batterfly_module1 u6 BI",-1,10,0);
 	vcdp->declBus  (c+30,"v myFFT_module radix4_batterfly_module1 u6 YR",-1,10,0);
 	vcdp->declBus  (c+31,"v myFFT_module radix4_batterfly_module1 u6 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u7 clk",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u7 clk",-1);
 	vcdp->declBus  (c+11,"v myFFT_module radix4_batterfly_module1 u7 A",-1,21,0);
 	vcdp->declBus  (c+13,"v myFFT_module radix4_batterfly_module1 u7 B",-1,21,0);
 	vcdp->declBus  (c+14,"v myFFT_module radix4_batterfly_module1 u7 Y",-1,21,0);
@@ -596,7 +600,7 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+35,"v myFFT_module radix4_batterfly_module1 u7 BI",-1,10,0);
 	vcdp->declBus  (c+36,"v myFFT_module radix4_batterfly_module1 u7 YR",-1,10,0);
 	vcdp->declBus  (c+37,"v myFFT_module radix4_batterfly_module1 u7 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u8 clk",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u8 clk",-1);
 	vcdp->declBus  (c+9,"v myFFT_module radix4_batterfly_module1 u8 A",-1,21,0);
 	vcdp->declBus  (c+10,"v myFFT_module radix4_batterfly_module1 u8 B",-1,21,0);
 	vcdp->declBus  (c+15,"v myFFT_module radix4_batterfly_module1 u8 Y",-1,21,0);
@@ -606,7 +610,7 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+29,"v myFFT_module radix4_batterfly_module1 u8 BI",-1,10,0);
 	vcdp->declBus  (c+38,"v myFFT_module radix4_batterfly_module1 u8 YR",-1,10,0);
 	vcdp->declBus  (c+39,"v myFFT_module radix4_batterfly_module1 u8 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u9 clk",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u9 clk",-1);
 	vcdp->declBus  (c+11,"v myFFT_module radix4_batterfly_module1 u9 A",-1,21,0);
 	vcdp->declBus  (c+13,"v myFFT_module radix4_batterfly_module1 u9 B",-1,21,0);
 	vcdp->declBus  (c+16,"v myFFT_module radix4_batterfly_module1 u9 Y",-1,21,0);
@@ -616,61 +620,61 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+35,"v myFFT_module radix4_batterfly_module1 u9 BI",-1,10,0);
 	vcdp->declBus  (c+40,"v myFFT_module radix4_batterfly_module1 u9 YR",-1,10,0);
 	vcdp->declBus  (c+41,"v myFFT_module radix4_batterfly_module1 u9 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u10 clk",-1);
-	vcdp->declBit  (c+465,"v myFFT_module radix4_batterfly_module1 u10 rst",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u10 clk",-1);
+	vcdp->declBit  (c+469,"v myFFT_module radix4_batterfly_module1 u10 rst",-1);
 	vcdp->declBus  (c+14,"v myFFT_module radix4_batterfly_module1 u10 A",-1,21,0);
 	vcdp->declBus  (c+2,"v myFFT_module radix4_batterfly_module1 u10 Y",-1,21,0);
 	vcdp->declBus  (c+17,"v myFFT_module radix4_batterfly_module1 u10 WR",-1,16,0);
 	vcdp->declBus  (c+18,"v myFFT_module radix4_batterfly_module1 u10 WI",-1,16,0);
 	vcdp->declBus  (c+42,"v myFFT_module radix4_batterfly_module1 u10 AR",-1,10,0);
 	vcdp->declBus  (c+43,"v myFFT_module radix4_batterfly_module1 u10 AI",-1,10,0);
-	vcdp->declBus  (c+387,"v myFFT_module radix4_batterfly_module1 u10 YR",-1,10,0);
-	vcdp->declBus  (c+388,"v myFFT_module radix4_batterfly_module1 u10 YI",-1,10,0);
-	vcdp->declQuad (c+389,"v myFFT_module radix4_batterfly_module1 u10 YR1",-1,44,0);
-	vcdp->declQuad (c+391,"v myFFT_module radix4_batterfly_module1 u10 YR2",-1,44,0);
-	vcdp->declQuad (c+393,"v myFFT_module radix4_batterfly_module1 u10 YI1",-1,44,0);
-	vcdp->declQuad (c+395,"v myFFT_module radix4_batterfly_module1 u10 YI2",-1,44,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u11 clk",-1);
-	vcdp->declBit  (c+465,"v myFFT_module radix4_batterfly_module1 u11 rst",-1);
+	vcdp->declBus  (c+391,"v myFFT_module radix4_batterfly_module1 u10 YR",-1,10,0);
+	vcdp->declBus  (c+392,"v myFFT_module radix4_batterfly_module1 u10 YI",-1,10,0);
+	vcdp->declQuad (c+393,"v myFFT_module radix4_batterfly_module1 u10 YR1",-1,44,0);
+	vcdp->declQuad (c+395,"v myFFT_module radix4_batterfly_module1 u10 YR2",-1,44,0);
+	vcdp->declQuad (c+397,"v myFFT_module radix4_batterfly_module1 u10 YI1",-1,44,0);
+	vcdp->declQuad (c+399,"v myFFT_module radix4_batterfly_module1 u10 YI2",-1,44,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u11 clk",-1);
+	vcdp->declBit  (c+469,"v myFFT_module radix4_batterfly_module1 u11 rst",-1);
 	vcdp->declBus  (c+15,"v myFFT_module radix4_batterfly_module1 u11 A",-1,21,0);
 	vcdp->declBus  (c+3,"v myFFT_module radix4_batterfly_module1 u11 Y",-1,21,0);
 	vcdp->declBus  (c+19,"v myFFT_module radix4_batterfly_module1 u11 WR",-1,16,0);
 	vcdp->declBus  (c+20,"v myFFT_module radix4_batterfly_module1 u11 WI",-1,16,0);
 	vcdp->declBus  (c+44,"v myFFT_module radix4_batterfly_module1 u11 AR",-1,10,0);
 	vcdp->declBus  (c+45,"v myFFT_module radix4_batterfly_module1 u11 AI",-1,10,0);
-	vcdp->declBus  (c+397,"v myFFT_module radix4_batterfly_module1 u11 YR",-1,10,0);
-	vcdp->declBus  (c+398,"v myFFT_module radix4_batterfly_module1 u11 YI",-1,10,0);
-	vcdp->declQuad (c+399,"v myFFT_module radix4_batterfly_module1 u11 YR1",-1,44,0);
-	vcdp->declQuad (c+401,"v myFFT_module radix4_batterfly_module1 u11 YR2",-1,44,0);
-	vcdp->declQuad (c+403,"v myFFT_module radix4_batterfly_module1 u11 YI1",-1,44,0);
-	vcdp->declQuad (c+405,"v myFFT_module radix4_batterfly_module1 u11 YI2",-1,44,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module1 u12 clk",-1);
-	vcdp->declBit  (c+465,"v myFFT_module radix4_batterfly_module1 u12 rst",-1);
+	vcdp->declBus  (c+401,"v myFFT_module radix4_batterfly_module1 u11 YR",-1,10,0);
+	vcdp->declBus  (c+402,"v myFFT_module radix4_batterfly_module1 u11 YI",-1,10,0);
+	vcdp->declQuad (c+403,"v myFFT_module radix4_batterfly_module1 u11 YR1",-1,44,0);
+	vcdp->declQuad (c+405,"v myFFT_module radix4_batterfly_module1 u11 YR2",-1,44,0);
+	vcdp->declQuad (c+407,"v myFFT_module radix4_batterfly_module1 u11 YI1",-1,44,0);
+	vcdp->declQuad (c+409,"v myFFT_module radix4_batterfly_module1 u11 YI2",-1,44,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module1 u12 clk",-1);
+	vcdp->declBit  (c+469,"v myFFT_module radix4_batterfly_module1 u12 rst",-1);
 	vcdp->declBus  (c+16,"v myFFT_module radix4_batterfly_module1 u12 A",-1,21,0);
 	vcdp->declBus  (c+4,"v myFFT_module radix4_batterfly_module1 u12 Y",-1,21,0);
 	vcdp->declBus  (c+21,"v myFFT_module radix4_batterfly_module1 u12 WR",-1,16,0);
 	vcdp->declBus  (c+22,"v myFFT_module radix4_batterfly_module1 u12 WI",-1,16,0);
 	vcdp->declBus  (c+46,"v myFFT_module radix4_batterfly_module1 u12 AR",-1,10,0);
 	vcdp->declBus  (c+47,"v myFFT_module radix4_batterfly_module1 u12 AI",-1,10,0);
-	vcdp->declBus  (c+407,"v myFFT_module radix4_batterfly_module1 u12 YR",-1,10,0);
-	vcdp->declBus  (c+408,"v myFFT_module radix4_batterfly_module1 u12 YI",-1,10,0);
-	vcdp->declQuad (c+409,"v myFFT_module radix4_batterfly_module1 u12 YR1",-1,44,0);
-	vcdp->declQuad (c+411,"v myFFT_module radix4_batterfly_module1 u12 YR2",-1,44,0);
-	vcdp->declQuad (c+413,"v myFFT_module radix4_batterfly_module1 u12 YI1",-1,44,0);
-	vcdp->declQuad (c+415,"v myFFT_module radix4_batterfly_module1 u12 YI2",-1,44,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 clk",-1);
-	vcdp->declBit  (c+465,"v myFFT_module radix4_batterfly_module2 rst",-1);
-	vcdp->declBus  (c+367,"v myFFT_module radix4_batterfly_module2 k",-1,6,0);
+	vcdp->declBus  (c+411,"v myFFT_module radix4_batterfly_module1 u12 YR",-1,10,0);
+	vcdp->declBus  (c+412,"v myFFT_module radix4_batterfly_module1 u12 YI",-1,10,0);
+	vcdp->declQuad (c+413,"v myFFT_module radix4_batterfly_module1 u12 YR1",-1,44,0);
+	vcdp->declQuad (c+415,"v myFFT_module radix4_batterfly_module1 u12 YR2",-1,44,0);
+	vcdp->declQuad (c+417,"v myFFT_module radix4_batterfly_module1 u12 YI1",-1,44,0);
+	vcdp->declQuad (c+419,"v myFFT_module radix4_batterfly_module1 u12 YI2",-1,44,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 clk",-1);
+	vcdp->declBit  (c+469,"v myFFT_module radix4_batterfly_module2 rst",-1);
+	vcdp->declBus  (c+371,"v myFFT_module radix4_batterfly_module2 k",-1,6,0);
 	vcdp->declBus  (c+360,"v myFFT_module radix4_batterfly_module2 A0",-1,21,0);
 	vcdp->declBus  (c+361,"v myFFT_module radix4_batterfly_module2 A1",-1,21,0);
 	vcdp->declBus  (c+362,"v myFFT_module radix4_batterfly_module2 A2",-1,21,0);
 	vcdp->declBus  (c+363,"v myFFT_module radix4_batterfly_module2 A3",-1,21,0);
-	vcdp->declBit  (c+365,"v myFFT_module radix4_batterfly_module2 valid_i",-1);
+	vcdp->declBit  (c+368,"v myFFT_module radix4_batterfly_module2 valid_i",-1);
 	vcdp->declBus  (c+5,"v myFFT_module radix4_batterfly_module2 Y0",-1,21,0);
 	vcdp->declBus  (c+6,"v myFFT_module radix4_batterfly_module2 Y1",-1,21,0);
 	vcdp->declBus  (c+7,"v myFFT_module radix4_batterfly_module2 Y2",-1,21,0);
 	vcdp->declBus  (c+8,"v myFFT_module radix4_batterfly_module2 Y3",-1,21,0);
-	vcdp->declBit  (c+369,"v myFFT_module radix4_batterfly_module2 valid_o",-1);
+	vcdp->declBit  (c+373,"v myFFT_module radix4_batterfly_module2 valid_o",-1);
 	vcdp->declBus  (c+48,"v myFFT_module radix4_batterfly_module2 B0",-1,21,0);
 	vcdp->declBus  (c+49,"v myFFT_module radix4_batterfly_module2 B1",-1,21,0);
 	vcdp->declBus  (c+50,"v myFFT_module radix4_batterfly_module2 B2",-1,21,0);
@@ -686,55 +690,55 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+59,"v myFFT_module radix4_batterfly_module2 W2KI",-1,16,0);
 	vcdp->declBus  (c+60,"v myFFT_module radix4_batterfly_module2 W3KR",-1,16,0);
 	vcdp->declBus  (c+61,"v myFFT_module radix4_batterfly_module2 W3KI",-1,16,0);
-	vcdp->declBus  (c+417,"v myFFT_module radix4_batterfly_module2 cnt",-1,3,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u1 clk",-1);
+	vcdp->declBus  (c+421,"v myFFT_module radix4_batterfly_module2 cnt",-1,3,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u1 clk",-1);
 	vcdp->declBus  (c+360,"v myFFT_module radix4_batterfly_module2 u1 A",-1,21,0);
 	vcdp->declBus  (c+362,"v myFFT_module radix4_batterfly_module2 u1 B",-1,21,0);
 	vcdp->declBus  (c+48,"v myFFT_module radix4_batterfly_module2 u1 Y",-1,21,0);
-	vcdp->declBus  (c+418,"v myFFT_module radix4_batterfly_module2 u1 AR",-1,10,0);
-	vcdp->declBus  (c+419,"v myFFT_module radix4_batterfly_module2 u1 AI",-1,10,0);
-	vcdp->declBus  (c+420,"v myFFT_module radix4_batterfly_module2 u1 BR",-1,10,0);
-	vcdp->declBus  (c+421,"v myFFT_module radix4_batterfly_module2 u1 BI",-1,10,0);
-	vcdp->declBus  (c+422,"v myFFT_module radix4_batterfly_module2 u1 YR",-1,10,0);
-	vcdp->declBus  (c+423,"v myFFT_module radix4_batterfly_module2 u1 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u2 clk",-1);
+	vcdp->declBus  (c+422,"v myFFT_module radix4_batterfly_module2 u1 AR",-1,10,0);
+	vcdp->declBus  (c+423,"v myFFT_module radix4_batterfly_module2 u1 AI",-1,10,0);
+	vcdp->declBus  (c+424,"v myFFT_module radix4_batterfly_module2 u1 BR",-1,10,0);
+	vcdp->declBus  (c+425,"v myFFT_module radix4_batterfly_module2 u1 BI",-1,10,0);
+	vcdp->declBus  (c+426,"v myFFT_module radix4_batterfly_module2 u1 YR",-1,10,0);
+	vcdp->declBus  (c+427,"v myFFT_module radix4_batterfly_module2 u1 YI",-1,10,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u2 clk",-1);
 	vcdp->declBus  (c+361,"v myFFT_module radix4_batterfly_module2 u2 A",-1,21,0);
 	vcdp->declBus  (c+363,"v myFFT_module radix4_batterfly_module2 u2 B",-1,21,0);
 	vcdp->declBus  (c+49,"v myFFT_module radix4_batterfly_module2 u2 Y",-1,21,0);
-	vcdp->declBus  (c+424,"v myFFT_module radix4_batterfly_module2 u2 AR",-1,10,0);
-	vcdp->declBus  (c+425,"v myFFT_module radix4_batterfly_module2 u2 AI",-1,10,0);
-	vcdp->declBus  (c+426,"v myFFT_module radix4_batterfly_module2 u2 BR",-1,10,0);
-	vcdp->declBus  (c+427,"v myFFT_module radix4_batterfly_module2 u2 BI",-1,10,0);
-	vcdp->declBus  (c+428,"v myFFT_module radix4_batterfly_module2 u2 YR",-1,10,0);
-	vcdp->declBus  (c+429,"v myFFT_module radix4_batterfly_module2 u2 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u3 clk",-1);
+	vcdp->declBus  (c+428,"v myFFT_module radix4_batterfly_module2 u2 AR",-1,10,0);
+	vcdp->declBus  (c+429,"v myFFT_module radix4_batterfly_module2 u2 AI",-1,10,0);
+	vcdp->declBus  (c+430,"v myFFT_module radix4_batterfly_module2 u2 BR",-1,10,0);
+	vcdp->declBus  (c+431,"v myFFT_module radix4_batterfly_module2 u2 BI",-1,10,0);
+	vcdp->declBus  (c+432,"v myFFT_module radix4_batterfly_module2 u2 YR",-1,10,0);
+	vcdp->declBus  (c+433,"v myFFT_module radix4_batterfly_module2 u2 YI",-1,10,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u3 clk",-1);
 	vcdp->declBus  (c+360,"v myFFT_module radix4_batterfly_module2 u3 A",-1,21,0);
 	vcdp->declBus  (c+362,"v myFFT_module radix4_batterfly_module2 u3 B",-1,21,0);
 	vcdp->declBus  (c+50,"v myFFT_module radix4_batterfly_module2 u3 Y",-1,21,0);
-	vcdp->declBus  (c+418,"v myFFT_module radix4_batterfly_module2 u3 AR",-1,10,0);
-	vcdp->declBus  (c+419,"v myFFT_module radix4_batterfly_module2 u3 AI",-1,10,0);
-	vcdp->declBus  (c+420,"v myFFT_module radix4_batterfly_module2 u3 BR",-1,10,0);
-	vcdp->declBus  (c+421,"v myFFT_module radix4_batterfly_module2 u3 BI",-1,10,0);
-	vcdp->declBus  (c+430,"v myFFT_module radix4_batterfly_module2 u3 YR",-1,10,0);
-	vcdp->declBus  (c+431,"v myFFT_module radix4_batterfly_module2 u3 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u4 clk",-1);
+	vcdp->declBus  (c+422,"v myFFT_module radix4_batterfly_module2 u3 AR",-1,10,0);
+	vcdp->declBus  (c+423,"v myFFT_module radix4_batterfly_module2 u3 AI",-1,10,0);
+	vcdp->declBus  (c+424,"v myFFT_module radix4_batterfly_module2 u3 BR",-1,10,0);
+	vcdp->declBus  (c+425,"v myFFT_module radix4_batterfly_module2 u3 BI",-1,10,0);
+	vcdp->declBus  (c+434,"v myFFT_module radix4_batterfly_module2 u3 YR",-1,10,0);
+	vcdp->declBus  (c+435,"v myFFT_module radix4_batterfly_module2 u3 YI",-1,10,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u4 clk",-1);
 	vcdp->declBus  (c+361,"v myFFT_module radix4_batterfly_module2 u4 A",-1,21,0);
 	vcdp->declBus  (c+363,"v myFFT_module radix4_batterfly_module2 u4 B",-1,21,0);
 	vcdp->declBus  (c+51,"v myFFT_module radix4_batterfly_module2 u4 Y",-1,21,0);
-	vcdp->declBus  (c+424,"v myFFT_module radix4_batterfly_module2 u4 AR",-1,10,0);
-	vcdp->declBus  (c+425,"v myFFT_module radix4_batterfly_module2 u4 AI",-1,10,0);
-	vcdp->declBus  (c+426,"v myFFT_module radix4_batterfly_module2 u4 BR",-1,10,0);
-	vcdp->declBus  (c+427,"v myFFT_module radix4_batterfly_module2 u4 BI",-1,10,0);
-	vcdp->declBus  (c+432,"v myFFT_module radix4_batterfly_module2 u4 YR",-1,10,0);
-	vcdp->declBus  (c+433,"v myFFT_module radix4_batterfly_module2 u4 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u5 clk",-1);
+	vcdp->declBus  (c+428,"v myFFT_module radix4_batterfly_module2 u4 AR",-1,10,0);
+	vcdp->declBus  (c+429,"v myFFT_module radix4_batterfly_module2 u4 AI",-1,10,0);
+	vcdp->declBus  (c+430,"v myFFT_module radix4_batterfly_module2 u4 BR",-1,10,0);
+	vcdp->declBus  (c+431,"v myFFT_module radix4_batterfly_module2 u4 BI",-1,10,0);
+	vcdp->declBus  (c+436,"v myFFT_module radix4_batterfly_module2 u4 YR",-1,10,0);
+	vcdp->declBus  (c+437,"v myFFT_module radix4_batterfly_module2 u4 YI",-1,10,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u5 clk",-1);
 	vcdp->declBus  (c+51,"v myFFT_module radix4_batterfly_module2 u5 A",-1,21,0);
 	vcdp->declBus  (c+52,"v myFFT_module radix4_batterfly_module2 u5 Y",-1,21,0);
 	vcdp->declBus  (c+62,"v myFFT_module radix4_batterfly_module2 u5 AR",-1,10,0);
 	vcdp->declBus  (c+63,"v myFFT_module radix4_batterfly_module2 u5 AI",-1,10,0);
 	vcdp->declBus  (c+64,"v myFFT_module radix4_batterfly_module2 u5 YR",-1,10,0);
 	vcdp->declBus  (c+62,"v myFFT_module radix4_batterfly_module2 u5 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u6 clk",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u6 clk",-1);
 	vcdp->declBus  (c+48,"v myFFT_module radix4_batterfly_module2 u6 A",-1,21,0);
 	vcdp->declBus  (c+49,"v myFFT_module radix4_batterfly_module2 u6 B",-1,21,0);
 	vcdp->declBus  (c+5,"v myFFT_module radix4_batterfly_module2 u6 Y",-1,21,0);
@@ -744,7 +748,7 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+68,"v myFFT_module radix4_batterfly_module2 u6 BI",-1,10,0);
 	vcdp->declBus  (c+69,"v myFFT_module radix4_batterfly_module2 u6 YR",-1,10,0);
 	vcdp->declBus  (c+70,"v myFFT_module radix4_batterfly_module2 u6 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u7 clk",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u7 clk",-1);
 	vcdp->declBus  (c+50,"v myFFT_module radix4_batterfly_module2 u7 A",-1,21,0);
 	vcdp->declBus  (c+52,"v myFFT_module radix4_batterfly_module2 u7 B",-1,21,0);
 	vcdp->declBus  (c+53,"v myFFT_module radix4_batterfly_module2 u7 Y",-1,21,0);
@@ -754,7 +758,7 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+74,"v myFFT_module radix4_batterfly_module2 u7 BI",-1,10,0);
 	vcdp->declBus  (c+75,"v myFFT_module radix4_batterfly_module2 u7 YR",-1,10,0);
 	vcdp->declBus  (c+76,"v myFFT_module radix4_batterfly_module2 u7 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u8 clk",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u8 clk",-1);
 	vcdp->declBus  (c+48,"v myFFT_module radix4_batterfly_module2 u8 A",-1,21,0);
 	vcdp->declBus  (c+49,"v myFFT_module radix4_batterfly_module2 u8 B",-1,21,0);
 	vcdp->declBus  (c+54,"v myFFT_module radix4_batterfly_module2 u8 Y",-1,21,0);
@@ -764,7 +768,7 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+68,"v myFFT_module radix4_batterfly_module2 u8 BI",-1,10,0);
 	vcdp->declBus  (c+77,"v myFFT_module radix4_batterfly_module2 u8 YR",-1,10,0);
 	vcdp->declBus  (c+78,"v myFFT_module radix4_batterfly_module2 u8 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u9 clk",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u9 clk",-1);
 	vcdp->declBus  (c+50,"v myFFT_module radix4_batterfly_module2 u9 A",-1,21,0);
 	vcdp->declBus  (c+52,"v myFFT_module radix4_batterfly_module2 u9 B",-1,21,0);
 	vcdp->declBus  (c+55,"v myFFT_module radix4_batterfly_module2 u9 Y",-1,21,0);
@@ -774,48 +778,48 @@ void Vfft64::traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->declBus  (c+74,"v myFFT_module radix4_batterfly_module2 u9 BI",-1,10,0);
 	vcdp->declBus  (c+79,"v myFFT_module radix4_batterfly_module2 u9 YR",-1,10,0);
 	vcdp->declBus  (c+80,"v myFFT_module radix4_batterfly_module2 u9 YI",-1,10,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u10 clk",-1);
-	vcdp->declBit  (c+465,"v myFFT_module radix4_batterfly_module2 u10 rst",-1);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u10 clk",-1);
+	vcdp->declBit  (c+469,"v myFFT_module radix4_batterfly_module2 u10 rst",-1);
 	vcdp->declBus  (c+53,"v myFFT_module radix4_batterfly_module2 u10 A",-1,21,0);
 	vcdp->declBus  (c+6,"v myFFT_module radix4_batterfly_module2 u10 Y",-1,21,0);
 	vcdp->declBus  (c+56,"v myFFT_module radix4_batterfly_module2 u10 WR",-1,16,0);
 	vcdp->declBus  (c+57,"v myFFT_module radix4_batterfly_module2 u10 WI",-1,16,0);
 	vcdp->declBus  (c+81,"v myFFT_module radix4_batterfly_module2 u10 AR",-1,10,0);
 	vcdp->declBus  (c+82,"v myFFT_module radix4_batterfly_module2 u10 AI",-1,10,0);
-	vcdp->declBus  (c+434,"v myFFT_module radix4_batterfly_module2 u10 YR",-1,10,0);
-	vcdp->declBus  (c+435,"v myFFT_module radix4_batterfly_module2 u10 YI",-1,10,0);
-	vcdp->declQuad (c+436,"v myFFT_module radix4_batterfly_module2 u10 YR1",-1,44,0);
-	vcdp->declQuad (c+438,"v myFFT_module radix4_batterfly_module2 u10 YR2",-1,44,0);
-	vcdp->declQuad (c+440,"v myFFT_module radix4_batterfly_module2 u10 YI1",-1,44,0);
-	vcdp->declQuad (c+442,"v myFFT_module radix4_batterfly_module2 u10 YI2",-1,44,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u11 clk",-1);
-	vcdp->declBit  (c+465,"v myFFT_module radix4_batterfly_module2 u11 rst",-1);
+	vcdp->declBus  (c+438,"v myFFT_module radix4_batterfly_module2 u10 YR",-1,10,0);
+	vcdp->declBus  (c+439,"v myFFT_module radix4_batterfly_module2 u10 YI",-1,10,0);
+	vcdp->declQuad (c+440,"v myFFT_module radix4_batterfly_module2 u10 YR1",-1,44,0);
+	vcdp->declQuad (c+442,"v myFFT_module radix4_batterfly_module2 u10 YR2",-1,44,0);
+	vcdp->declQuad (c+444,"v myFFT_module radix4_batterfly_module2 u10 YI1",-1,44,0);
+	vcdp->declQuad (c+446,"v myFFT_module radix4_batterfly_module2 u10 YI2",-1,44,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u11 clk",-1);
+	vcdp->declBit  (c+469,"v myFFT_module radix4_batterfly_module2 u11 rst",-1);
 	vcdp->declBus  (c+54,"v myFFT_module radix4_batterfly_module2 u11 A",-1,21,0);
 	vcdp->declBus  (c+7,"v myFFT_module radix4_batterfly_module2 u11 Y",-1,21,0);
 	vcdp->declBus  (c+58,"v myFFT_module radix4_batterfly_module2 u11 WR",-1,16,0);
 	vcdp->declBus  (c+59,"v myFFT_module radix4_batterfly_module2 u11 WI",-1,16,0);
 	vcdp->declBus  (c+83,"v myFFT_module radix4_batterfly_module2 u11 AR",-1,10,0);
 	vcdp->declBus  (c+84,"v myFFT_module radix4_batterfly_module2 u11 AI",-1,10,0);
-	vcdp->declBus  (c+444,"v myFFT_module radix4_batterfly_module2 u11 YR",-1,10,0);
-	vcdp->declBus  (c+445,"v myFFT_module radix4_batterfly_module2 u11 YI",-1,10,0);
-	vcdp->declQuad (c+446,"v myFFT_module radix4_batterfly_module2 u11 YR1",-1,44,0);
-	vcdp->declQuad (c+448,"v myFFT_module radix4_batterfly_module2 u11 YR2",-1,44,0);
-	vcdp->declQuad (c+450,"v myFFT_module radix4_batterfly_module2 u11 YI1",-1,44,0);
-	vcdp->declQuad (c+452,"v myFFT_module radix4_batterfly_module2 u11 YI2",-1,44,0);
-	vcdp->declBit  (c+464,"v myFFT_module radix4_batterfly_module2 u12 clk",-1);
-	vcdp->declBit  (c+465,"v myFFT_module radix4_batterfly_module2 u12 rst",-1);
+	vcdp->declBus  (c+448,"v myFFT_module radix4_batterfly_module2 u11 YR",-1,10,0);
+	vcdp->declBus  (c+449,"v myFFT_module radix4_batterfly_module2 u11 YI",-1,10,0);
+	vcdp->declQuad (c+450,"v myFFT_module radix4_batterfly_module2 u11 YR1",-1,44,0);
+	vcdp->declQuad (c+452,"v myFFT_module radix4_batterfly_module2 u11 YR2",-1,44,0);
+	vcdp->declQuad (c+454,"v myFFT_module radix4_batterfly_module2 u11 YI1",-1,44,0);
+	vcdp->declQuad (c+456,"v myFFT_module radix4_batterfly_module2 u11 YI2",-1,44,0);
+	vcdp->declBit  (c+468,"v myFFT_module radix4_batterfly_module2 u12 clk",-1);
+	vcdp->declBit  (c+469,"v myFFT_module radix4_batterfly_module2 u12 rst",-1);
 	vcdp->declBus  (c+55,"v myFFT_module radix4_batterfly_module2 u12 A",-1,21,0);
 	vcdp->declBus  (c+8,"v myFFT_module radix4_batterfly_module2 u12 Y",-1,21,0);
 	vcdp->declBus  (c+60,"v myFFT_module radix4_batterfly_module2 u12 WR",-1,16,0);
 	vcdp->declBus  (c+61,"v myFFT_module radix4_batterfly_module2 u12 WI",-1,16,0);
 	vcdp->declBus  (c+85,"v myFFT_module radix4_batterfly_module2 u12 AR",-1,10,0);
 	vcdp->declBus  (c+86,"v myFFT_module radix4_batterfly_module2 u12 AI",-1,10,0);
-	vcdp->declBus  (c+454,"v myFFT_module radix4_batterfly_module2 u12 YR",-1,10,0);
-	vcdp->declBus  (c+455,"v myFFT_module radix4_batterfly_module2 u12 YI",-1,10,0);
-	vcdp->declQuad (c+456,"v myFFT_module radix4_batterfly_module2 u12 YR1",-1,44,0);
-	vcdp->declQuad (c+458,"v myFFT_module radix4_batterfly_module2 u12 YR2",-1,44,0);
-	vcdp->declQuad (c+460,"v myFFT_module radix4_batterfly_module2 u12 YI1",-1,44,0);
-	vcdp->declQuad (c+462,"v myFFT_module radix4_batterfly_module2 u12 YI2",-1,44,0);
+	vcdp->declBus  (c+458,"v myFFT_module radix4_batterfly_module2 u12 YR",-1,10,0);
+	vcdp->declBus  (c+459,"v myFFT_module radix4_batterfly_module2 u12 YI",-1,10,0);
+	vcdp->declQuad (c+460,"v myFFT_module radix4_batterfly_module2 u12 YR1",-1,44,0);
+	vcdp->declQuad (c+462,"v myFFT_module radix4_batterfly_module2 u12 YR2",-1,44,0);
+	vcdp->declQuad (c+464,"v myFFT_module radix4_batterfly_module2 u12 YI1",-1,44,0);
+	vcdp->declQuad (c+466,"v myFFT_module radix4_batterfly_module2 u12 YI2",-1,44,0);
     }
 }
 
@@ -1241,138 +1245,142 @@ void Vfft64::traceFullThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vc
 	vcdp->fullBit  (c+354,(vlTOPp->v__DOT__myFFT_module__DOT__stage_4_start_flg));
 	vcdp->fullBit  (c+355,(vlTOPp->v__DOT__myFFT_module__DOT__stage_5_start_flg));
 	vcdp->fullBus  (c+364,(vlTOPp->v__DOT__myFFT_module__DOT__cnt),7);
-	vcdp->fullBit  (c+366,(vlTOPp->v__DOT__myFFT_module__DOT__calculating_batterfly_flg));
-	vcdp->fullBit  (c+368,(vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly));
-	vcdp->fullBit  (c+369,(vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly_3));
-	vcdp->fullBus  (c+370,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt),4);
-	vcdp->fullBus  (c+371,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+	vcdp->fullBus  (c+365,(vlTOPp->v__DOT__myFFT_module__DOT__cnt3),7);
+	vcdp->fullBit  (c+366,(vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly));
+	vcdp->fullBit  (c+367,(vlTOPp->v__DOT__myFFT_module__DOT__calculating_batterfly_flg));
+	vcdp->fullBit  (c+368,(vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly_3));
+	vcdp->fullBit  (c+369,(vlTOPp->v__DOT__myFFT_module__DOT__calculating_batterfly_flg_3));
+	vcdp->fullBus  (c+370,(vlTOPp->v__DOT__myFFT_module__DOT__k1),7);
+	vcdp->fullBus  (c+371,(vlTOPp->v__DOT__myFFT_module__DOT__k3),7);
+	vcdp->fullBit  (c+372,(vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly));
+	vcdp->fullBit  (c+373,(vlTOPp->v__DOT__myFFT_module__DOT__fin_batterfly_3));
+	vcdp->fullBus  (c+374,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt),4);
+	vcdp->fullBus  (c+375,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 					 >> 0xb))),11);
-	vcdp->fullBus  (c+372,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN0)),11);
-	vcdp->fullBus  (c+373,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+	vcdp->fullBus  (c+376,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN0)),11);
+	vcdp->fullBus  (c+377,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
 					 >> 0xb))),11);
-	vcdp->fullBus  (c+374,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN2)),11);
-	vcdp->fullBus  (c+375,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+	vcdp->fullBus  (c+378,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN2)),11);
+	vcdp->fullBus  (c+379,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 					  >> 0xb) + 
 					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
 					  >> 0xb)))),11);
-	vcdp->fullBus  (c+376,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+	vcdp->fullBus  (c+380,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
 					 + vlTOPp->v__DOT__myFFT_module__DOT__AIN2))),11);
-	vcdp->fullBus  (c+377,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+	vcdp->fullBus  (c+381,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 					 >> 0xb))),11);
-	vcdp->fullBus  (c+378,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN1)),11);
-	vcdp->fullBus  (c+379,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+	vcdp->fullBus  (c+382,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN1)),11);
+	vcdp->fullBus  (c+383,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
 					 >> 0xb))),11);
-	vcdp->fullBus  (c+380,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN3)),11);
-	vcdp->fullBus  (c+381,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-					  >> 0xb) + 
-					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
-					  >> 0xb)))),11);
-	vcdp->fullBus  (c+382,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-					 + vlTOPp->v__DOT__myFFT_module__DOT__AIN3))),11);
-	vcdp->fullBus  (c+356,(vlTOPp->v__DOT__myFFT_module__DOT__AIN0),22);
-	vcdp->fullBus  (c+358,(vlTOPp->v__DOT__myFFT_module__DOT__AIN2),22);
-	vcdp->fullBus  (c+383,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
-					  >> 0xb) - 
-					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
-					  >> 0xb)))),11);
-	vcdp->fullBus  (c+384,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
-					 - vlTOPp->v__DOT__myFFT_module__DOT__AIN2))),11);
-	vcdp->fullBus  (c+357,(vlTOPp->v__DOT__myFFT_module__DOT__AIN1),22);
-	vcdp->fullBus  (c+359,(vlTOPp->v__DOT__myFFT_module__DOT__AIN3),22);
+	vcdp->fullBus  (c+384,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN3)),11);
 	vcdp->fullBus  (c+385,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
-					  >> 0xb) - 
+					  >> 0xb) + 
 					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
 					  >> 0xb)))),11);
 	vcdp->fullBus  (c+386,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					 + vlTOPp->v__DOT__myFFT_module__DOT__AIN3))),11);
+	vcdp->fullBus  (c+356,(vlTOPp->v__DOT__myFFT_module__DOT__AIN0),22);
+	vcdp->fullBus  (c+358,(vlTOPp->v__DOT__myFFT_module__DOT__AIN2),22);
+	vcdp->fullBus  (c+387,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					  >> 0xb) - 
+					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN2 
+					  >> 0xb)))),11);
+	vcdp->fullBus  (c+388,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN0 
+					 - vlTOPp->v__DOT__myFFT_module__DOT__AIN2))),11);
+	vcdp->fullBus  (c+357,(vlTOPp->v__DOT__myFFT_module__DOT__AIN1),22);
+	vcdp->fullBus  (c+359,(vlTOPp->v__DOT__myFFT_module__DOT__AIN3),22);
+	vcdp->fullBus  (c+389,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
+					  >> 0xb) - 
+					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN3 
+					  >> 0xb)))),11);
+	vcdp->fullBus  (c+390,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN1 
 					 - vlTOPp->v__DOT__myFFT_module__DOT__AIN3))),11);
-	vcdp->fullBus  (c+387,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR),11);
-	vcdp->fullBus  (c+388,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI),11);
-	vcdp->fullQuad (c+389,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1),45);
-	vcdp->fullQuad (c+391,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2),45);
-	vcdp->fullQuad (c+393,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1),45);
-	vcdp->fullQuad (c+395,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2),45);
-	vcdp->fullBus  (c+397,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR),11);
-	vcdp->fullBus  (c+398,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI),11);
-	vcdp->fullQuad (c+399,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1),45);
-	vcdp->fullQuad (c+401,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2),45);
-	vcdp->fullQuad (c+403,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1),45);
-	vcdp->fullQuad (c+405,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2),45);
-	vcdp->fullBus  (c+407,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR),11);
-	vcdp->fullBus  (c+408,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI),11);
-	vcdp->fullQuad (c+409,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1),45);
-	vcdp->fullQuad (c+411,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2),45);
-	vcdp->fullQuad (c+413,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1),45);
-	vcdp->fullQuad (c+415,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2),45);
-	vcdp->fullBus  (c+367,(vlTOPp->v__DOT__myFFT_module__DOT__k1),7);
-	vcdp->fullBit  (c+365,(vlTOPp->v__DOT__myFFT_module__DOT__start_batterfly));
-	vcdp->fullBus  (c+417,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt),4);
-	vcdp->fullBus  (c+418,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+	vcdp->fullBus  (c+391,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR),11);
+	vcdp->fullBus  (c+392,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI),11);
+	vcdp->fullQuad (c+393,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1),45);
+	vcdp->fullQuad (c+395,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2),45);
+	vcdp->fullQuad (c+397,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1),45);
+	vcdp->fullQuad (c+399,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI2),45);
+	vcdp->fullBus  (c+401,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR),11);
+	vcdp->fullBus  (c+402,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI),11);
+	vcdp->fullQuad (c+403,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR1),45);
+	vcdp->fullQuad (c+405,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR2),45);
+	vcdp->fullQuad (c+407,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI1),45);
+	vcdp->fullQuad (c+409,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YI2),45);
+	vcdp->fullBus  (c+411,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR),11);
+	vcdp->fullBus  (c+412,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI),11);
+	vcdp->fullQuad (c+413,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR1),45);
+	vcdp->fullQuad (c+415,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YR2),45);
+	vcdp->fullQuad (c+417,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI1),45);
+	vcdp->fullQuad (c+419,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u12__DOT__YI2),45);
+	vcdp->fullBus  (c+421,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt),4);
+	vcdp->fullBus  (c+422,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 					 >> 0xb))),11);
-	vcdp->fullBus  (c+419,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN8)),11);
-	vcdp->fullBus  (c+420,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
+	vcdp->fullBus  (c+423,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN8)),11);
+	vcdp->fullBus  (c+424,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 					 >> 0xb))),11);
-	vcdp->fullBus  (c+421,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN10)),11);
-	vcdp->fullBus  (c+422,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+	vcdp->fullBus  (c+425,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN10)),11);
+	vcdp->fullBus  (c+426,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 					  >> 0xb) + 
 					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
 					  >> 0xb)))),11);
-	vcdp->fullBus  (c+423,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+	vcdp->fullBus  (c+427,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
 					 + vlTOPp->v__DOT__myFFT_module__DOT__AIN10))),11);
-	vcdp->fullBus  (c+424,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+	vcdp->fullBus  (c+428,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 					 >> 0xb))),11);
-	vcdp->fullBus  (c+425,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN9)),11);
-	vcdp->fullBus  (c+426,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
+	vcdp->fullBus  (c+429,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN9)),11);
+	vcdp->fullBus  (c+430,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 					 >> 0xb))),11);
-	vcdp->fullBus  (c+427,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN11)),11);
-	vcdp->fullBus  (c+428,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
-					  >> 0xb) + 
-					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
-					  >> 0xb)))),11);
-	vcdp->fullBus  (c+429,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
-					 + vlTOPp->v__DOT__myFFT_module__DOT__AIN11))),11);
-	vcdp->fullBus  (c+360,(vlTOPp->v__DOT__myFFT_module__DOT__AIN8),22);
-	vcdp->fullBus  (c+362,(vlTOPp->v__DOT__myFFT_module__DOT__AIN10),22);
-	vcdp->fullBus  (c+430,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
-					  >> 0xb) - 
-					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
-					  >> 0xb)))),11);
-	vcdp->fullBus  (c+431,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
-					 - vlTOPp->v__DOT__myFFT_module__DOT__AIN10))),11);
-	vcdp->fullBus  (c+361,(vlTOPp->v__DOT__myFFT_module__DOT__AIN9),22);
-	vcdp->fullBus  (c+363,(vlTOPp->v__DOT__myFFT_module__DOT__AIN11),22);
+	vcdp->fullBus  (c+431,((0x7ff & vlTOPp->v__DOT__myFFT_module__DOT__AIN11)),11);
 	vcdp->fullBus  (c+432,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
-					  >> 0xb) - 
+					  >> 0xb) + 
 					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
 					  >> 0xb)))),11);
 	vcdp->fullBus  (c+433,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+					 + vlTOPp->v__DOT__myFFT_module__DOT__AIN11))),11);
+	vcdp->fullBus  (c+360,(vlTOPp->v__DOT__myFFT_module__DOT__AIN8),22);
+	vcdp->fullBus  (c+362,(vlTOPp->v__DOT__myFFT_module__DOT__AIN10),22);
+	vcdp->fullBus  (c+434,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+					  >> 0xb) - 
+					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN10 
+					  >> 0xb)))),11);
+	vcdp->fullBus  (c+435,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN8 
+					 - vlTOPp->v__DOT__myFFT_module__DOT__AIN10))),11);
+	vcdp->fullBus  (c+361,(vlTOPp->v__DOT__myFFT_module__DOT__AIN9),22);
+	vcdp->fullBus  (c+363,(vlTOPp->v__DOT__myFFT_module__DOT__AIN11),22);
+	vcdp->fullBus  (c+436,((0x7ff & ((vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
+					  >> 0xb) - 
+					 (vlTOPp->v__DOT__myFFT_module__DOT__AIN11 
+					  >> 0xb)))),11);
+	vcdp->fullBus  (c+437,((0x7ff & (vlTOPp->v__DOT__myFFT_module__DOT__AIN9 
 					 - vlTOPp->v__DOT__myFFT_module__DOT__AIN11))),11);
-	vcdp->fullBus  (c+434,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR),11);
-	vcdp->fullBus  (c+435,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI),11);
-	vcdp->fullQuad (c+436,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1),45);
-	vcdp->fullQuad (c+438,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2),45);
-	vcdp->fullQuad (c+440,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1),45);
-	vcdp->fullQuad (c+442,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2),45);
-	vcdp->fullBus  (c+444,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR),11);
-	vcdp->fullBus  (c+445,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI),11);
-	vcdp->fullQuad (c+446,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1),45);
-	vcdp->fullQuad (c+448,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2),45);
-	vcdp->fullQuad (c+450,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1),45);
-	vcdp->fullQuad (c+452,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2),45);
-	vcdp->fullBus  (c+454,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR),11);
-	vcdp->fullBus  (c+455,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI),11);
-	vcdp->fullQuad (c+456,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1),45);
-	vcdp->fullQuad (c+458,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2),45);
-	vcdp->fullQuad (c+460,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1),45);
-	vcdp->fullQuad (c+462,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2),45);
-	vcdp->fullBit  (c+466,(vlTOPp->valid_a));
-	vcdp->fullBus  (c+467,(vlTOPp->ar),11);
-	vcdp->fullBus  (c+468,(vlTOPp->ai),11);
-	vcdp->fullBit  (c+469,(vlTOPp->valid_o));
-	vcdp->fullBit  (c+470,(vlTOPp->rd_en));
-	vcdp->fullBit  (c+471,(vlTOPp->full));
-	vcdp->fullBus  (c+472,(vlTOPp->xr),11);
-	vcdp->fullBus  (c+473,(vlTOPp->xi),11);
-	vcdp->fullBit  (c+464,(vlTOPp->CLK));
-	vcdp->fullBit  (c+465,(vlTOPp->RST));
+	vcdp->fullBus  (c+438,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR),11);
+	vcdp->fullBus  (c+439,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI),11);
+	vcdp->fullQuad (c+440,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR1),45);
+	vcdp->fullQuad (c+442,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YR2),45);
+	vcdp->fullQuad (c+444,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI1),45);
+	vcdp->fullQuad (c+446,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u10__DOT__YI2),45);
+	vcdp->fullBus  (c+448,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR),11);
+	vcdp->fullBus  (c+449,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI),11);
+	vcdp->fullQuad (c+450,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR1),45);
+	vcdp->fullQuad (c+452,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YR2),45);
+	vcdp->fullQuad (c+454,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI1),45);
+	vcdp->fullQuad (c+456,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI2),45);
+	vcdp->fullBus  (c+458,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR),11);
+	vcdp->fullBus  (c+459,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI),11);
+	vcdp->fullQuad (c+460,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR1),45);
+	vcdp->fullQuad (c+462,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR2),45);
+	vcdp->fullQuad (c+464,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI1),45);
+	vcdp->fullQuad (c+466,(vlTOPp->v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI2),45);
+	vcdp->fullBit  (c+470,(vlTOPp->valid_a));
+	vcdp->fullBus  (c+471,(vlTOPp->ar),11);
+	vcdp->fullBus  (c+472,(vlTOPp->ai),11);
+	vcdp->fullBit  (c+473,(vlTOPp->valid_o));
+	vcdp->fullBit  (c+474,(vlTOPp->rd_en));
+	vcdp->fullBit  (c+475,(vlTOPp->full));
+	vcdp->fullBus  (c+476,(vlTOPp->xr),11);
+	vcdp->fullBus  (c+477,(vlTOPp->xi),11);
+	vcdp->fullBit  (c+468,(vlTOPp->CLK));
+	vcdp->fullBit  (c+469,(vlTOPp->RST));
     }
 }

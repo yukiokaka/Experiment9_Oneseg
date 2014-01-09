@@ -51,14 +51,18 @@ VL_MODULE(Vfft64) {
     VL_SIG8(v__DOT__myFFT_module__DOT__stage_4_start_flg,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__stage_5_start_flg,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__cnt,6,0);
+    VL_SIG8(v__DOT__myFFT_module__DOT__cnt3,6,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__start_batterfly,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__calculating_batterfly_flg,0,0);
+    VL_SIG8(v__DOT__myFFT_module__DOT__start_batterfly_3,0,0);
+    VL_SIG8(v__DOT__myFFT_module__DOT__calculating_batterfly_flg_3,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__k1,6,0);
+    VL_SIG8(v__DOT__myFFT_module__DOT__k3,6,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__fin_batterfly,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__fin_batterfly_3,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__cnt,3,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__cnt,3,0);
-    //char	__VpadToAlign41[1];
+    //char	__VpadToAlign45[1];
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u11__DOT__YR,10,0);
@@ -71,7 +75,7 @@ VL_MODULE(Vfft64) {
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u11__DOT__YI,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YR,10,0);
     VL_SIG16(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__u12__DOT__YI,10,0);
-    //char	__VpadToAlign66[2];
+    //char	__VpadToAlign70[2];
     VL_SIG(v__DOT__A0,21,0);
     VL_SIG(v__DOT__A1,21,0);
     VL_SIG(v__DOT__A2,21,0);
@@ -370,7 +374,6 @@ VL_MODULE(Vfft64) {
     VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W2KI,16,0);
     VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KR,16,0);
     VL_SIG(v__DOT__myFFT_module__DOT__radix4_batterfly_module2__DOT__W3KI,16,0);
-    //char	__VpadToAlign1260[4];
     VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR1,44,0);
     VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YR2,44,0);
     VL_SIG64(v__DOT__myFFT_module__DOT__radix4_batterfly_module1__DOT__u10__DOT__YI1,44,0);
