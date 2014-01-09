@@ -13,6 +13,12 @@ module myFFT(
    
    
    reg [3:0]                   stage;
+   reg                         stage_1_start_flg;
+   reg                         stage_2_start_flg;
+   reg                         stage_3_start_flg;
+   reg                         stage_4_start_flg;
+   reg                         stage_5_start_flg;
+
    reg [21:0]                  AIN0,AIN1,AIN2,AIN3;
    
    reg [6:0]                   cnt;
@@ -30,16 +36,23 @@ module myFFT(
          valid_o <= 0;
          k1 <= 0;
          calculating_batterfly_flg <= 0;
+         stage_1_start_flg <= 0;
+         stage_2_start_flg <= 0;
+         stage_3_start_flg <= 0;
+         stage_4_start_flg <= 0;
+         stage_5_start_flg <= 0;
+
       end
       else begin
          if(stage == 0) begin
             if(start) begin
                stage <= 1;
+               stage_1_start_flg <= 1;
                cnt <= 0;
             end
          end
          
-         if(stage == 1) begin
+         if(stage_1_start_flg) begin
             if(!calculating_batterfly_flg) begin
                case(cnt) 
                  6'd0: begin
@@ -259,7 +272,10 @@ module myFFT(
                   cnt <= cnt + 1;
                   if(cnt > 15) begin
                      cnt <= 0;
+                     stage_1_start_flg <= 0;         
+                     stage_2_start_flg <= 1;            
                      stage <= stage + 1;
+                     
                      k1 <= 0;                     
                   end
                   
@@ -268,7 +284,7 @@ module myFFT(
            
          end // if (stage == 1)
          
-         if(stage == 2) begin
+         if(stage_2_start_flg) begin
             if(!calculating_batterfly_flg) begin
                case(cnt) 
                  6'd0: begin
@@ -489,6 +505,8 @@ module myFFT(
                   if(((cnt+1) % 4) == 0) cnt <= cnt + 13; 
                   if(cnt>51) begin
                      cnt <= 0;
+                     stage_2_start_flg <= 0;         
+                     stage_3_start_flg <= 1;            
                      stage <= stage + 1;
                      k1 <= 0;                     
                   end                  
@@ -497,7 +515,7 @@ module myFFT(
             end // else: !if(!calculating_batterfly_flg)
          end // if (stage == 2)
          
-         if(stage == 3) begin
+         if(stage_3_start_flg) begin
             if(!calculating_batterfly_flg) begin               
                case(cnt)
                  6'd0: begin
@@ -718,6 +736,8 @@ module myFFT(
                   if(cnt > 60)
                     begin
                        cnt <= 0;
+                       stage_3_start_flg <= 0;         
+                       stage_4_start_flg <= 1;            
                        stage <= stage + 1;
                     end                                          
                end // if (fin_batterfly)                
@@ -725,7 +745,7 @@ module myFFT(
          end // if (stage == 3)
 
          
-         if(stage == 4) begin
+         if(stage_4_start_flg) begin
             YOUT0 <= YOUT0;
             YOUT1 <= YOUT16;
             YOUT2 <= YOUT32;
@@ -791,14 +811,17 @@ module myFFT(
             YOUT62 <= YOUT47;
             YOUT63 <= YOUT63;
             stage <= stage + 1;
+            stage_4_start_flg <= 0;         
+            stage_5_start_flg <= 1;            
             valid_o <= 1;
             start_batterfly <= 0;
          end // if (stage == 4)
          
 
-         if(stage ==5) begin
+         if(stage_5_start_flg) begin
             valid_o <= 0;
             stage <= 0;
+            stage_5_start_flg <= 0;         
             start_batterfly <= 0;
             
          end          
