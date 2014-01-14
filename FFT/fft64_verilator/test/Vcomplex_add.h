@@ -5,26 +5,26 @@
 // The class here is then constructed to instantiate the design.
 // See the Verilator manual for examples.
 
-#ifndef _Vfft64_H_
-#define _Vfft64_H_
+#ifndef _Vcomplex_add_H_
+#define _Vcomplex_add_H_
 
 #include "verilated.h"
-class Vfft64__Syms;
-class Vfft64_radix4_batterfly;
-class Vfft64_radix4_batterfly;
-class Vfft64_radix4_batterfly;
+class Vcomplex_add__Syms;
+class Vcomplex_add_radix4_batterfly;
+class Vcomplex_add_radix4_batterfly;
+class Vcomplex_add_radix4_batterfly;
 class VerilatedVcd;
 
 //----------
 
-VL_MODULE(Vfft64) {
+VL_MODULE(Vcomplex_add) {
   public:
     // CELLS
     // Public to allow access to /*verilator_public*/ items;
     // otherwise the application code can consider these internals.
-    Vfft64_radix4_batterfly*	__PVT__v__DOT__myFFT_module__DOT__radix4_batterfly_module1;
-    Vfft64_radix4_batterfly*	__PVT__v__DOT__myFFT_module__DOT__radix4_batterfly_module2;
-    Vfft64_radix4_batterfly*	__PVT__v__DOT__myFFT_module__DOT__radix4_batterfly_module3;
+    Vcomplex_add_radix4_batterfly*	__PVT__v__DOT__myFFT_module__DOT__radix4_batterfly_module1;
+    Vcomplex_add_radix4_batterfly*	__PVT__v__DOT__myFFT_module__DOT__radix4_batterfly_module2;
+    Vcomplex_add_radix4_batterfly*	__PVT__v__DOT__myFFT_module__DOT__radix4_batterfly_module3;
     
     // PORTS
     // The application code writes and reads these signals to
@@ -49,7 +49,6 @@ VL_MODULE(Vfft64) {
     VL_SIG8(v__DOT__start_fft_flg,0,0);
     VL_SIG8(v__DOT__fin_fft_flg,0,0);
     VL_SIG8(v__DOT__valid_o_from_myFFT,0,0);
-    VL_SIG8(v__DOT__input_succeed_flg,0,0);
     VL_SIG8(v__DOT__fft_culculating_flg,0,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__stage,3,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__stage_1_start_flg,0,0);
@@ -69,7 +68,7 @@ VL_MODULE(Vfft64) {
     VL_SIG8(v__DOT__myFFT_module__DOT__k1,6,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__k2,6,0);
     VL_SIG8(v__DOT__myFFT_module__DOT__k3,6,0);
-    //char	__VpadToAlign46[2];
+    //char	__VpadToAlign45[3];
     VL_SIG(v__DOT__A0,21,0);
     VL_SIG(v__DOT__A1,21,0);
     VL_SIG(v__DOT__A2,21,0);
@@ -134,70 +133,6 @@ VL_MODULE(Vfft64) {
     VL_SIG(v__DOT__A61,21,0);
     VL_SIG(v__DOT__A62,21,0);
     VL_SIG(v__DOT__A63,21,0);
-    VL_SIG(v__DOT__AREG0,21,0);
-    VL_SIG(v__DOT__AREG1,21,0);
-    VL_SIG(v__DOT__AREG2,21,0);
-    VL_SIG(v__DOT__AREG3,21,0);
-    VL_SIG(v__DOT__AREG4,21,0);
-    VL_SIG(v__DOT__AREG5,21,0);
-    VL_SIG(v__DOT__AREG6,21,0);
-    VL_SIG(v__DOT__AREG7,21,0);
-    VL_SIG(v__DOT__AREG8,21,0);
-    VL_SIG(v__DOT__AREG9,21,0);
-    VL_SIG(v__DOT__AREG10,21,0);
-    VL_SIG(v__DOT__AREG11,21,0);
-    VL_SIG(v__DOT__AREG12,21,0);
-    VL_SIG(v__DOT__AREG13,21,0);
-    VL_SIG(v__DOT__AREG14,21,0);
-    VL_SIG(v__DOT__AREG15,21,0);
-    VL_SIG(v__DOT__AREG16,21,0);
-    VL_SIG(v__DOT__AREG17,21,0);
-    VL_SIG(v__DOT__AREG18,21,0);
-    VL_SIG(v__DOT__AREG19,21,0);
-    VL_SIG(v__DOT__AREG20,21,0);
-    VL_SIG(v__DOT__AREG21,21,0);
-    VL_SIG(v__DOT__AREG22,21,0);
-    VL_SIG(v__DOT__AREG23,21,0);
-    VL_SIG(v__DOT__AREG24,21,0);
-    VL_SIG(v__DOT__AREG25,21,0);
-    VL_SIG(v__DOT__AREG26,21,0);
-    VL_SIG(v__DOT__AREG27,21,0);
-    VL_SIG(v__DOT__AREG28,21,0);
-    VL_SIG(v__DOT__AREG29,21,0);
-    VL_SIG(v__DOT__AREG30,21,0);
-    VL_SIG(v__DOT__AREG31,21,0);
-    VL_SIG(v__DOT__AREG32,21,0);
-    VL_SIG(v__DOT__AREG33,21,0);
-    VL_SIG(v__DOT__AREG34,21,0);
-    VL_SIG(v__DOT__AREG35,21,0);
-    VL_SIG(v__DOT__AREG36,21,0);
-    VL_SIG(v__DOT__AREG37,21,0);
-    VL_SIG(v__DOT__AREG38,21,0);
-    VL_SIG(v__DOT__AREG39,21,0);
-    VL_SIG(v__DOT__AREG40,21,0);
-    VL_SIG(v__DOT__AREG41,21,0);
-    VL_SIG(v__DOT__AREG42,21,0);
-    VL_SIG(v__DOT__AREG43,21,0);
-    VL_SIG(v__DOT__AREG44,21,0);
-    VL_SIG(v__DOT__AREG45,21,0);
-    VL_SIG(v__DOT__AREG46,21,0);
-    VL_SIG(v__DOT__AREG47,21,0);
-    VL_SIG(v__DOT__AREG48,21,0);
-    VL_SIG(v__DOT__AREG49,21,0);
-    VL_SIG(v__DOT__AREG50,21,0);
-    VL_SIG(v__DOT__AREG51,21,0);
-    VL_SIG(v__DOT__AREG52,21,0);
-    VL_SIG(v__DOT__AREG53,21,0);
-    VL_SIG(v__DOT__AREG54,21,0);
-    VL_SIG(v__DOT__AREG55,21,0);
-    VL_SIG(v__DOT__AREG56,21,0);
-    VL_SIG(v__DOT__AREG57,21,0);
-    VL_SIG(v__DOT__AREG58,21,0);
-    VL_SIG(v__DOT__AREG59,21,0);
-    VL_SIG(v__DOT__AREG60,21,0);
-    VL_SIG(v__DOT__AREG61,21,0);
-    VL_SIG(v__DOT__AREG62,21,0);
-    VL_SIG(v__DOT__AREG63,21,0);
     VL_SIG(v__DOT__Y0,21,0);
     VL_SIG(v__DOT__Y1,21,0);
     VL_SIG(v__DOT__Y2,21,0);
@@ -390,198 +325,6 @@ VL_MODULE(Vfft64) {
     VL_SIG(v__DOT__myFFT_module__DOT__C61,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__C62,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__C63,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D0,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D1,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D2,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D3,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D4,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D5,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D6,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D7,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D8,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D9,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D10,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D11,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D12,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D13,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D14,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D15,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D16,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D17,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D18,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D19,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D20,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D21,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D22,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D23,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D24,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D25,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D26,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D27,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D28,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D29,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D30,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D31,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D32,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D33,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D34,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D35,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D36,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D37,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D38,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D39,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D40,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D41,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D42,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D43,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D44,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D45,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D46,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D47,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D48,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D49,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D50,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D51,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D52,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D53,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D54,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D55,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D56,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D57,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D58,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D59,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D60,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D61,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D62,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__D63,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG0,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG1,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG2,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG3,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG4,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG5,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG6,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG7,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG8,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG9,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG10,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG11,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG12,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG13,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG14,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG15,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG16,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG17,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG18,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG19,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG20,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG21,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG22,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG23,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG24,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG25,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG26,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG27,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG28,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG29,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG30,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG31,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG32,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG33,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG34,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG35,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG36,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG37,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG38,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG39,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG40,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG41,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG42,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG43,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG44,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG45,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG46,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG47,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG48,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG49,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG50,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG51,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG52,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG53,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG54,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG55,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG56,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG57,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG58,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG59,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG60,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG61,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG62,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__BREG63,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG0,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG1,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG2,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG3,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG4,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG5,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG6,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG7,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG8,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG9,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG10,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG11,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG12,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG13,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG14,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG15,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG16,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG17,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG18,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG19,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG20,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG21,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG22,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG23,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG24,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG25,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG26,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG27,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG28,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG29,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG30,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG31,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG32,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG33,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG34,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG35,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG36,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG37,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG38,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG39,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG40,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG41,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG42,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG43,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG44,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG45,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG46,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG47,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG48,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG49,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG50,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG51,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG52,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG53,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG54,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG55,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG56,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG57,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG58,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG59,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG60,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG61,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG62,21,0);
-    VL_SIG(v__DOT__myFFT_module__DOT__CREG63,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN0,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN1,21,0);
     VL_SIG(v__DOT__myFFT_module__DOT__AIN2,21,0);
@@ -599,27 +342,27 @@ VL_MODULE(Vfft64) {
     // Internals; generally not touched by application code
     VL_SIG8(__Vclklast__TOP__CLK,0,0);
     VL_SIG8(__Vclklast__TOP__RST,0,0);
-    //char	__VpadToAlign2150[2];
+    //char	__VpadToAlign1126[2];
     VL_SIG(__Vm_traceActivity,31,0);
     
     // INTERNAL VARIABLES
     // Internals; generally not touched by application code
-    Vfft64__Syms*	__VlSymsp;		// Symbol table
+    Vcomplex_add__Syms*	__VlSymsp;		// Symbol table
     
     // PARAMETERS
     // Parameters marked /*verilator public*/ for use by application code
     
     // CONSTRUCTORS
   private:
-    Vfft64& operator= (const Vfft64&);	///< Copying not allowed
-    Vfft64(const Vfft64&);	///< Copying not allowed
+    Vcomplex_add& operator= (const Vcomplex_add&);	///< Copying not allowed
+    Vcomplex_add(const Vcomplex_add&);	///< Copying not allowed
   public:
     /// Construct the model; called by application code
     /// The special name  may be used to make a wrapper with a
     /// single model invisible WRT DPI scope names.
-    Vfft64(const char* name="TOP");
+    Vcomplex_add(const char* name="TOP");
     /// Destroy the model; called (often implicitly) by application code
-    ~Vfft64();
+    ~Vcomplex_add();
     /// Trace signals in the model; called by application code
     void trace (VerilatedVcdC* tfp, int levels, int options=0);
     
@@ -633,24 +376,24 @@ VL_MODULE(Vfft64) {
     
     // INTERNAL METHODS
   private:
-    static void _eval_initial_loop(Vfft64__Syms* __restrict vlSymsp);
+    static void _eval_initial_loop(Vcomplex_add__Syms* __restrict vlSymsp);
   public:
-    void __Vconfigure(Vfft64__Syms* symsp, bool first);
+    void __Vconfigure(Vcomplex_add__Syms* symsp, bool first);
   private:
-    static IData	_change_request(Vfft64__Syms* __restrict vlSymsp);
+    static IData	_change_request(Vcomplex_add__Syms* __restrict vlSymsp);
   public:
-    static void	_eval(Vfft64__Syms* __restrict vlSymsp);
-    static void	_eval_initial(Vfft64__Syms* __restrict vlSymsp);
-    static void	_eval_settle(Vfft64__Syms* __restrict vlSymsp);
-    static void	_sequent__TOP__1(Vfft64__Syms* __restrict vlSymsp);
-    static void	traceChgThis(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceChgThis__2(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceChgThis__3(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceChgThis__4(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceFullThis(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceFullThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceInitThis(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
-    static void	traceInitThis__1(Vfft64__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void	_eval(Vcomplex_add__Syms* __restrict vlSymsp);
+    static void	_eval_initial(Vcomplex_add__Syms* __restrict vlSymsp);
+    static void	_eval_settle(Vcomplex_add__Syms* __restrict vlSymsp);
+    static void	_sequent__TOP__1(Vcomplex_add__Syms* __restrict vlSymsp);
+    static void	traceChgThis(Vcomplex_add__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void	traceChgThis__2(Vcomplex_add__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void	traceChgThis__3(Vcomplex_add__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void	traceChgThis__4(Vcomplex_add__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void	traceFullThis(Vcomplex_add__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void	traceFullThis__1(Vcomplex_add__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void	traceInitThis(Vcomplex_add__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
+    static void	traceInitThis__1(Vcomplex_add__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void traceInit (VerilatedVcd* vcdp, void* userthis, uint32_t code);
     static void traceFull (VerilatedVcd* vcdp, void* userthis, uint32_t code);
     static void traceChg  (VerilatedVcd* vcdp, void* userthis, uint32_t code);
